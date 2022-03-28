@@ -116,7 +116,7 @@
 }
 @media screen and (max-width: 1300px) {
   .coverage_col {
-    padding: 0 20px;
+    padding: 0 12px;
   }
   .counter-box {
     font-size: 32px;
@@ -126,6 +126,6 @@
     bottom: 0;
     right: -6px;
     min-height: 105px;
-    transform: translateY(-50%) rotate(23deg);
+    transform: translateY(-50%) rotate(19deg);
   }
 }

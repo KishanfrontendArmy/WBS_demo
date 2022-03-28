@@ -14,10 +14,10 @@ function TicketsType(props) {
           </a>
           <div className="tickets-date">{props.data.date}</div>
           <div className={`tickets_standard_top_icon ${props?.data?.topclass} wow zoomIn`}>
-            <img src={props.data.topicon} alt="" />
+            <img src={props.data.topicon} alt="" data-parallax={props.data.animationtop} />
           </div>
           <div className={`tickets_standard_bottom_left ${props?.data?.bottomclass} wow zoomIn`} >
-            <img src={props.data.bottomicon} alt="" />
+            <img src={props.data.bottomicon} alt="" data-parallax={props.data.animationbottom} />
           </div>
         </div>
         <div className="tickets_list">
