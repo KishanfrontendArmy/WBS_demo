@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: var(--unnamed-color-101031);
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #0d0e1d;
+  color: #fff;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.o-scroll {
+  background-color: #0d0e1d !important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clr,
+.cl,
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  content: "";
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.cls-1 {
+  fill: #e42e35;
+}
+
+/*********************** | components Css |  ************************/
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1800px /*1700px*/;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Title */
+.title-box {
+  text-align: center;
+  padding-bottom: 80px;
+}
+h2 {
+  font-size: 58px;
+  line-height: 1.15;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.27;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Russo One", sans-serif;
+  color: #0d0e1d;
+}
+/* Title */
+
+/* Button  */
+.a_btn {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d0e1d;
+  line-height: 1;
+  background-color: #fff;
+  padding: 16px 22px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.3s 0s;
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+
+/* Animation Button */
+.a_btn:after,
+.a_btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.a_btn:before {
+  opacity: 0;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  z-index: -1;
+  border-radius: 5px;
+}
+.a_btn:hover:before {
+  opacity: 1;
+}
+.a_btn:after {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  z-index: -1;
+  background-color: #000000;
+  border-radius: 5px;
+}
+.a_btn:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: left;
+  -webkit-transform-origin: left;
+}
+.a_btn:hover {
+  border: 1px solid #ffffff;
+  color: #fff;
+}
+/* Animation Button */
+
+/*********************** | components Css |  ************************/

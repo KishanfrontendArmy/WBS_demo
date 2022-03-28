@@ -1,0 +1,131 @@
+/****************** | coverage_sec |  *******************/
+.coverage_sec {
+  padding: 100px 0;
+  position: relative;
+}
+.coverage_icon_top {
+  position: absolute;
+  width: 122px;
+  height: 105px;
+  top: -6%;
+  right: 10%;
+  transform: rotate(45deg);
+}
+.coverage_sec_otr {
+  position: relative;
+}
+.coverge_close_share_left {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-size: 100%;
+  top: 50%;
+  left: 4.6%;
+  transform: translateY(-50%);
+}
+.coverge_close_share_left svg {
+  width: 41px;
+  height: 41px;
+}
+.coverage_row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0;
+  margin: 0 -45px;
+}
+.coverage_col {
+  padding: 0 45px;
+  position: relative;
+  min-width: 251px;
+}
+.coverage_col:after {
+  content: "";
+  top: 35%;
+  bottom: 0;
+  right: -5px;
+  position: absolute;
+  width: 2px;
+  background: #dc2d34;
+  min-height: 115px;
+  transform: translateY(-50%) rotate(25deg);
+}
+.coverage_col:last-child::after {
+  content: none;
+}
+.counter-box {
+  display: flex;
+  align-items: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  letter-spacing: 0.036em;
+  line-height: 0.78;
+  text-align: center;
+  justify-content: center;
+}
+.coverage_box {
+  text-align: center;
+}
+.coverage_box h6 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+/****************** | coverage_sec |  *******************/
+
+@media screen and (max-width: 1800px) {
+  .coverge_close_share_left {
+    left: 0;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .coverage_row {
+    margin: 0 -35px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .counter-box {
+    font-size: 35px;
+    min-width: 130px;
+    text-align: center;
+  }
+  .coverage_col {
+    padding: 0 31px;
+    min-width: 100px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .counter-box {
+    font-size: 35px;
+  }
+  .coverage_box h6 {
+    font-size: 15px;
+  }
+  .title-box {
+    padding-bottom: 40px;
+  }
+  .coverage_icon_top svg {
+    width: 110px;
+  }
+  .coverge_close_share_left {
+    left: -20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .coverage_col {
+    padding: 0 20px;
+  }
+  .counter-box {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  .coverage_col:after {
+    bottom: 0;
+    right: -6px;
+    min-height: 105px;
+    transform: translateY(-50%) rotate(23deg);
+  }
+}
