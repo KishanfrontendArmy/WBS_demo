@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import Scroll from "../Scroll";
 import Title from "../../components/Title/index";
 import ShowCase from "../../components/ShowCase/index";
 import TicketsWbs from "../../components/TicketsWbs/index";

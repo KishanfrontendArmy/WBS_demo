@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./showCase.css";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";

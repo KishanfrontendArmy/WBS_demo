@@ -1,12 +1,3 @@
-import Ticket1TopImage from "./assets/Image/standard-top-icon.svg";
-import Ticket1BottomImage from "./assets/Image/standard-bottom-left-icon.svg";
-
-import Ticket2TopImage from "./assets/Image/dots_img.svg";
-import Ticket2BottomImage from "./assets/Image/bussion_bottom_icon_new.svg";
-
-import Ticket3TopImage from "./assets/Image/close-icon.svg";
-import Ticket3BottomImage from "./assets/Image/vip_bottom_icon.svg";
-
 
 export const Tickets = [
   {
