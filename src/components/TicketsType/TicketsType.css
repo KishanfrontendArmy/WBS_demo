@@ -97,17 +97,6 @@
   position: relative;
   z-index: 11;
 }
-/* .tickets_list:after {
-    content: "";
-    position: absolute;
-    left: -20px;
-    right: -20px;
-    background-color: #0f1025;
-    height: 70px;
-    top: -26px;
-    transform: rotate(-6deg);
-    z-index: 0;
-} */
 .top_shape {
   position: absolute;
   left: -20px;

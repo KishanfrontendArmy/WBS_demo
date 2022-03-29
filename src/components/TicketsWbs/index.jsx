@@ -26,12 +26,6 @@ function TicketsWbs(data) {
           (element_top_position <= window_bottom_position)) {
           $element.addClass('is_show');
 
-          //   console.log(element_top_position, 'top-position');
-          //   console.log(window_bottom_position, 'bottom-position');
-          //   console.log(window_top_position, 'window_top_position');
-          //   console.log(element_height, 'element-height');
-          //   console.log(element_bottom_position, 'element_bottom_position');
-          //   console.log(window_height, 'windown-height');
         }
       });
     }
@@ -46,7 +40,7 @@ function TicketsWbs(data) {
         {
           Tickets && Tickets.length > 0 && Tickets.map((data, index) => {
             return (
-              <TicketsType data={data} key={index} delayticket={data.delayticket} />
+              <TicketsType data={data} key={index} />
             )
           })
         }
