@@ -32,13 +32,13 @@ const Herobanner = () => {
                         </div>
                         <div className="hero_banner_text_right d-flex flex-column col-3">
                             <div className="add_calender">
-                                <a href="javascript:void(0)" className="text_link text_link_org">Add to Calendar</a>
+                                <a href="#" className="text_link text_link_org">Add to Calendar</a>
                             </div>
                             <div className="a_btn a_btn_bdr btn_org_bdr">
-                                <a href="javascript:void(0)">Enquire Now</a>
+                                <a href="#">Enquire Now</a>
                             </div>
                             <div className="a_btn a_btn_fill btn_orange">
-                                <a href="javascript:void(0)">Book Tickets</a>
+                                <a href="#">Book Tickets</a>
                             </div>
                             <small>Reserve your tickets for upcoming events at special prices</small>
                             <div className="fill_img_box">

@@ -67,7 +67,7 @@ const Speaker = () => {
                     </div>
 
                     <div className="a_btn a_btn_fill btn_orange">
-                        <a href="javascript:void(0)">
+                        <a href="#">
                             VIEW MORE speakers
                             <svg xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" width="13px" height="12px">
                                 <path fillRule="evenodd" fill="rgb(255, 255, 255)" d="M6.277,11.406 L0.148,0.791 L12.406,0.791 L6.277,11.406 Z" />

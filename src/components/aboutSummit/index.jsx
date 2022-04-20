@@ -16,13 +16,13 @@ const AboutSummit = () => {
                         <div className="about_summit_left_btn_box_otr">
                             <div className="about_summit_btn_box">
                                 <div className="a_btn a_btn_fill btn_orange">
-                                    <a href="javascript:void(0)">Sponsor</a>
+                                    <a href="#">Sponsor</a>
                                 </div>
                                 <p>Explore sponsorship opportunities</p>
                             </div>
                             <div className="about_summit_btn_box">
                                 <div className="a_btn a_btn_bdr btn_white_bdr">
-                                    <a href="javascript:void(0)">Book Tickets</a>
+                                    <a href="#">Book Tickets</a>
                                 </div>
                                 <p>Reserve your tickets for upcoming events at special prices</p>
                             </div>

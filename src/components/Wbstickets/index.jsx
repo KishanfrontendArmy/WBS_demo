@@ -20,7 +20,7 @@ const WbsTickets = () => {
                                             <h5 className="russo-one">{data.title}</h5>
                                             <h3>{data.price}</h3>
                                             <div className="a_btn a_btn_fill btn_white">
-                                                <a href="javascript:void(0)">Book Tickets</a>
+                                                <a href="#">Book Tickets</a>
                                             </div>
                                             <p>{data.date}</p>
                                         </div>

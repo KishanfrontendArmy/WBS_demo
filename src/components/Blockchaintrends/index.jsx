@@ -4,7 +4,8 @@ import "./swiper.min.css";
 import { BlockchainTrendsData, BlockchainSessionsData } from '../../data';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
-import 'swiper/css/navigation'
+import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 
 import SwiperCore, { Navigation, Scrollbar, Autoplay } from 'swiper';
 SwiperCore.use([Navigation, Scrollbar, Autoplay]);
@@ -95,7 +96,10 @@ const BlockchainTrends = () => {
                             <p>Connect with prospective business partners in an exclusive innovation-focused event with an access to interactive sessions, networking areas, breakouts and meeting spaces.
                             </p>
                             <div className="a_btn a_btn_fill btn_orange">
-                                <a href="javascript:void(0)">Become a Sponsor</a>
+                                {/* <Link to={'/'}>
+                                    Become a Sponsor
+                                </Link> */}
+                                <a href="#">Become a Sponsor</a>
                             </div>
                         </div>
                         <div className="blockchain_trends_quotes col-6">
