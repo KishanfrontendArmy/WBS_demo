@@ -1,0 +1,73 @@
+/******************** Header CSS ********************/
+header.header_main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+.header_inr {
+  padding: 22px 0;
+}
+
+.header_left h6 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.header_left h6 span {
+  display: block;
+  background: #e57139;
+  border-radius: 5px;
+  padding: 0 8px;
+  margin: 0 0 5px 0;
+}
+.header_left h6 span strong {
+  font-size: 30px;
+}
+
+.header_left h6 span sup {
+  font-size: 15px;
+  font-weight: 600;
+  vertical-align: 10px;
+  margin: 0 0 0 2px;
+}
+
+.header_right ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.header_right ul li {
+  list-style: none;
+  margin: 0 12px 0 12px;
+}
+
+.header_right ul li a:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: #ffffff;
+  left: 0;
+  width: 100%;
+  transform: translateX(-30%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear 0s;
+  bottom: -11px;
+}
+
+.header_right ul li:hover a:before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: all 0.5s linear 0s;
+}
+.header_right .a_btn:nth-child(2) {
+  margin: 0 7px;
+}
+/******************** Header CSS ********************/

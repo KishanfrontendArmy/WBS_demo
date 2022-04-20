@@ -1,0 +1,125 @@
+/******************** Banner CSS ********************/
+.hero_banner_inr {
+  position: relative;
+}
+
+.hero_banner_inr .hero_banner_video {
+  -webkit-mask-image: url(/public/image/hero_banner_bg_shape.png);
+  mask-image: url(/public/image/hero_banner_bg_shape.png);
+  -webkit-mask-size: initial;
+  mask-size: initial;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-clip: border-box;
+  mask-clip: border-box;
+  -webkit-mask-position: center bottom;
+}
+.hero_banner_inr .hero_banner_video::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/public/image/hero_banner_over_lay.png);
+}
+
+.hero_banner_text {
+  position: absolute;
+  top: 13.7%;
+  left: 0;
+  right: 0;
+  max-width: 1182px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_banner_text_banner {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  grid-gap: 25px;
+}
+
+.hero_banner_event_co_host_logo {
+  grid-row-start: 2;
+}
+
+.hero_banner_event_presents_logo {
+  grid-column-start: 2;
+}
+
+.hero_banner_event_sponsor_logo {
+  grid-row-start: 2;
+}
+
+.hero_banner_event_logo {
+  grid-row-start: 2;
+}
+
+.hero_banner_event_poweredby_logo {
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+.hero_banner_text_left h1 {
+  font-size: 80px;
+  line-height: 71px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+.hero_banner_text_inr {
+  margin: 60px 0 0 0;
+}
+
+.hero_banner_text_left {
+  position: relative;
+  flex: 1;
+  padding-right: 30px;
+}
+
+.hero_banner_text_left:before {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  width: 4px;
+}
+
+.hero_banner_text_right {
+  padding: 0 21px;
+  text-align: center;
+}
+.hero_banner_text_left h1 sup {
+  vertical-align: -10px;
+}
+
+.hero_banner_text_left h1 sup:last-of-type {
+  display: none;
+}
+
+.add_calender {
+  margin: 7px 0 0 0;
+}
+
+.hero_banner_text_right .btn_org_bdr {
+  margin: 21px 0;
+}
+
+.hero_banner_text_right small {
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  color: #f9f9f9;
+  margin: 6px 0;
+}
+
+.hero_banner_text_right .a_btn a {
+  width: 100%;
+}
+/******************** Banner CSS ********************/

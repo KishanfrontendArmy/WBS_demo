@@ -1,0 +1,84 @@
+/******************** Testimonials CSS ********************/
+.testimonials {
+    padding: 120px 0 260px;
+    position: relative;
+  }
+  .testimonials:before {
+    content: "";
+    background: url(/public/image/line_bg_pattern.jpg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    bottom: -14%;
+    left: 0;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+  }
+  .testimonials_inr_box {
+    max-width: 1368px;
+    margin: 0 auto;
+  }
+  .title_testi {
+    padding: 0 9%;
+    margin-bottom: 74px;
+  }
+  .testi_video_slide_item iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .testi_video_slide_item {
+    padding-top: 56.25%;
+  }
+  
+  .testi_video_slider_arrow > div {
+    width: 93px;
+    height: 93px;
+    background: rgb(0 0 0 / 30%);
+    border-radius: 100%;
+    transition: all 0.3s ease 0s;
+  }
+  
+  
+  .swiper-button-next {
+    right: 27px;
+  }
+  
+  .swiper-button-prev {
+    left: 27px;
+  }
+  .testi_video_slider_arrow > div:after {
+    content: none;
+  }
+  .testi_video_slider_arrow > div:hover {
+    background: rgb(0 0 0 / 100%);
+  }
+  /******************** Testimonials CSS ********************/
+
+
+
+
+  /* .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+
+
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  } */

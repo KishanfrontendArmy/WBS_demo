@@ -1,0 +1,73 @@
+/******************** Footer CSS ********************/
+.footer {
+  background: #16182d;
+  padding: 71px 0;
+}
+
+.ft_left p {
+  color: #cdcdcd;
+  line-height: 21px;
+  padding-bottom: 17px;
+}
+
+.ft_logo {
+  padding-bottom: 23px;
+}
+
+.ft_social_media ul {
+  gap: 17px;
+}
+
+.ft_social_media ul li {
+  list-style: none;
+}
+
+.ft_left {
+  width: 361px;
+}
+
+.ft_copyright {
+  border-top: 1px solid #959595;
+  margin: 31px 0 0 0;
+  padding: 34px 0 0 0;
+  text-align: center;
+}
+
+.ft_copyright p {
+  color: #cdcdcd;
+  font-size: 14px;
+  line-height: 28px;
+}
+.ft_right h4 {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0 0 25px 0;
+}
+
+.ft_address p {
+  line-height: 21px;
+  padding-bottom: 17px;
+}
+
+.ft_address {
+  max-width: 276px;
+  margin-right: 8%;
+}
+
+.ft_right_menu ul li a {
+  color: #c3c4c4;
+  transition: all 0.3s ease 0s;
+}
+.ft_right_menu ul li a:hover {
+  color: #ffffff;
+}
+.ft_right_menu ul li {
+  line-height: 24px;
+  list-style: none;
+}
+
+.ft_right {
+  width: 57%;
+  padding-right: 13%;
+}
+/******************** Footer CSS ********************/

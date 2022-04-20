@@ -1,0 +1,140 @@
+
+/******************** Speakers CSS ********************/
+.speakers_list_otr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 56px;
+}
+
+.speaker_name h3 {
+  color: #f9f9f9;
+  font-size: 34px;
+  font-weight: 800;
+  padding: 17px 0 10px;
+}
+
+.speaker_position p {
+  color: #f9f9f9;
+  font-size: 25px;
+  padding: 0 20px 0 0;
+  line-height: 30px;
+}
+.speaker_plus {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.speaker_img {
+  position: relative;
+}
+
+.speaker_plus button {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 600;
+  width: 55px;
+  height: 55px;
+  background: #0e1526;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+.speakers_inr .a_btn {
+  text-align: center;
+}
+
+.speakers_inr .a_btn {
+  text-align: center;
+  padding: 117px 0 0 0;
+}
+
+.speakers_inr .a_btn a svg {
+  margin: 0 0 0 5px;
+}
+
+.speakers_inr .a_btn a svg path {
+  transition: all 0.3s ease 0s;
+}
+
+.speakers_inr .a_btn a:hover svg path {
+  fill: #e5713a;
+}
+.speaker_model_otr .modal-dialog {
+  max-width: 1420px;
+}
+
+.speaker_model_otr .modal-dialog .speaker_model_box {
+  position: relative;
+  padding: 40px;
+  z-index: 0;
+}
+
+.speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 600;
+  width: 55px;
+  height: 55px;
+  background: #0e1526;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close span {
+  transform: rotate(45deg);
+}
+.speaker_model_otr .modal-dialog .speaker_model_box:before {
+  position: absolute;
+  content: "";
+  width: 296px;
+  height: 418px;
+  background: #e57139;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.speaker_model_right_box h5 {
+  font-size: 33px;
+  line-height: 39px;
+  letter-spacing: 1px;
+  color: #0e1526;
+  font-weight: 800;
+}
+
+.speaker_model_right_box {
+  width: 62%;
+}
+
+.speaker_model_right_box strong {
+  display: inline-block;
+  font-weight: 400;
+  color: #0e1526;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 24px 0 34px;
+}
+
+.speaker_model_left_box {
+  width: 32%;
+}
+
+.speaker_model_right_box p {
+  font-size: 26px;
+  line-height: 36px;
+  color: #0e1526;
+}
+.speaker_model_otr {
+  background: rgb(14 21 38 / 78%);
+}
+
+/******************** Speakers CSS ********************/

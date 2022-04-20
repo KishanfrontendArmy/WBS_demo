@@ -1,0 +1,34 @@
+/******************** Media Coverage CSS ********************/
+.media_coverage_list {
+  padding: 102px 0 135px;
+}
+
+.media_coverage_box strong {
+  display: inline-block;
+  font-size: 47px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.media_coverage_box {
+  margin: 0 35px;
+  text-align: center;
+  max-width: 200px;
+  position: relative;
+}
+
+.media_coverage_box:not(:last-child):before {
+  position: absolute;
+  content: "";
+  background: #e5713a;
+  height: 121%;
+  width: 3px;
+  transform: skewX(-21deg);
+  right: -36px;
+  top: -6px;
+}
+.media_coverage_box p {
+  font-size: 18px;
+  margin: 15px 0 0 0;
+}
+/******************** Media Coverage CSS ********************/

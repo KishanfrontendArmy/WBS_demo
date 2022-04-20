@@ -20,7 +20,7 @@ var target = $(".bounce"),
 
 // animate each letter individually
 for (j = 0; j < targetText.length; j++) {
-    var letterDiv = "<div data-wow-delay=\"" + (j * 0.1).toFixed(2) + "s\"  class=\"letter wow bounceIn\">" + targetText[j] + "</div>";
+    var letterDiv = "<div data-wow-delay=\"" + (j * 0.1).toFixed(2) + "s\"  className=\"letter wow bounceIn\">" + targetText[j] + "</div>";
     $(letterDiv).appendTo(target.last());
 }
 

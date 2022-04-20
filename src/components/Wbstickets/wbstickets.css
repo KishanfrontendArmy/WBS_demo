@@ -1,0 +1,146 @@
+/******************** Parellax CSS ********************/
+.parellax_bg {
+  background: url(/public/image/parellax_bg_img.png) top no-repeat;
+  background-attachment: fixed;
+  padding: 381px 0 448px 0;
+}
+.parellax_bg h2 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.tickets_wbs_title {
+  padding: 0 0 85px 0;
+}
+
+.tickets_wbs_list {
+  gap: 64px;
+}
+
+.tickets_wbs_price_box {
+  width: 33.33%;
+  background: #0f1025;
+}
+
+.tickets_wbs_price_box_top {
+  background: #5c56c8;
+}
+
+.tickets_wbs_price_points {
+  padding: 37px 30px 38px 47px;
+}
+
+.tickets_wbs_price_points ul li {
+  font-size: 23px;
+  line-height: 46px;
+  color: #ffffff;
+  list-style: none;
+  padding-left: 37px;
+  position: relative;
+}
+.tickets_wbs_price_points ul li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 14px;
+}
+.tickets_wbs_price_points ul li.right_point:before {
+  background: url(/public/image/tick_green.png);
+  width: 23px;
+  height: 18px;
+}
+.tickets_wbs_price_points ul li.cancel_point:before {
+  background: url(/public/image/close_red.png);
+  width: 18px;
+  height: 18px;
+}
+.tickets_wbs_price_points ul li.cancel_point {
+  color: #7c7c7c;
+}
+.tickets_wbs_price_box_top_text {
+  text-align: center;
+  padding: 60px 0 67px;
+}
+
+.tickets_wbs_price_box_top_text h5 {
+  font-size: 39px;
+  line-height: 34px;
+  padding: 0 0 32px 0;
+  color: #e57139;
+}
+
+.tickets_wbs_price_box_top_text h3 {
+  font-size: 51px;
+  color: #ffffff;
+}
+
+.tickets_wbs_price_box_top_text .a_btn {
+  padding: 17px 0 24px 0;
+}
+
+.tickets_wbs_price_box_top_text .a_btn a {
+  font-size: 20px;
+}
+
+.tickets_wbs_price_box_top_text p {
+  font-size: 20px;
+  font-weight: 600;
+}
+section.why_attend {
+  padding: 230px 0 0 0;
+}
+
+.why_attend_title {
+  padding: 0 0 65px 0;
+}
+.why_attend_list {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  gap: 38px;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.why_attend_list .why_attend_box {
+  background: #eaecfd;
+  padding: 51px 59px 30px;
+}
+
+.why_attend_box_top {
+  margin: 0 0 22px 0;
+}
+
+.why_attend_box_top .why_attend_box_icon {
+  width: 87px;
+  height: 87px;
+  border-radius: 100%;
+  background: #ea8141;
+  flex: 0 0 87px;
+}
+
+.why_attend_box_top .why_attend_box_icon img {
+  width: max-content;
+}
+
+.why_attend_box_top h3 {
+  font-size: 30px;
+  color: #0d0e1d;
+  margin: 0 0 0 23px;
+  padding: 0 40px 0 0;
+}
+
+.why_attend_box p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #0d0e1d;
+}
+
+.why_attend_box p a {
+  color: #ea8141;
+  text-decoration: underline;
+}
+/******************** Parellax CSS ********************/

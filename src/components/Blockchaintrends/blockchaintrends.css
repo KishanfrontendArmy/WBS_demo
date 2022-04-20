@@ -1,0 +1,159 @@
+/******************** Blockchain Trends CSS ********************/
+.blockchain_trends_slider {
+  margin: 98px 0 0 0;
+}
+.blockchain_trends_image_slider {
+  width: 74.361%;
+}
+
+.blockchain_trends_text_slider_otr {
+  width: 33.14%;
+  background: #ea8141;
+  padding: 62px 63px 68px 70px;
+  margin-left: -7.501%;
+  position: relative;
+  z-index: 1;
+}
+.blockchain_trends_button_box {
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  right: 0;
+}
+.blockchain_trends_button_box > div {
+  width: 93px;
+  height: 93px;
+  background: rgb(0 0 0 / 30%);
+  border-radius: 100%;
+  transition: all 0.3s ease 0s;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.blockchain_trends_button_box > div:hover {
+  background: #16182d;
+}
+.blockchain_trends_text_slide_box h3 {
+  font-size: 38px;
+  line-height: 46px;
+  color: #f3f3f3;
+  font-weight: 600;
+  padding: 0 10px 33px 0;
+}
+
+.blockchain_trends_text_slide_box p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #f3f3f3;
+}
+
+.blockchain_trends_text_slide_box p:not(:last-child) {
+  padding-bottom: 25px;
+}
+.session_title_img {
+  padding: 18px 0 0 0;
+}
+/******************** Blockchain Trends CSS ********************/
+
+/******************** Sessions CSS ********************/
+
+/* .sessions_list h2 {text-transform: uppercase;-webkit-text-fill-color: #0e1526; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;font-size: 70px;} */
+
+.sessions_list h5 {
+  padding: 170px 0 31px 0;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.sessions_list p {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+.sessions_list .a_btn {
+  margin: 29px 0 0 0;
+}
+.blockchain_trends_quotes {
+  margin: 20% 0 0% 0;
+}
+
+.blockchain_trends_quotes_icon {
+  max-width: 72px;
+}
+
+.blockchain_trends_quote h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #f9f9f9;
+  line-height: 50px;
+}
+
+.blockchain_trends_quote h3 span {
+  color: #ea8141;
+  font-weight: 700;
+}
+
+.blockchain_trends_quote {
+  padding: 38px 0;
+}
+
+.blockchain_trends_quote_detail {
+  display: flex;
+  align-items: center;
+}
+
+.blockchain_trends_quote_detail_img {
+  max-width: 121px;
+  height: 121px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.blockchain_trends_quote_detail_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blockchain_trends_quote_detail_box {
+  padding: 0 0 0 27px;
+}
+
+.blockchain_trends_quote_detail_box h4 {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.blockchain_trends_quote_detail_box p {
+  font-size: 21px;
+  color: #f9f9f9;
+}
+.blockchain_trends_quotes_slider_btns > div {
+  width: 39px;
+  height: 39px;
+  background: #f9f9f9;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.blockchain_trends_quotes_slider_btns > div:hover {
+  background: #ea8141;
+}
+.blockchain_trends_quotes_slider_btns {
+  display: flex;
+  padding: 34px 0 0 0;
+}
+section.blockchain_trends {
+  padding: 0 0 94px 0;
+}
+/******************** Sessions CSS ********************/

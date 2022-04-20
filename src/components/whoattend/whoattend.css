@@ -1,0 +1,50 @@
+/******************** Who Attends Image CSS ********************/
+section.who_attends {
+  padding: 0 0 140px 0;
+}
+.who_attends_inr p {
+  font-size: 30px;
+  color: #fdfdfe;
+  letter-spacing: 1px;
+  max-width: 1000px;
+  text-align: center;
+  margin: 42px auto 0;
+}
+
+.who_attends_sector {
+  padding: 54px 0 60px;
+}
+
+.who_attends_sector_item {
+  background: #ea8141;
+  border-radius: 50px;
+  padding: 16px 25px;
+}
+
+.who_attends_sector_item small {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.who_attends_points ul li {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 -6% 30px 0;
+  width: 32%;
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.who_attends_points ul li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ffffff;
+  top: 4px;
+  left: 0;
+}
+/******************** Who Attends Image CSS ********************/

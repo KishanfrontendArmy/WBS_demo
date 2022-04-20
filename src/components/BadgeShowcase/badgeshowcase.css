@@ -1,0 +1,56 @@
+/******************** Media Coverage With Image CSS ********************/
+section.media_coverage_img_sec {
+  padding: 210px 0 251px;
+  position: relative;
+}
+section.media_coverage_img_sec::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(/public/image/line_pattern_bg.jpg) no-repeat center;
+  bottom: -20%;
+  z-index: -1;
+}
+.media_coverage_left h2 {
+  text-align: left;
+}
+
+.media_coverage_left {
+  margin-right: 32px;
+}
+
+.media_coverage_right {
+  width: 45%;
+}
+
+.media_coverage_right img {
+  width: 100%;
+}
+.media_coverage_item {
+  width: 146px;
+  height: 146px;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 38px 0 0;
+}
+
+.media_coverage_img_sec_list {
+  padding: 48px 0 0 0;
+}
+
+.media_coverage_item strong {
+  font-size: 34px;
+}
+
+.media_coverage_item p {
+  padding: 6px 19px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+/******************** Media Coverage With Image CSS ********************/

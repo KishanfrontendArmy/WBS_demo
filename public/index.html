@@ -13,7 +13,7 @@
   </head>
   <body>
    
-    <section class="scroll-section">
+    <!-- <section class="scroll-section">
       <div class="more_sec">
           <a href="#coverage_sec_scroll">
               <svg width="34" height="56" viewBox="0 0 34 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,14 +27,101 @@
               <h1 class="word bounce" data-text="Pleases Scroll Down"></h1>
           </div>
       </div>
-  </section>
+  </section> -->
   <div id="root"></div>
-  <script src="assets/scroll.js"></script>
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var testi_video_swiper = new Swiper(".testi_video_slider", {
+            navigation: {
+                nextEl: ".testi_video_slider_arrow .swiper-button-next",
+                prevEl: ".testi_video_slider_arrow .swiper-button-prev",
+            },
+        });
+        var discussion_topics_swiper = new Swiper(".discussion_topics_slider", {
+            slidesPerView: 5,
+            spaceBetween: 14,
+            pagination: {
+                el: ".discussion_topics_slider .swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var blockchain_trends_image_swiper = new Swiper(".blockchain_trends_text_slider", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 1,
+            watchSlidesProgress: true,
+            allowTouchMove: false,
+        });
+        var blockchain_trends_text_swiper = new Swiper(".blockchain_trends_image_slider", {
+            loop: true,
+            spaceBetween: 10,
+            allowTouchMove: false,
+            navigation: {
+            nextEl: ".blockchain_trends_button_next",
+            prevEl: ".blockchain_trends_button_prev",
+            },
+            thumbs: {
+                swiper: blockchain_trends_image_swiper,
+            },
+        });
+
+        var blockchain_trends_quotes_slider = new Swiper(".blockchain_trends_quotes_slider", {
+            navigation: {
+            nextEl: ".blockchain_trends_quotes_slider_next",
+            prevEl: ".blockchain_trends_quotes_slider_prev",
+            },
+        });
+      </script>
+       <script>
+        jQuery(document).ready(function() {
+            equalheight = function(container) {
+            var currentTallest = 0,
+                currentRowStart = 0,
+                rowDivs = new Array(),
+                $el,
+                topPosition = 0;
+            jQuery(container).each(function() {
+                $el = jQuery(this);
+                jQuery($el).height('auto')
+                topPostion = $el.position().top;
+                if (currentRowStart != topPostion) {
+                    for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                        rowDivs[currentDiv].height(currentTallest);
+                    }
+                    rowDivs.length = 0; // empty the array
+                    currentRowStart = topPostion;
+                    currentTallest = $el.height();
+                    rowDivs.push($el);
+                } else {
+                    rowDivs.push($el);
+                    currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+                }
+                for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+            });
+        }
+        jQuery(document).ready(function() {
+            equalheight('.discussion_topics_slide_item');
+        });
+        jQuery(window).resize(function() {
+            equalheight('.discussion_topics_slide_item');
+        });
+        });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- <script src="assets/jquery-3.6.0.min.js"></script>
+  <script src="assets/jquery.parallax-scroll.js"></script>
+  <script src="assets/wow.min.js"></script>
+  <!-- <script src="assets/scroll.js"></script> -->
+  <!-- <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="assets/jquery-3.6.0.min.js"></script>
-    <script src="assets/jquery.parallax-scroll.js"></script>
-    <script src="assets/custome.js"></script>
-    <script src="assets/wow.min.js"></script>
+    <!-- <script src="assets/custome.js"></script> -->
     
   </body>
 </html>
