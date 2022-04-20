@@ -58,11 +58,6 @@ const BlockchainTrends = () => {
                                         el: ".swiper-scrollbar",
                                         draggable: true,
                                     }}
-                                    speed={1000}
-                                    autoplay={{
-                                        delay: 5000,
-                                        disableOnInteraction: true,
-                                    }}
                                     // breakpoints={sliderForSingleBreakPoint}
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
