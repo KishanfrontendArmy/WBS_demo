@@ -5,16 +5,20 @@ import { WhyAttendData } from '../../data';
 
 const WbsTickets = () => {
 
-    const Automoreless = (index) => {
+    const Automoreless = (index, checked) => {
+        console.log(checked)
         WhyAttendData.map((res, ind) => {
             if (ind !== index) {
                 document.querySelector('.more_less_testi_input' + ind).checked = false;
             } else {
-                document.querySelector('.more_less_testi_input' + index).checked = true;
+                if(checked) {
+                    document.querySelector('.more_less_testi_input' + index).checked = true;
+                } else {
+                    document.querySelector('.more_less_testi_input' + index).checked = false;
+                }
             }
         })
     }
-
     return (
         <div className="parellax_bg relative parallax-window w2 page-section" data-parallax="scroll" data-image-src="/image/parellax_bg_img.png" id="bookticketslink">
             <div className="container">
@@ -22,7 +26,7 @@ const WbsTickets = () => {
                     <div className="tickets_wbs_title wow fadeInUp" data-wow-delay="0.2s">
                         <h2>TICKETS TO WBS DUBAI</h2>
                     </div>
-                    <div className="tickets_wbs_list d-flex align-items-start">
+                    <div className="tickets_wbs_list row d-flex align-items-start">
                         {Tickets && Tickets.length > 0 && Tickets.map((data, index) => {
                             return (
                                 <div key={`tickets_wbs_price_box ${index}`} className="tickets_wbs_price_box col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay={data.time}>
