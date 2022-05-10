@@ -152,6 +152,9 @@
   --bs-gutter-x: .255rem;
   --bs-gutter-y: 3.5rem;
 }
+a#loadMore {
+  cursor: pointer;
+}
 /******************** Speakers CSS ********************/
 
 

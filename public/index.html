@@ -75,6 +75,38 @@
             },
         });
       </script> -->
+      <script>
+        jQuery(document).ready(function() {
+           var sections = jQuery('.page-section'), 
+                    nav = jQuery('.header_main'), 
+                    nav_height = nav.outerHeight();
+                    jQuery('.header_right ul li:first a').addClass('active');
+                    jQuery('.page-section:first').addClass('active');
+                jQuery(window).on('scroll', function () {
+                  var cur_pos = jQuery(this).scrollTop();
+                  sections.each(function() {
+                    var top = jQuery(this).offset().top - nav_height,
+                        bottom = top + jQuery(this).outerHeight();
+                    if (cur_pos >= top && cur_pos <= bottom) {
+                      nav.find('a').removeClass('active');
+                      sections.removeClass('active');
+                      jQuery(this).addClass('active');
+                      nav.find('a[href="#'+jQuery(this).attr('id')+'"]').addClass('active');
+        
+                    }
+                  });
+                });
+            nav.find('a').on('click', function () {
+              var jQueryel = jQuery(this)
+                , id = jQueryel.attr('href');
+              jQuery('html, body').animate({
+                scrollTop: jQuery(id).offset().top - nav_height + 16
+              }, 500);
+              return false;
+            }); 
+        });
+        
+        </script>
        <script>
         jQuery(document).ready(function() {
             equalheight = function(container) {
