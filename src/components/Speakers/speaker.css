@@ -28,6 +28,7 @@
 .speaker_img img {
     filter: grayscale(1);
     transition: all ease-in-out 0.2s 0s;
+    width: 100%;
 }
 .speaker_box:hover  .speaker_img img {
     filter: grayscale(0);
@@ -147,7 +148,10 @@
   bottom: -7%;
   z-index: 1;
 }
-
+.speakers_list_otr {
+  --bs-gutter-x: .255rem;
+  --bs-gutter-y: 3.5rem;
+}
 /******************** Speakers CSS ********************/
 
 

@@ -129,6 +129,17 @@
 .hero_banner_text_right .a_btn a {
   width: 100%;
 }
+.testimonials::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 101%;
+  height: 300px;
+  background: url(/public/image/hero-bg-shap1.png)no-repeat top;
+  z-index: 1;
+  background-size: 100% 100%;
+}
 /******************** Banner CSS ********************/
 
 /* /************************** hero_banner ************************** / */

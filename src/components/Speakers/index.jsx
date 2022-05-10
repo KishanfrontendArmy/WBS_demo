@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './speaker.css';
 import { SpeakerData } from '../../data';
 import { SpeakermodalData } from '../../data';
 
 const Speaker = () => {
+    const [speakers, setSpeakers] = useState(SpeakerData);
+
+    const loadMore = () => {
+        setSpeakers([...speakers, ...SpeakerData]);
+    }
+
     return (
         <section className="speakers relative page-section" id="speakerslink">
             <div className="container">
@@ -12,9 +18,9 @@ const Speaker = () => {
                         <h2>SPEAKERS</h2>
                         <p>Meet early adopters, highly influential and established opinion leaders from blockchain & crypto fraternity</p>
                     </div>
-                    <div className="speakers_list_otr row" id="myList">
+                    <div className="speakers_list_otr row" id="myList" >
 
-                        {SpeakerData && SpeakerData.length > 0 && SpeakerData.map((data, index) => {
+                        {speakers && speakers.length > 0 && speakers.map((data, index) => {
                             return (
 
                                 <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp" data-wow-delay={data.time}>
@@ -68,7 +74,7 @@ const Speaker = () => {
                     </div>
 
                     <div className="a_btn a_btn_fill btn_orange wow fadeInUp">
-                        <a href="#" id="loadMore">
+                        <a id="loadMore" onClick={loadMore}>
                             VIEW MORE speakers
                             <svg xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" width="13px" height="12px">
                                 <path fillRule="evenodd" fill="rgb(255, 255, 255)" d="M6.277,11.406 L0.148,0.791 L12.406,0.791 L6.277,11.406 Z" />

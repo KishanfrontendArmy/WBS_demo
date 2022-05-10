@@ -201,6 +201,10 @@ a:hover {
 .fa-envelope { color: #DAA603;}
 /****************** Common CSS *******************/
 
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
 
 /* /************************** Common CSS ************************** / */
 

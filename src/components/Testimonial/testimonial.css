@@ -8,7 +8,7 @@
   position: relative;
   z-index: 5;
 }
-.testimonials::after {
+/* .testimonials::after {
     content: "";
     position: absolute;
     left: 0;
@@ -18,7 +18,7 @@
     background: url(/public/image/hero-bg-shap1.png)no-repeat top;
     z-index: 1;
     background-size: 100% 100%;
-}
+} */
 .testimonials_cube-1 {
     position: absolute;
     left: 3%;

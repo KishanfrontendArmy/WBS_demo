@@ -16,6 +16,9 @@ const Testimonial = () => {
         <section className="testimonials relative page-section" id="testimonialslink">
             <div className="testimonials_cube-1 ">
                 {/* <!-- <canvas id="c"></canvas> --> */}
+                <span >
+                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}' className="img-fluid" src="/image/cube-6-png.png" alt="" />
+                </span>
             </div>
             <div className="container">
                 <div className="testimonials_inr_box row">

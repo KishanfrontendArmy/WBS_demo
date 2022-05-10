@@ -161,16 +161,19 @@ gap: 38px;
 flex-wrap: wrap;
 grid-template-columns: repeat(2, 50%);
 } */
-
+.why_attend_list {
+  --bs-gutter-y: 2.4rem;
+  --bs-gutter-x: 3rem;
+}
 .why_attend_list .why_attend_box_bg {
 background: #eaecfd;
 padding:51px 39px 30px 59px;
 }
 
-.row {
+/* .row {
   --bs-gutter-y: 2.4rem;
   --bs-gutter-x: 3rem;
-}
+} */
 
 .why_attend_box_top {
 margin: 0 0 22px 0;
