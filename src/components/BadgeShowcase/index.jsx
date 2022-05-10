@@ -18,7 +18,7 @@ const BadgeShowCase = () => {
                 <div className="media_coverage_img_sec_list d-flex align-items-center flex-wrap" id="media_sec_counter">
                     {Badges.map((data, index) => {
                         return (
-                            <div key={index} className="media_coverage_item wow zoomIn">
+                            <div key={index} className="media_coverage_item wow zoomIn" data-wow-delay={data.time}>
                                 <div className="number_box">
                                     <strong><CountUp
                                         start={focus ? 0 : null}

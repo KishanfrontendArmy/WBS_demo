@@ -20,7 +20,7 @@ function ShowCase() {
           ShowCaseData.length &&
           ShowCaseData.map((data, index) => {
             return (
-              <div className="coverage_col wow fadeInDown" data-wow-delay={data.delay} key={index}>
+              <div className="coverage_col wow fadeInDown" data-wow-delay={data.time} key={index}>
                 <div className="coverage_box">
                   <div className="counter-box">
                     <div className="counter">

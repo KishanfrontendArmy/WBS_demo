@@ -81,7 +81,6 @@
 }
 /******************** Testimonials CSS ********************/
 
-
 /* /************************** testimonials ************************** / */
 
 
@@ -97,7 +96,7 @@
 }
 @media screen and (max-width: 1600px){
 
-  .testimonials_inr_box .col-md-8 {width: 73.666667%;}
+  .testimonials_inr_box .col-md-8 {width: 85%;}
 
   .title_testi {margin-bottom: 70px;}
 
@@ -116,7 +115,7 @@
 }
 @media screen and (max-width: 1300px){
 
-  .testimonials_inr_box .col-md-8 {width: 75%;}
+  .testimonials_inr_box .col-md-8 {width: 84%;}
   .testimonials   {
       padding-top: 30px;
   }
@@ -135,10 +134,9 @@
   .testimonials {padding: 20 0 180px;}
   .testi_video_slider_arrow > div {width: 73px;height: 73px;}    
   .title_testi_icon_right{ max-width: 50px;}
-  .testimonials_inr_box  h2 {
-      position: relative;
-      z-index: 3;
-  }
+  .testimonials_inr_box  h2 { position: relative; z-index: 3;}
+  .title_testi { margin-bottom: 50px;}
+  .testimonials { padding: 30px 0 170px;}
 
 }
 @media screen and (max-width: 1024px){
@@ -166,7 +164,7 @@
   
   .testimonials {padding: 20px 0 160px; margin-top: 40px;}     
 
-
+.testimonials_inr_box .row { margin: 0; padding: 0;}
   
 }
 
@@ -184,6 +182,7 @@
 
   .testimonials {padding: 0 0 110px;}    
   .testimonials_inr_box.row {--bs-gutter-x: 0 !important;--bs-gutter-y: 0;}
+  
 
   .testi_video_slider_arrow > div {width: 43px;height: 43px;}
   .testi_video_slider_arrow > div img {max-width: 25px;}
@@ -192,7 +191,7 @@
 }
 @media screen and (max-width: 374px){
 
-  .testimonials {padding: 0 0 110px;}
+  .testimonials {padding: 0 0 90px;}
 
   .testi_video_slider_arrow > div {width: 40px;height: 40px;}
   .testi_video_slider_arrow > div img {max-width: 22px;}
@@ -201,3 +200,4 @@
 
 
 /* /************************** testimonials ************************** / */
+

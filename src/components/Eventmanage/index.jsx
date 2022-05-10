@@ -35,13 +35,13 @@ const EventManage = () => {
                 })}
             </div>
             <div className="event_manage_top_right_icon wow zoomIn">
-                <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}' >
-                    <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
+                <span  >
+                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}' className="img-fluid" src="/image/cube-6-png.png" alt="" />
                 </span>
             </div>
             <div className="event_manage_left_icon wow zoomIn">
-                <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
-                    <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
+                <span >
+                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}' className="img-fluid" src="/image/cube-6-png.png" alt="" />
                 </span>
             </div>
         </section>

@@ -237,6 +237,11 @@
           bottom: 104%;
       }
       .hero_banner_event_presents_logo {grid-column-start: 1;}
+      .hero_banner_event_co_host_logo { grid-row-start: 1; grid-column-start: 2;}
+      .hero_banner_event_logo { grid-row-start: 2; grid-column: 2 span / 3;}
+      .hero_banner_text_inr .col-md-8 {
+          align-items: center;
+      }
   
   }
   
@@ -269,18 +274,22 @@
           bottom: 107%;
       }
   
-    /*  .hero_banner_event_presents_logo { 
-      max-width: 260px;
-      margin: 0 auto;}
-  */
+  
   .hero_banner_text_banner {
-      max-width: 260px;
+      max-width: 230px;
       margin: 0 auto;
   }
   
-  section.hero_banner {
+      section.hero_banner {
           padding-bottom: 50px !important;
       }
+  
+  .hero_banner_text_inr .col-md-8 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
   
   
   
@@ -288,12 +297,12 @@
   }
   @media screen and (max-width: 374px){
   
-      .hero_banner_text_left h1 {font-size: 24px;line-height: 34px;padding-bottom: 10px;}
+      .hero_banner_text_left h1 {font-size: 24px;line-height: 29px;padding-bottom: 10px;}
       .hero_banner_text_right {padding: 10px 0;}    
       section.hero_banner {margin-bottom: 50px;}
       .testimonials::after { bottom: 110%;}
   
-      
+      .hero_banner_text_banner { max-width: 200px; margin: 0 auto;}
       
       
   }

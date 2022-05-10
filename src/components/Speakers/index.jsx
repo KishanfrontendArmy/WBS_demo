@@ -17,7 +17,7 @@ const Speaker = () => {
                         {SpeakerData && SpeakerData.length > 0 && SpeakerData.map((data, index) => {
                             return (
 
-                                <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp">
+                                <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp" data-wow-delay={data.time}>
                                     <div className="speaker_img">
                                         <img className="img-fluid" src={data.image} alt="" />
                                         <div className="speaker_plus">
@@ -78,8 +78,8 @@ const Speaker = () => {
                 </div>
             </div>
             <div className="speakers-cube-bottom wow zoomIn">
-                <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
-                    <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
+                <span >
+                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}' className="img-fluid" src="/image/cube-6-png.png" alt="" />
                 </span>
             </div>
         </section>

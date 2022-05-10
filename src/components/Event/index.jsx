@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./event.css";
 import Header from "../Header";
 import Herobanner from "../Herobanner";
@@ -6,7 +6,7 @@ import Testimonial from "../Testimonial";
 import AboutSummit from "../aboutSummit";
 import Speaker from "../Speakers";
 import DiscussionTopic from "../DiscussionTopics";
-// import WOW from 'wowjs';
+import WOW from 'wowjs';
 import Podcasts from "../Podcats";
 import BlockchainTrends from "../Blockchaintrends";
 import WbsTickets from "../Wbstickets/index";
@@ -19,11 +19,11 @@ import MediaCoverage from "../mediacoverage";
 
 
 function Event() {
-  // useEffect(() => {
-  //   new WOW.WOW({
-  //     live: false
-  //   }).init();
-  // })
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  })
 
 
 

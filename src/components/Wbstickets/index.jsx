@@ -25,7 +25,7 @@ const WbsTickets = () => {
                     <div className="tickets_wbs_list d-flex align-items-start">
                         {Tickets && Tickets.length > 0 && Tickets.map((data, index) => {
                             return (
-                                <div key={`tickets_wbs_price_box ${index}`} className="tickets_wbs_price_box col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                <div key={`tickets_wbs_price_box ${index}`} className="tickets_wbs_price_box col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay={data.time}>
                                     <div class="tickets_wbs_price_box_bg" >
                                         <div class="tickets_wbs_price_box_top">
                                             <div class="business_icon_1 wow zoomIn">
@@ -53,6 +53,7 @@ const WbsTickets = () => {
                                             </div>
                                         </div>
                                         <div className="tickets_wbs_price_points">
+                                            <span class="top_shape"></span>
                                             <div className="tickets_wbs_price_point_item">
                                                 <ul>
                                                     {data.include && data.include.length > 0 && data.include.map((data, index) => {
@@ -82,7 +83,7 @@ const WbsTickets = () => {
                         <div className="why_attend_list row">
                             {WhyAttendData && WhyAttendData.length > 0 && WhyAttendData.map((data, index) => {
                                 return (
-                                    <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay={data.time}>
                                         <div className="why_attend_box_bg">
 
                                             <div className="why_attend_box_top d-flex align-items-center">
@@ -112,8 +113,8 @@ const WbsTickets = () => {
                 </section>
             </div>
             <div class="parellax-cube-top wow zoomIn">
-                <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":15}'>
-                    <img class="img-fluid" src="/image/cube-13.png" alt="" />
+                <span >
+                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":15}' class="img-fluid" src="/image/cube-13.png" alt="" />
                 </span>
             </div>
         </div>

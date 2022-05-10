@@ -38,7 +38,7 @@ const DiscussionTopic = () => {
                             {DiscussionTopicData && DiscussionTopicData.length > 0 && DiscussionTopicData.map((data, index) => {
                                 return (
                                     <SwiperSlide key={`discussion_topics_slide_item ${index}`}>
-                                        <div className="swiper-slide discussion_topics_slide_item d-flex align-items-center justify-content-center flex-column wow fadeInRight" >
+                                        <div className="swiper-slide discussion_topics_slide_item d-flex align-items-center justify-content-center flex-column wow fadeInRight" data-wow-delay={data.time} >
                                             <div className="discussion_topics_img">
                                                 <img className='img-fluid' data-parallax='{"scale":1.2}' src={data.image} alt="" />
                                             </div>
@@ -52,7 +52,7 @@ const DiscussionTopic = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
 
 
 

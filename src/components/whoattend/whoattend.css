@@ -50,44 +50,60 @@ section.who_attends {
 }
 /******************** Who Attends Image CSS ********************/
 
-
 /* /************************** who_attends ************************** / */
 
 
 
+@media (max-width: 1800px) {
+  .who_attends_sector_item {
+      padding: 14px 16px;
+  }
+  .who_attends_sector_item small {
+      font-size: 17px;
+  }
+  .who_attends_points ul li {
+      padding-right: 10px;
+      line-height: 1.2;
+  }
+}
 
 @media (max-width: 1600px) {
-    
+  
   .who_attends_sector {flex-wrap: wrap; justify-content: flex-start !important;}
   .who_attends_sector_item {margin: 12px;}
   .who_attends_inr p {font-size: 26px;max-width: 925px;margin: 22px auto 0;}
-  section.who_attends {padding: 0 0 120px 0;}
+  section.who_attends {padding: 0 0 100px 0;}
+  .who_attends_sector_item { margin: 7px;}
+  .who_attends_sector_item { padding: 12px 13px;}
+  .who_attends_sector_item small { font-size: 15px;}
 }
 @media (max-width: 1400px) {
 
   .who_attends_inr p {font-size: 24px;max-width: 925px;margin: 18px auto 0;}
   .who_attends_sector {padding: 44px 0 50px;}
-  section.who_attends {padding: 0 0 90px 0;}
+  section.who_attends {padding: 0 0 80px 0;}
+  .who_attends_points ul li { margin-bottom: 25px;font-size: 17px;}
   
 }
 @media (max-width: 1200px) {
 
   .who_attends_inr p {font-size: 22px;margin: 18px auto 0;}
   .who_attends_sector {padding: 40px 0 30px;}
-  
+  section.who_attends { padding: 0 0 60px 0;}
 }
 @media (max-width: 992px) {
 
   .who_attends_inr p {font-size: 19px;}
-  .who_attends_points ul li {font-size: 17px;margin: 0 10px 30px 0;width: 48%;}
+  .who_attends_points ul li { font-size: 16px; margin: 0 0 20px 0; width: 50%;}
   section.who_attends {padding: 0 0 60px 0;}
+  
   
 }
 @media (max-width: 768px) { 
 
   .who_attends_inr p {font-size: 17px;}    
-  .who_attends_points ul li {font-size: 17px;margin: 0 10px 20px 0;}
   section.who_attends {padding: 0 0 50px 0;}
+  .who_attends_sector_item { padding: 10px 12px; margin: 5px;}
   
 }
 @media (max-width: 576px) { 
@@ -97,6 +113,15 @@ section.who_attends {
   .who_attends_inr p {font-size: 16px;margin: 14px auto 0;}
   section.who_attends {padding: 0 0 40px 0;}
   .who_attends_sector { max-width: 360px; margin: 0 auto; text-align: center;}
+}
+@media (max-width: 374px) {
+  .who_attends_sector {
+      padding-top: 25px;
+  }    
+  .who_attends_points ul li {
+      font-size: 15px;
+      margin: 0 0 15px 0;
+  }
 }
 
 /* /************************** who_attends ************************** / */

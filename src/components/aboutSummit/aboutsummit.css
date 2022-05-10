@@ -53,3 +53,122 @@
   padding: 13px 0 0 0;
 }
 /******************** About Summit CSS ********************/
+
+
+
+/* /************************** about_summit ************************** / */
+
+@media screen and (max-width: 1800px){
+        
+  .about_summit_left strong {padding: 34px 0 37px;}    
+  .about_summit_left > p {font-size: 21px;line-height: 30px;}
+
+}
+@media screen and (max-width: 1700px){
+      
+  .about_summit_left strong {padding: 32px 0 32px;font-size: 26px;}
+  .about_summit_left > p {font-size: 18px;line-height: 29px;padding-bottom: 26px;} 
+  .about_summit {padding: 0 0 123px 0;}
+
+}
+@media screen and (max-width: 1600px){
+      
+
+}
+@media screen and (max-width: 1440px){
+  
+  .about_summit_left strong {padding: 25px 0; font-size: 21px;}
+  .about_summit_left {padding-right: 1.5rem!important;}
+  .about_summit {padding: 0 0 115px 0;}
+  .about_summit_single-cube  {
+      top: -11%;
+  }
+  .about_summit_left h2 {
+      padding-right: 0;
+  }
+  
+
+}
+@media screen and (max-width: 1300px){
+      
+  .about_summit_left strong {padding: 22px 0;font-size: 22px;}
+  .about_summit_left > p {font-size: 19px;line-height: 29px;padding-bottom: 20px;}
+  .about_summit_left_btn_box_otr p {font-size: 16px;line-height: 24px;padding: 12px 0 0 0;}
+  .about_summit_left h2 {padding-right: 0px;}
+  .about_summit {padding: 0 0 95px 0;}
+  .about_summit_single-cube  { top: -8%; }
+
+}
+@media screen and (max-width: 1200px){
+      
+  .about_summit_inr {flex-wrap: wrap; flex-direction: column-reverse;} 
+  .about_summit_left, .about_summit_right {width: 100%;}
+  .about_summit_right img {width: 100%;}
+  .about_summit_right {padding-top: 40px;}
+  .about_summit_left .title_box {width: 100%;}
+  .about_summit {padding: 0 0 83px 0;}
+  .about_summit_right   {
+      margin-bottom: 30px;
+  }
+
+  .about_summit_right, .about_summit_left { max-width: 800px; margin-left: auto; margin-right: auto;}
+  
+
+}
+@media screen and (max-width: 1024px){
+      
+  .about_summit_left > p {font-size: 18px;line-height: 27px;padding-bottom: 18px;}
+  .about_summit {padding: 0 0 65px 0;}
+  .about_summit_bottom-cube.wow.zoomIn { max-width: 160px; bottom: 0;}
+
+}
+@media screen and (max-width: 900px){
+      
+  .about_summit_left strong {padding: 20px 0;font-size: 21px;}
+  .about_summit_left > p {font-size: 17px;line-height: 26px;padding-bottom: 18px;}
+  
+
+}
+@media screen and (max-width: 767px){
+      
+  .about_summit_left_btn_box_otr {display: flex !important;flex-wrap: wrap;}
+  .about_summit_single-cube { left: -25px; width: auto;}
+  
+
+
+}
+@media screen and (max-width: 600px){
+      
+  .about_summit_left > p {font-size: 16px;line-height: 25px;}    
+  .about_summit_left strong { padding: 15px 0; font-size: 16px;}
+   
+  .about_summit_single-cube { left: -45px; width: auto;}
+  .about_summit_right, .about_summit_left {  padding: 0 12px !important;}
+  .about_summit_btn_box {
+  margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
+  flex: unset;}
+}
+@media screen and (max-width:479px){
+      
+  .about_summit_left_btn_box_otr .about_summit_btn_box {width: 100%;padding-bottom: 20px !important;padding: 0;}
+  .about_summit_left_btn_box_otr {display: flex !important;flex-wrap: wrap;}
+  .about_summit_right {padding-top: 20px;}    
+  .about_summit_bottom-cube.wow.zoomIn { max-width: 100px; bottom: -20px;}
+  .about_summit { padding: 0 0 25px 0;}
+
+
+}
+@media screen and (max-width: 374px){
+      
+  .about_summit_left strong {padding: 16px 0;font-size: 18px;}
+  .about_summit_left > p {font-size: 15px;line-height: 23px;padding-bottom: 16px;}
+
+}
+
+
+
+
+/* /************************** about_summit ************************** / */
+

@@ -25,7 +25,7 @@ const MediaCoverage = () => {
                 <div className="media_coverage_list d-flex align-items-start justify-content-center relative" id="counter">
                     {ShowCaseData && ShowCaseData.length > 0 && ShowCaseData.map((data, index) => {
                         return (
-                            <div key={`media_coverage_box ${index}`} className="media_coverage_box col-auto wow zoomIn">
+                            <div key={`media_coverage_box ${index}`} className="media_coverage_box col-auto wow zoomIn" data-wow-delay={data.time}>
                                 <div className="media_number">
                                     <strong className="russo-one"> <CountUp
                                         start={focus ? 0 : null}

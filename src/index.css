@@ -202,132 +202,130 @@ a:hover {
 /****************** Common CSS *******************/
 
 
-
 /* /************************** Common CSS ************************** / */
 
 @media screen and (max-width: 1800px){
-  .title_box h2 {font-size: 74px;line-height: 80px;}
-  .title_box_small h2 {font-size: 52px;line-height: 61px;}
+    .title_box h2 {font-size: 70px;line-height: 75px;}
+    .title_box_small h2 {font-size: 52px;line-height: 61px;}
 }
 @media screen and (max-width: 1700px){
 
-  .title_box h2 {font-size: 71px;line-height: 77px;}
-  .title_box_small h2 {font-size: 50px;line-height: 59px;}
-  canvas#c {
-      width: 300px;
-      height: 300px;
-  }
+    .title_box h2 {font-size: 60px;line-height: 65px;}
+    .title_box_small h2 {font-size: 50px;line-height: 59px;}
+    canvas#c {
+        width: 300px;
+        height: 300px;
+    }
 
 }
 @media screen and (max-width: 1600px){
 
-  .title_box h2 {font-size: 68px;line-height: 73px;}
-  .title_box_small > p {font-size: 29px;line-height: 36px;padding: 32px 0 54px;}
+    .title_box h2 {font-size: 55px;line-height: 60px;}
+    .title_box_small > p {font-size: 29px;line-height: 36px;padding: 32px 0 54px;}
 }
 
 @media screen and (max-width: 1440px){
-  .title_box h2 {font-size: 63px;line-height: 70px;}
-  .title_box_small h2 {text-align: center;font-size: 46px;line-height: 55px;}
-  .title_box_small > p {font-size: 26px;line-height: 37px;padding: 20px 0 50px;}
-  
+    .title_box h2 {font-size: 50px;line-height: 55px;}
+    .title_box_small h2 {text-align: center;font-size: 46px;line-height: 55px;}
+    .title_box_small > p {font-size: 22px;line-height: 34px;padding: 20px 0 50px;}
+    
 }
 @media screen and (max-width: 1300px){
-  
-  .title_box h2 {font-size: 60px;line-height: 68px;}   
-  .container {padding: 0 40px;} 
-  .title_box_small h2 {font-size: 42px;line-height: 52px;}    
-  canvas#c {
-      width: 200px;
-      height: 200px;
-  }
+    
+    .title_box h2 {font-size: 45px;line-height: 50px;}   
+    .container {padding: 0 40px;} 
+    .title_box_small h2 {font-size: 42px;line-height: 52px;}    
+    canvas#c {
+        width: 200px;
+        height: 200px;
+    }
 
 }   
 @media screen and (max-width: 1200px){
-  .title_box h2 {font-size: 54px;line-height: 66px;}  
-  .title_box_small > p {font-size: 23px;line-height: 35px;padding: 16px 0 45px;}    
- .navbar-expand-lg .navbar-toggler { display: block;
-  padding: 0;
-  border: 0;
-  color: #fff !important;
-  opacity: 1;
-  z-index: 999;
-  outline: none;
-  box-shadow: none; }
-  .navbar-expand-lg .navbar-collapse { position: absolute; display: flex !important; }
-  .navbar .container.justify-content-between.align-items-end { align-items: center !important;}
-  .navbar-expand-lg .navbar-collapse{position:fixed;top:0;right:0;background:#0e1526;color:#fff;bottom:0;z-index:9;width:100%;transform:translate3d(100%,0,0);transition:transform 300ms ease,opacity 300ms ease;box-shadow:0 10px 10px 0 rgb(0 0 0 / 23%);flex-wrap:wrap;padding:50px 30px 30px;justify-content:center;align-items:center;display:flex !important;max-width:100%; flex-direction: column; height: 100vh !important;}
-  .navbar-collapse.header_right.collapse.show  {transform:translate3d(0,0,0) scale3d(1,1,1);backface-visibility:hidden;transition:transform 300ms ease,opacity 300ms ease;display:flex !important;overflow:auto;}
-  .navbar-expand-lg .navbar-nav { flex-direction: column; margin: 20px 0;}
-  .header_right ul li { margin: 15px 0 !important; text-align: center; }
-  .header_left { z-index: 99999;}
-  .header_right .a_btn:nth-child(2) {
-      margin-bottom: 20px;
+    .title_box h2 {font-size: 40px;line-height: 45px;}  
+    .title_box_small > p {font-size: 23px;line-height: 35px;padding: 16px 0 45px;}    
+   .navbar-expand-lg .navbar-toggler { display: block;
+    padding: 0;
+    border: 0;
+    color: #fff !important;
+    opacity: 1;
+    z-index: 999;
+    outline: none;
+    box-shadow: none; }
+    .navbar-expand-lg .navbar-collapse { position: absolute; display: flex !important; }
+    .navbar .container.justify-content-between.align-items-end { align-items: center !important;}
+    .navbar-expand-lg .navbar-collapse{position:fixed;top:0;right:0;background:#0e1526;color:#fff;bottom:0;z-index:9;width:100%;transform:translate3d(100%,0,0);transition:transform 300ms ease,opacity 300ms ease;box-shadow:0 10px 10px 0 rgb(0 0 0 / 23%);flex-wrap:wrap;padding:50px 30px 30px;justify-content:center;align-items:center;display:flex !important;max-width:100%; flex-direction: column; height: 100vh !important;}
+    .navbar-collapse.header_right.collapse.show  {transform:translate3d(0,0,0) scale3d(1,1,1);backface-visibility:hidden;transition:transform 300ms ease,opacity 300ms ease;display:flex !important;overflow:auto;}
+    .navbar-expand-lg .navbar-nav { flex-direction: column; margin: 20px 0;}
+    .header_right ul li { margin: 15px 0 !important; text-align: center; }
+    .header_left { z-index: 99999;}
+    .header_right .a_btn:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+
+ 
+  .navbar-toggler .navbar-toggler-icon {
+   background-image: url(/public/image/close_icon.svg) !important; 
+   transition: all ease 0.3s 0s;
+  }
+.navbar-toggler.collapsed .navbar-toggler-icon {
+   background-image: url(/public/image/humbird-icon.svg) !important; 
   }
 
-
-
-.navbar-toggler .navbar-toggler-icon {
- background-image: url(/public/image/close_icon.svg) !important; 
- transition: all ease 0.3s 0s;
-}
-.navbar-toggler.collapsed .navbar-toggler-icon {
- background-image: url(/public/image/humbird-icon.svg) !important; 
-}
-
-.header_right ul li .dropdown-menu { padding: 0; background: transparent; flex-direction: column; display: none !important; margin: 10px 0 0 !important; border: 0;}
- .header_right ul li .dropdown-menu.show { display: flex !important;}
- .header_right ul li .dropdown-menu li { margin: 3px 0 !important;}
+  .header_right ul li .dropdown-menu { padding: 0; background: transparent; flex-direction: column; display: none !important; margin: 10px 0 0 !important; border: 0;}
+   .header_right ul li .dropdown-menu.show { display: flex !important;}
+   .header_right ul li .dropdown-menu li { margin: 3px 0 !important;}
 }
 @media screen and (max-width: 1024px){ 
 
-  .title_box_small h2 {font-size: 37px;line-height: 48px;}
-  .title_box h2 {font-size: 45px;line-height: 55px;}
-  .title_box_small > p {font-size: 20px;line-height: 32px;padding: 15px 0 42px;}
-  
+    .title_box_small h2 {font-size: 30px;line-height: 38px;}
+    .title_box h2 {font-size: 35px;line-height: 40px;}
+    .title_box_small > p {font-size: 20px;line-height: 32px;padding: 15px 0 42px;}
+    
 }
 
 @media screen and (max-width: 900px){
 
-  .title_box h2 {font-size: 40px;line-height: 49px;}
-  .title_box_small h2 {font-size: 34px;line-height: 46px;}
 
 }
 
 @media screen and (max-width: 767px){
-  
-  .title_box h2 {font-size: 34px;line-height: 47px;}
-  .container {padding: 0 30px;} 
-  .title_box_small h2 {font-size: 31px;line-height: 42px;}
-  .title_box_small > p {font-size: 18px;line-height: 30px;padding: 13px 0 40px;}
-  
+    
+    .title_box h2 {font-size: 28px;line-height: 32px;}
+    .container {padding: 0 30px;} 
+    .title_box_small h2 {font-size: 31px;line-height: 42px;}
+    .title_box_small > p {font-size: 18px;line-height: 30px;padding: 13px 0 40px;}
+    
 }   
 @media screen and (max-width: 600px){
-  .title_box_small h2 {font-size: 27px;line-height: 38px;}
-  .title_box h2 {font-size: 28px;line-height: 40px;}
-  canvas#c {
-      width: 130px;
-      height: 130px;
-  }
+    .title_box_small h2 { font-size: 21px; line-height: 32px;}
+    .title_box h2 {font-size: 23px;line-height: 30px;}
+    canvas#c {
+        width: 130px;
+        height: 130px;
+    }
 }
 @media screen and (max-width: 479px){
-  
-  .title_box h2 {font-size: 23px;line-height: 31px;}
-  .container {padding: 0 20px;} 
-  .text_link {font-size: 16px;}
-  .title_box_small h2 {font-size: 24px;line-height: 35px;}
-  .title_box_small > p {font-size: 17px;line-height: 28px;}    
+    
+    .title_box h2 {font-size: 23px;line-height: 28px;}
+    .container {padding: 0 20px;} 
+    .text_link {font-size: 16px;}
+    .title_box_small h2 {font-size: 24px;line-height: 35px;}
+    .title_box_small > p {font-size: 17px;line-height: 28px;}    
 
 }   
 @media screen and (max-width: 374px){
-  
-  .title_box h2 {font-size: 20px;line-height: 28px;}
-  .container {padding: 0 15px;} 
-  .title_box_small h2 {font-size: 22px;line-height: 32px;}    
+    
+    .title_box h2 {font-size: 20px;line-height: 23px;}
+    .container {padding: 0 15px;} 
+    .title_box_small h2 {font-size: 22px;line-height: 32px;}    
 
 }   
 
 
 /* /************************** Common CSS ************************** / *
+
 
 
 /* ****************Animate CSS strat******************************** */

@@ -14,7 +14,7 @@ const WhoAttend = () => {
                     <div className="who_attends_sector d-flex align-items-center justify-content-between">
                         {WhoAttendData && WhoAttendData.length > 0 && WhoAttendData.map((data, index) => {
                             return (
-                                <div key={`who_attends_sector_item ${index}`} className="who_attends_sector_item  wow fadeInUp">
+                                <div key={`who_attends_sector_item ${index}`} className="who_attends_sector_item  wow fadeInUp" data-wow-delay={data.time}>
                                     <small> {data.Sector}</small>
                                 </div>
                             )

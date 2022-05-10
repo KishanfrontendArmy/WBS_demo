@@ -94,9 +94,12 @@
 @media screen and (max-width: 1200px){
 
   .media_coins_icon {width: 140px;top: -130px;}
-  .media_coverage_box {width: 19%;margin: 13px 0px;}
+  .media_coverage_box {margin: 13px 20px;}
   .media_coverage_list {flex-wrap: wrap;padding: 72px 0 45px;}
   .media_single_quabe_3 {opacity: 0.6;}
+  .media_coverage_box:not(:last-child):before {
+      top: -13px;
+  }
   
 }
 @media screen and (max-width: 1024px){

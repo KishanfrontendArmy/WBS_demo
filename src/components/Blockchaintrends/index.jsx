@@ -69,7 +69,7 @@ const BlockchainTrends = () => {
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
                                         return (
-                                            <SwiperSlide key={`blockchain_trends_text_slide_box ${index}`} className="swiper-slide blockchain_trends_text_slide_box wow fadeInRight" >
+                                            <SwiperSlide key={`blockchain_trends_text_slide_box ${index}`} className="swiper-slide blockchain_trends_text_slide_box wow fadeInRight" data-wow-delay="0.3s">
                                                 <h3>{data.heading}</h3>
                                                 <p>{data.headingtext}</p>
                                                 <p>{data.headingtext1}</p>
@@ -107,7 +107,7 @@ const BlockchainTrends = () => {
                         <div className="blockchain_trends_quotes col-12 col-lg-6 wow fadeInRight relative">
                             <div className="blockchain_trends_coins_otr wow zoomIn">
                                 <div className="blockchain_trends_coins">
-                                    <img className="img-fluid" src="/image/coins_icon1.png" alt="" />
+                                    <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-15}' className="img-fluid" src="/image/coins_icon1.png" alt="" />
                                 </div>
                             </div>
                             <div className="blockchain_trends_quotes_icon">
@@ -161,8 +161,8 @@ const BlockchainTrends = () => {
                     </div>
                 </div>
                 <div className="blockchain-cube-bottom wow zoomIn">
-                    <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-15}'>
-                        <img className="img-fluid" src="/image/cube-12.png" alt="" />
+                    <span >
+                        <img data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-15}' className="img-fluid" src="/image/cube-12.png" alt="" />
                     </span>
                 </div>
             </section>

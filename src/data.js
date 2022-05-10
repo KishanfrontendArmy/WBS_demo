@@ -125,33 +125,43 @@ export const WhoAttendPeopleData = [
 export const WhoAttendData = [
   {
     Sector: "Governments",
+    time: ".1s",
   },
   {
     Sector: "Retail",
+    time: ".2s",
   },
   {
     Sector: "Ecommerce",
+    time: ".3s",
   },
   {
     Sector: "Transportation",
+    time: ".4s",
   },
   {
     Sector: "Tourism & Hospitality",
+    time: ".5s",
   },
   {
     Sector: "Utilities",
+    time: ".6s",
   },
   {
     Sector: "Real Estate & Infrastructure",
+    time: ".7s",
   },
   {
     Sector: "BFSI",
+    time: ".8s",
   },
   {
     Sector: "Fintech",
+    time: ".9s",
   },
   {
     Sector: "Healthcare",
+    time: "1s",
   },
 ];
 
@@ -240,42 +250,52 @@ export const DiscussionTopicData = [
   {
     image: "/image/discussion1.gif",
     discription: "NFTs and the future of the Metaverse",
+    time: ".1s",
   },
   {
     image: "/image/discussion2.gif",
     discription: "From Web 2.0 to Web 3.0",
+    time: ".2s",
   },
   {
     image: "/image/discussion3.gif",
     discription: "Current state of DeFi",
+    time: ".3s",
   },
   {
     image: "/image/discussion4.gif",
     discription: "Navigating Blockchain and Digital Assets as a VC",
+    time: ".4s",
   },
   {
     image: "/image/discussion5.gif",
     discription: "Decentralized Autonomous Organizations (DAOs)",
+    time: ".5s",
   },
   {
     image: "/image/discussion1.gif",
     discription: "NFTs and the future of the Metaverse",
+    time: ".6s",
   },
   {
     image: "/image/discussion2.gif",
     discription: "From Web 2.0 to Web 3.0",
+    time: ".7s",
   },
   {
     image: "/image/discussion3.gif",
     discription: "Current state of DeFi",
+    time: ".8s",
   },
   {
     image: "/image/discussion4.gif",
     discription: "Navigating Blockchain and Digital Assets as a VC",
+    time: ".9s",
   },
   {
     image: "/image/discussion5.gif",
     discription: "Decentralized Autonomous Organizations (DAOs)",
+    time: "1s",
   },
 ];
 export const SpeakerData = [
@@ -284,6 +304,7 @@ export const SpeakerData = [
     link: "#.",
     name: "RASHID HAZARI",
     position: "Job Title 1, Job Title 2 vvCompany name",
+    time: ".1s",
 
   },
   {
@@ -291,49 +312,49 @@ export const SpeakerData = [
     link: "#.",
     name: "KATHLEEN BREITMAN",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".2s",
   },
   {
     image: "/image/speaker_3.jpg",
     link: "#.",
     name: "JUSTIN FISHER",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".3s",
   },
   {
     image: "/image/speaker_4.jpg",
     link: "#.",
     name: "DAVID CHAUM",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".4s",
   },
   {
     image: "/image/speaker_5.jpg",
     link: "#.",
     name: "TIM DRAPER",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".5s",
   },
   {
     image: "/image/speaker_1.jpg",
     link: "#.",
     name: "RASHID HAZARI",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".6s",
   },
   {
     image: "/image/speaker_2.jpg",
     link: "#.",
     name: "KATHLEEN BREITMAN",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".7s",
   },
   {
     image: "/image/speaker_3.jpg",
     link: "#.",
     name: "JUSTIN FISHER",
     position: "Job Title 1, Job Title 2 vvCompany name",
-
+    time: ".8s",
   },
 ];
 export const TestimonialData = [
@@ -364,6 +385,7 @@ export const Tickets = [
     img3: "/image/cube-fill.png",
     title: "STANDARD",
     price: "US$ 295",
+    time: ".4s",
     date: "Valid till February 15, 2022",
     include: [
       "Conference access",
@@ -383,6 +405,7 @@ export const Tickets = [
     img3: "/image/business_icon3.png",
     title: "BUSINESS",
     price: "US$ 595",
+    time: ".6s",
     date: "Valid till February 15, 2022",
     include: [
       "Conference access",
@@ -402,6 +425,7 @@ export const Tickets = [
     img2: "/image/vip-icon.png",
     img3: "/image/vip-icon.png",
     title: "STANDARD",
+    time: ".8s",
     price: "US$ 295",
     date: "Valid till February 15, 2022",
     include: [
@@ -451,21 +475,25 @@ export const WhyAttendData = [
     image: "/image/why_attend_icon_1.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Draft new regulations, meet potential partners, network with global blockchain experts",
+    time: ".2s",
   },
   {
     image: "/image/why_attend_icon_2.png",
     title: "WHY SHOULD ENTERPRISES ATTEND?",
     discription: "Explore innovative blockchain products, network with regional governments and potential partners",
+    time: ".4s",
   },
   {
     image: "/image/why_attend_icon_3.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Showcase innovations, get brand exposure and network with investors to help raise funds",
+    time: ".6s",
   },
   {
     image: "/image/why_attend_icon_4.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Meet curated startups/ICOs, network with elites from enterprises, governments and global blockchain experts ",
+    time: ".8s",
   },
 ]
 
@@ -474,36 +502,41 @@ export const ShowCaseData = [
     title: "19",
     sign: "",
     description: "GLOBAL EDITIONS",
-
+    time: ".2s",
   },
   {
     title: "25000",
     sign: "+",
     description: "C-LEVEL ATTENDEES",
+    time: ".4s",
 
   },
   {
     title: "1050",
     sign: "+",
     description: "GLOBAL EDITIONS",
+    time: ".6s",
 
   },
   {
     title: "5100",
     sign: "+",
     description: "INVESTORS",
+    time: ".8s",
 
   },
   {
     title: "800",
     sign: "+",
     description: "MEDIA PARTNERS",
+    time: "1s",
 
   },
   {
     title: "52",
     sign: "+",
     description: "COUNTRIES REPRESENTED",
+    time: "1.2s",
 
   },
 ]
