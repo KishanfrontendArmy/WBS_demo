@@ -3,6 +3,8 @@ section.sponsors {
   padding: 140px 0 83px 0;
   background: #ffffff;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 section.sponsors h2 {
@@ -10,3 +12,53 @@ section.sponsors h2 {
   padding: 0 0 74px 0;
 }
 /******************** Sponsors CSS ********************/
+
+
+/* /************************** sponsors ************************** / */
+
+
+@media (max-width: 1600px) {
+    
+   
+}
+@media (max-width: 1400px) {
+
+    section.sponsors h2 {padding: 0 0 35px 0;}
+    section.sponsors {padding: 110px 0 73px 0;}
+
+}
+@media (max-width: 1200px) {
+
+    .sponsors_item {padding: 0 30px;}
+    section.sponsors h2 {padding: 0 0 34px 0;}    
+    section.sponsors {padding: 90px 0 60px 0;}
+
+    
+}
+@media (max-width: 992px) {
+
+    section.sponsors h2 {padding: 0 0 20px 0;}
+    section.sponsors {padding: 70px 0 50px 0;}
+    
+}
+@media (max-width: 768px) { 
+
+    .sponsors_item {padding: 0 20px;}
+    section.sponsors {padding: 60px 0 40px 0;}
+    
+}
+@media (max-width: 576px) { 
+
+    section.sponsors h2 {padding: 0 0 10px 0;}
+    
+    
+}
+@media (max-width: 374px) { 
+
+    .sponsors_item {padding: 0 15px;}
+    
+    
+}
+
+
+/* /************************** sponsors ************************** / */

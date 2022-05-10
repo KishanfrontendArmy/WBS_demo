@@ -3,35 +3,49 @@ import './aboutsummit.css';
 
 const AboutSummit = () => {
     return (
-        <section className="about_summit">
+        <section className="about_summit relative page-section">
             <div className="container">
-                <div className="about_summit_inr d-flex align-items-start justify-content-between flex-wrap">
-                    <div className="about_summit_left col-6">
-                        <div className="title_box">
+                <div className="about_summit_inr row flex-wrap relative align-items-start">
+                    <div className="about_summit_single-cube wow zoomIn">
+                        {/* style="display: inline-block;" */}
+                        <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
+                            <img className="img-fluid" src="/image/single-cube.svg" alt="" />
+                        </span>
+                    </div>
+                    <div className="about_summit_left col-12 col-lg-7 pe-5 wow fadeInLeft">
+                        <div className="title_box col-11">
                             <h2>WBS - WORLD'S LONGEST RUNNING & MOST-ELITE BLOCKCHAIN SUMMIT SERIES</h2>
                         </div>
                         <strong className="russo-one">Connect with the elite blockchain & crypto experts, investors & HNIs from around the world.</strong>
                         <p>Take a break from your normal working week, and explore two days of unconventional networking with 1000+ senior-level professionals from governments and enterprises along with curated investors and crypto influencers.</p>
                         <p>Designed in an intimate luxurious setting, we make sure all the spotlight is on you to help you raise funds for your ICOs/IEOs/STOs/IDOs or reduce your sales cycle like no other event!</p>
-                        <div className="about_summit_left_btn_box_otr">
-                            <div className="about_summit_btn_box">
+                        <div className="about_summit_left_btn_box_otr row m-0">
+                            <div className="about_summit_btn_box col-12 col-sm-6 col-md-3 p-0">
                                 <div className="a_btn a_btn_fill btn_orange">
-                                    <a href="#">Sponsor</a>
+                                    <a href="#.">Sponsor</a>
                                 </div>
                                 <p>Explore sponsorship opportunities</p>
                             </div>
-                            <div className="about_summit_btn_box">
+                            <div className="about_summit_btn_box col-12 col-sm-6 col-md-4">
                                 <div className="a_btn a_btn_bdr btn_white_bdr">
-                                    <a href="#">Book Tickets</a>
+                                    <a href="#.">Book Tickets</a>
                                 </div>
                                 <p>Reserve your tickets for upcoming events at special prices</p>
                             </div>
                         </div>
                     </div>
-                    <div className="about_summit_right col-5">
-                        <img src="/image/about-summit-img.jpg" alt="" />
+                    <div className="about_summit_right col-12 col-lg-5 wow fadeInRight">
+                        <div className="scale_img_animation">
+                            <img className="img-fluid" src="/image/about-summit-img.jpg" alt="" />
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className="about_summit_bottom-cube wow zoomIn">
+                {/* style="display: inline-block;" */}
+                <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
+                    <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
+                </span>
             </div>
         </section>
     )

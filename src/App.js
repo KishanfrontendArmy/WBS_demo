@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import Home from "./components/Home";
+import Event from "./components/Event";
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
 
     <div className="App">
-      <Home />
+      <Event />
     </div>
   );
 }

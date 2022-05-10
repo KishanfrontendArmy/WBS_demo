@@ -1,6 +1,18 @@
 /******************** Event Manage By CSS ********************/
+.event_manage_left_icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.event_manage_top_right_icon {
+  position: absolute;
+  right: 10%;
+  top: -5%; 
+}
 .event_manage_by_title h2 {
-  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .trescon_logo {
@@ -25,17 +37,14 @@ section.event_manage_by {
   padding: 49px 0 0 0;
 }
 
-.event_manage_by_left {
-  text-align: center;
-  padding-left: 5%;
-}
-
 .event_manage_by_right h3 {
   font-size: 36px;
   line-height: 38px;
   padding: 0 0 42px 0;
 }
-
+.event_manage_by_right {
+  padding-left: 50px;
+}
 .event_manage_by_right p {
   font-size: 18px;
   line-height: 30px;
@@ -45,3 +54,169 @@ section.event_manage_by {
   padding-bottom: 30px;
 }
 /******************** Event Manage By CSS ********************/
+
+
+
+/* /************************** event_manage_by ************************** / */
+.event_manage_by_left {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1800px) {
+  .trescon_logo img {
+      max-width: 590px;
+  }
+  .trescon_logo {
+      margin: -19px 0 0 61px;
+      position: relative;
+  }
+}
+@media (max-width: 1700px) {
+  .trescon_logo img {
+      max-width: 500px;
+  }
+  .trescon_logo {
+      margin-top: 0;
+  }
+  .event_manage_by_right h3 {
+      font-size: 32px;
+      line-height: 35px;
+      padding: 0 0 30px 0;
+  }
+  section.event_manage_by {
+      padding: 100px 0 60px;
+  }
+  .event_manage_top_right_icon img.img-fluid {
+      max-width: 180px;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  
+  .event_manage_by_title h2 {font-size: 47px;}
+  .event_manage_by_right h3 {font-size: 32px;line-height: 34px;padding: 0 0px 35px 0;}
+  .event_manage_by_right p:not(:last-child) {padding-bottom: 24px;}
+  
+  .event_manage_by_left {
+      margin: 0 !important;
+      width: 50%;
+  }
+  .event_manage_by_title { width: 100%;}
+}
+@media (max-width: 1400px) {
+
+  .event_manage_by_right h3 {font-size: 29px;line-height: 32px;padding: 0 0px 24px 0;}
+  .event_manage_by_inr {padding: 50px 0 0 0;}
+  .event_manage_by_right p {font-size: 17px;line-height: 28px;}
+  .event_manage_by_title h2 {font-size: 43px;}
+  .trescon_logo {margin: 0 0 0 61px;}    
+
+  .event_manage_top_right_icon { top: -8%; max-width: 200px;}
+  .event_manage_left_icon { max-width: 200px; }
+  section.event_manage_by { padding: 70px 0;}
+
+}
+@media (max-width: 1300px) {
+  .event_manage_by_title {
+      margin: 0;
+  }
+  .event_manage_by_title h2 {
+      justify-content: center;
+  }
+  .trescon_logo img {
+      max-width: 400px;
+  }
+  .event_manage_top_right_icon {
+      right: 2%;
+  }
+}
+@media (max-width: 1200px) {
+
+  section.event_manage_by {padding: 60px 0;}    
+  .event_manage_by_title {padding-left: 0 !important;}    
+  .event_manage_by_title h2 {font-size: 38px;}
+  .event_manage_by_right h3 {font-size: 27px;line-height: 30px;padding: 0 0px 18px 0;}
+  .event_manage_left_icon {
+      max-width: 150px;
+  }
+
+  .event_manage_by_left, .event_manage_by_right {
+      width: 100%;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto !important;
+  }
+  .event_manage_by_left {
+      padding-bottom: 30px;
+  }
+
+}
+@media (max-width: 992px) {
+
+  .event_manage_by_title .offset-1 {margin-left: 0;}
+  .event_manage_by_left, .event_manage_by_right {width: 100%;}
+  .event_manage_left_icon { max-width: 150px; left: 0; bottom: -6%;}
+  .event_manage_by_left { margin: 0;}
+  .event_manage_by_title  {
+      padding: 0;
+      margin: 0;
+  }
+  .event_manage_by_title h2 {
+      font-size: 30px;
+  }
+
+  .trescon_logo img {
+      max-width: 360px;
+  }
+  .trescon_logo:before {
+      bottom: 16px;
+  }
+
+}
+@media (max-width: 768px) { 
+
+  .event_manage_by_title h2 {font-size: 27px;align-items: flex-start !important;}
+  .trescon_logo:before {display: none;}
+  .trescon_logo {margin: 30px 0 0 0;}
+  .trescon_logo img {max-width: 380px;}
+  .event_manage_by_right h3 {font-size: 24px;line-height: 27px;}
+  .event_manage_by_right p:not(:last-child) {padding-bottom: 20px;}
+  .event_manage_by_title h2 {
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+  }
+  .trescon_logo img { max-width: 300px;}
+  .event_manage_top_right_icon img.img-fluid { max-width: 140px;}
+  .event_manage_top_right_icon { right: 1%; top: -5%;}
+      
+
+}
+@media (max-width: 576px) { 
+
+  
+  .event_manage_by_right p {font-size: 16px;line-height: 28px;}
+  .event_manage_by_right h3 {font-size: 20px;line-height: 26px;}    
+  .event_manage_by_right p:not(:last-child) {padding-bottom: 15px;}
+  section.event_manage_by {padding:50px 0;}
+  .trescon_logo img {max-width: 270px;}
+  .event_manage_by_inr {padding: 30px 0 0 0; margin: 0;}
+  .event_manage_top_right_icon { max-width: 120px; top: -7%;}
+  .event_manage_left_icon { max-width: 100px; left: auto; bottom: -3%; right: -30px; opacity: 0.5;}
+  .trescon_logo { margin: 20px 0 0 0;}
+}
+@media (max-width: 374px) { 
+
+  .event_manage_by_inr {padding: 30px 0 0 0;}
+  .trescon_logo {margin: 20px 0 0 0;}    
+  section.event_manage_by { padding: 40px 0;}
+  .event_manage_by_right p { font-size: 15px; line-height: 28px;}
+  
+}
+
+
+
+/* /************************** event_manage_by ************************** / */
+
+

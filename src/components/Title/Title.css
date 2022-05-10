@@ -1,0 +1,11 @@
+.title-box {
+    text-align: center;
+    padding-bottom: 80px;
+}
+h2 {
+    font-size: 58px;
+    line-height: 1.15;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+}

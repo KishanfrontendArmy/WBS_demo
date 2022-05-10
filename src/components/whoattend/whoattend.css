@@ -1,6 +1,8 @@
 /******************** Who Attends Image CSS ********************/
 section.who_attends {
   padding: 0 0 140px 0;
+  position: relative;
+  z-index: 1;
 }
 .who_attends_inr p {
   font-size: 30px;
@@ -30,8 +32,7 @@ section.who_attends {
 .who_attends_points ul li {
   font-size: 18px;
   color: #ffffff;
-  margin: 0 -6% 30px 0;
-  width: 32%;
+  margin: 0 0 30px 0;
   list-style: none;
   position: relative;
   padding-left: 30px;
@@ -48,3 +49,54 @@ section.who_attends {
   left: 0;
 }
 /******************** Who Attends Image CSS ********************/
+
+
+/* /************************** who_attends ************************** / */
+
+
+
+
+@media (max-width: 1600px) {
+    
+  .who_attends_sector {flex-wrap: wrap; justify-content: flex-start !important;}
+  .who_attends_sector_item {margin: 12px;}
+  .who_attends_inr p {font-size: 26px;max-width: 925px;margin: 22px auto 0;}
+  section.who_attends {padding: 0 0 120px 0;}
+}
+@media (max-width: 1400px) {
+
+  .who_attends_inr p {font-size: 24px;max-width: 925px;margin: 18px auto 0;}
+  .who_attends_sector {padding: 44px 0 50px;}
+  section.who_attends {padding: 0 0 90px 0;}
+  
+}
+@media (max-width: 1200px) {
+
+  .who_attends_inr p {font-size: 22px;margin: 18px auto 0;}
+  .who_attends_sector {padding: 40px 0 30px;}
+  
+}
+@media (max-width: 992px) {
+
+  .who_attends_inr p {font-size: 19px;}
+  .who_attends_points ul li {font-size: 17px;margin: 0 10px 30px 0;width: 48%;}
+  section.who_attends {padding: 0 0 60px 0;}
+  
+}
+@media (max-width: 768px) { 
+
+  .who_attends_inr p {font-size: 17px;}    
+  .who_attends_points ul li {font-size: 17px;margin: 0 10px 20px 0;}
+  section.who_attends {padding: 0 0 50px 0;}
+  
+}
+@media (max-width: 576px) { 
+
+  .who_attends_sector_item {width: 100%;}
+  .who_attends_points ul li {width: 100%;}
+  .who_attends_inr p {font-size: 16px;margin: 14px auto 0;}
+  section.who_attends {padding: 0 0 40px 0;}
+  .who_attends_sector { max-width: 360px; margin: 0 auto; text-align: center;}
+}
+
+/* /************************** who_attends ************************** / */

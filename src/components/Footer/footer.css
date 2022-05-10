@@ -2,6 +2,7 @@
 .footer {
   background: #16182d;
   padding: 71px 0;
+  position: relative;
 }
 
 .ft_left p {
@@ -71,3 +72,55 @@
   padding-right: 13%;
 }
 /******************** Footer CSS ********************/
+
+
+/* /************************** footer ************************** / */
+
+
+@media (max-width: 1600px) {
+    
+  .footer {padding: 61px 0;}
+  .ft_copyright {margin: 28px 0 0 0;padding: 28px 0 0 0;}    
+ 
+}
+@media (max-width: 1400px) {
+
+  .footer {padding: 50px 0;}
+  .ft_copyright {margin: 25px 0 0 0;padding: 25px 0 0 0;}    
+
+}
+@media (max-width: 1200px) {
+
+ .footer {padding: 45px 0;}
+ .ft_copyright {padding: 23px 0 0 0;}
+
+}
+@media (max-width: 992px) {
+
+.ft_left {width: 100%;}
+.ft_left {width: 100%;padding-bottom: 30px;}
+.ft_right {width: 100%;padding-right: 0;}
+  
+}
+@media (max-width: 768px) { 
+
+  .ft_right h4 {font-size: 16px;padding: 0 0px 18px 0;}
+  .footer {padding: 40px 0;}
+  .ft_logo img {max-width: 150px;}
+  .ft_right {width: 100%;flex-wrap: wrap;}    
+  
+}
+@media (max-width: 576px) { 
+  
+  .ft_address, .ft_right_menu, .ft_right_menu {width: 100%;padding-top: 40px;}
+   
+}
+@media (max-width: 374px) { 
+
+    
+}
+
+/* /************************** footer ************************** / */
+
+
+

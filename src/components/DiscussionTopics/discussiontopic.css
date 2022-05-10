@@ -1,5 +1,5 @@
 /******************** Discussion Topics CSS ********************/
-.discussion_topics {
+/* .discussion_topics {
   padding: 128px 0 0 0;
 }
 .discussion_topics_slide_item {
@@ -32,5 +32,138 @@
   color: #ffffff;
   text-align: center;
   line-height: 26px;
+} */
+/******************** Discussion Topics CSS ********************/
+
+
+/******************** Discussion Topics CSS ********************/
+.discussion_topics {
+  padding: 128px 0 0 0;
+}
+.discussion_topics_slide_item {
+  padding: 56px 0 67px;
+  background: #0f1025;
+  transition: all ease-in-out 0.3s 0s;
+  cursor: pointer;
+}
+.discussion_topics_slide_item:hover {
+  background: #5c56c8;
+}
+.discussion_topics_slider {
+  padding: 71px 0 60px 0;
+}
+.discussion_topics_img img {
+    max-width: 110px;
+}
+.discussion_topics_slider .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  width: 92px;
+  height: 10px;
+  border-radius: 0;
+  background: #202249;
+  opacity: 1;
+  transform: scale(1) translateX(-221%);
+}
+.discussion_topics_slider .swiper-pagination-bullet {
+  width: 92px;
+  height: 10px;
+  border-radius: 0;
+  background: #202249;
+  opacity: 1;
+  transform: scale(1) translateX(-221%);
+}
+
+.discussion_topics_slider .swiper-pagination {
+  width: 297px !important;
+}
+
+.discussion_topics_slider
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #5c56c8;
+}
+.discussion_topics_slide_item p {
+  padding: 30px 30px 0;
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
 }
 /******************** Discussion Topics CSS ********************/
+
+
+/* /************************** discussion_topics ************************** / */
+
+@media screen and (max-width: 1800px){
+  .discussion_topics_slide_item  {
+      padding: 50px 0;
+  }
+}
+@media screen and (max-width: 1700px){
+  
+  .discussion_topics {padding: 118px 0 0 0;}
+  .discussion_topics_slider {padding: 68px 0 58px 0;}
+  .discussion_topics_slide_item  {
+      padding: 45px 0;
+  }
+  .discussion_topics_slide_item p { padding: 30px 30px 0;font-size: 18px;}
+}
+@media screen and (max-width: 1600px){
+
+  .discussion_topics {padding: 108px 0 0 0;}
+  .discussion_topics_slide_item p {padding: 30px 30px 0;font-size: 19px;color: #ffffff;line-height: 25px;}
+  .discussion_topics_slide_item { padding: 45px 0;}
+
+  
+}
+@media screen and (max-width: 1440px){
+
+  .discussion_topics {padding: 98px 0 0 0;}
+  .discussion_topics_slider {padding: 65px 0 55px 0;}
+
+}
+@media screen and (max-width: 1300px){
+
+}
+@media screen and (max-width: 1200px){
+  
+  .discussion_topics_slider {padding: 55px 0px 65px 0;}
+  .discussion_topics_slide_item p { padding: 20px 15px 0; font-size: 18px;}
+  .discussion_topics_slide_item { padding: 30px 0; }
+
+}
+@media screen and (max-width: 1024px){
+  
+  .discussion_topics {padding: 88px 0 0 0;}
+  .discussion_topics_slider {padding: 50px 0px 65px 0;}
+  
+
+}
+@media screen and (max-width: 900px){
+  
+  .discussion_topics {padding: 78px 0 0 0;}
+  .discussion_topics_slide_item p {font-size: 17px;line-height: 22px;}
+  .discussion_topics_img img { max-width: 70px;}
+
+}
+@media screen and (max-width: 767px){
+
+  .discussion_topics {padding: 68px 0 0 0;}
+  .discussion_topics_slider {padding: 45px 0px 60px 0;}
+  
+
+}
+@media screen and (max-width: 600px){
+  
+  .discussion_topics_slider {padding: 35px 0px 55px 0;}
+  .discussion_topics_slide_item p {font-size: 16px;line-height: 20px;}
+
+}
+@media screen and (max-width: 479px){
+  .discussion_topics_slider {padding: 30px 0px 50px 0; max-width: 300px;}
+  .discussion_topics_slide_item { min-height: 300px;}
+
+}
+@media screen and (max-width: 374px){
+
+}
+
+/* /************************** discussion_topics ************************** / */

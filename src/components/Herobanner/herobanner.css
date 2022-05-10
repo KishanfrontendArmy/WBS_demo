@@ -13,8 +13,12 @@
   -webkit-mask-clip: border-box;
   mask-clip: border-box;
   -webkit-mask-position: center bottom;
+  opacity: 0;
 }
-.hero_banner_inr .hero_banner_video::before {
+.hero_banner {
+  position: relative;
+}
+.hero_banner::before {
   position: absolute;
   content: "";
   top: 0;
@@ -22,6 +26,7 @@
   left: 0;
   right: 0;
   background-image: url(/public/image/hero_banner_over_lay.png);
+  background-size: cover;
 }
 
 .hero_banner_text {
@@ -29,7 +34,6 @@
   top: 13.7%;
   left: 0;
   right: 0;
-  max-width: 1182px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -72,19 +76,18 @@
 }
 
 .hero_banner_text_inr {
-  margin: 60px 0 0 0;
+  margin-top:60px;
 }
 
 .hero_banner_text_left {
   position: relative;
-  flex: 1;
   padding-right: 30px;
 }
 
 .hero_banner_text_left:before {
   position: absolute;
   content: "";
-  right: 10px;
+  right: -30px;
   top: 0;
   bottom: 0;
   background: #ffffff;
@@ -106,6 +109,10 @@
 .add_calender {
   margin: 7px 0 0 0;
 }
+.add_calender .dropdown-item span {
+  margin-right: 10px;
+  font-size: 18px;
+}
 
 .hero_banner_text_right .btn_org_bdr {
   margin: 21px 0;
@@ -123,3 +130,171 @@
   width: 100%;
 }
 /******************** Banner CSS ********************/
+
+/* /************************** hero_banner ************************** / */
+
+
+
+@media screen and (max-width: 1920px){
+  .hero_banner {
+      padding-bottom: 120px;
+  }
+  }
+  @media screen and (max-width: 1800px){
+  
+  }
+  @media screen and (max-width: 1700px){
+      .hero_banner {
+          padding-bottom: 70px;
+      }
+  
+  }
+  @media screen and (max-width: 1600px){
+  
+      .hero_banner_text_inr .col-md-8 {flex: 0 0 auto;width: 71%;}
+      .hero_banner_text_inr .me-3 {margin-right: 1rem!important;}
+      .hero_banner_text_left h1 {font-size: 60px;line-height: 67px;}
+      .hero_banner_text_inr .col-md-2 {flex: 0 0 auto;width: 30.666667%;}
+      .hero_banner_text_inr .offset-md-2 {margin-left: 9.666667%;}
+      
+  }
+  @media screen and (max-width: 1440px){
+      .hero_banner_text_left h1 {font-size: 56px;line-height: 64px;}
+      .hero_banner_text_inr .col-md-8 {flex: 0 0 auto;width: 73%;}
+      .hero_banner_text_inr {
+          margin-top: 40px;
+      }
+      .testimonials::after {
+          height: 210px;
+          bottom: 102%;
+      }
+  }
+  @media screen and (max-width: 1300px){
+  
+      .hero_banner_text_left h1 {font-size: 52px;line-height: 62px;}
+      .hero_banner_text_inr .col-md-8 {width: 75%;}
+      .hero_banner_text_inr {margin-top: 50px;}
+      
+      .hero_banner {
+          padding-bottom: 100px;
+      }
+  }
+  @media screen and (max-width: 1200px){
+      
+      .hero_banner_text_inr .col-md-8 {width: 83%;}
+      .hero_banner_text_left h1 {font-size: 49px;line-height: 59px;}
+      .hero_banner_text_inr .col-md-8 {width: 90%;}
+      .hero_banner_text_left h1 {font-size: 44px;line-height: 56px;}
+      .hero_banner { padding-bottom: 21%;}
+      .testimonials::after { height: 15%; bottom: 104%;}
+  
+  }
+  @media screen and (max-width: 1024px){
+  
+      .hero_banner_text_inr .offset-md-2 {width: 80%;margin-left: 0;}
+      .hero_banner_text_left h1 {font-size: 44px;line-height: 56px;padding-bottom: 20px;}
+      .hero_banner_text_left:before {position: absolute;content: "";right: 0; top: unset; bottom: 0px;background: #ffffff;width: 100%;height: 4px;}
+      .hero_banner_text_inr {justify-content: center;flex-wrap: wrap !important;margin-top: 50px;}
+      .hero_banner_text_inr .col-md-2 {flex: 0 0 auto;width: 60%;margin: 0 !important;}
+      .hero_banner_text_right {padding: 20px 0;}  
+      section.hero_banner {height: 113vh;margin-bottom: 50px;}
+      
+  }
+  @media screen and (max-width: 900px){
+  
+      .hero_banner_text_inr .col-md-8 {width: 100%;}
+      .hero_banner_text_left h1 {font-size: 40px;line-height: 52px;padding-bottom: 20px;}
+      .hero_banner_text_inr .col-md-2 {width: 70%;}
+      .testimonials::after {
+          bottom: 108%;
+      }
+  
+  .hero_banner_video {
+      display: none;
+  }
+      .hero_banner_text {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+  section.hero_banner {
+      height: auto !important;
+      margin-bottom: 50px;
+      padding: 80px 0 30px 0 !important;
+  }
+  }
+  @media screen and (max-width: 767px){
+      .hero_banner_event_presents_logo {grid-column-start: 2;}
+      .hero_banner_event_sponsor_logo {grid-row-start: 3;}
+      .hero_banner_text_left h1 {font-size: 37px;line-height: 49px;padding-bottom: 17px;}
+      .hero_banner_text_right {padding: 17px 0;}
+      section.hero_banner {margin-bottom: 0;}
+      .testimonials::after {
+          bottom: 104%;
+      }
+      .hero_banner_event_presents_logo {grid-column-start: 1;}
+  
+  }
+  
+  @media screen and (max-width: 600px){
+  
+      .hero_banner_text_left h1 {font-size: 32px;line-height: 44px;padding-bottom: 14px;}
+      .hero_banner_text_right {padding: 14px 0;}    
+      .hero_banner_text_inr .col-md-2 {flex: 0 0 auto;width: 90%;}
+      .hero_banner_text_inr .offset-md-2 {width: 100%;}
+      
+      .testimonials::after {
+          bottom: 105%;
+      }
+  
+  
+  }
+  @media screen and (max-width: 479px){
+  
+      .hero_banner_event_presents_logo {grid-column-start: 1;}
+      .hero_banner_event_sponsor_logo {grid-row-start: 2;}
+      .hero_banner_event_logo {grid-row-start: 3;}
+      .hero_banner_event_co_host_logo {grid-row-start: 4;}
+      .hero_banner_event_poweredby_logo {grid-row-start: 5;grid-column-start: 1;}
+      .hero_banner_text_left h1 {font-size: 27px;line-height: 37px;padding-bottom: 12px;} 
+      .hero_banner_text_right {padding: 12px 0;}    
+      .hero_banner_text_right .btn_org_bdr {margin: 15px 0;}
+      .hero_banner_text_inr .col-md-2 {width: 100%;}
+      .hero_banner_text_inr {justify-content: center;flex-wrap: wrap !important;text-align: center;}
+      .testimonials::after {
+          bottom: 107%;
+      }
+  
+    /*  .hero_banner_event_presents_logo { 
+      max-width: 260px;
+      margin: 0 auto;}
+  */
+  .hero_banner_text_banner {
+      max-width: 260px;
+      margin: 0 auto;
+  }
+  
+  section.hero_banner {
+          padding-bottom: 50px !important;
+      }
+  
+  
+  
+  
+  }
+  @media screen and (max-width: 374px){
+  
+      .hero_banner_text_left h1 {font-size: 24px;line-height: 34px;padding-bottom: 10px;}
+      .hero_banner_text_right {padding: 10px 0;}    
+      section.hero_banner {margin-bottom: 50px;}
+      .testimonials::after { bottom: 110%;}
+  
+      
+      
+      
+  }
+  

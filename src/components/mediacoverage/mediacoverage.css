@@ -3,32 +3,151 @@
   padding: 102px 0 135px;
 }
 
-.media_coverage_box strong {
-  display: inline-block;
+.media_number {
+  display: flex;
   font-size: 47px;
   letter-spacing: 1px;
   line-height: 1;
+  min-width: 155px;
+  justify-content: center;
+  align-items: center;
 }
 
+.media_coins_icon {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: -130px;
+    animation: jumpLeftRight  8s infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+.media_single_quabe_3 {
+  position: absolute;
+  right: 13%;
+  top: -58%;
+  animation: rotedAnimation  100s infinite;
+}
 .media_coverage_box {
   margin: 0 35px;
   text-align: center;
   max-width: 200px;
   position: relative;
 }
-
+.media_coverage_box:last-child {
+    max-width: 140px;
+}
 .media_coverage_box:not(:last-child):before {
-  position: absolute;
-  content: "";
-  background: #e5713a;
-  height: 121%;
-  width: 3px;
-  transform: skewX(-21deg);
-  right: -36px;
-  top: -6px;
+    position: absolute;
+    content: "";
+    background: #e5713a;
+    height: 141%;
+    width: 3px;
+    transform: skewX(-18deg);
+    right: -37px;
+    top: -6px;
 }
 .media_coverage_box p {
   font-size: 18px;
   margin: 15px 0 0 0;
 }
 /******************** Media Coverage CSS ********************/
+
+
+/* /************************** media_coverage relative ************************** / */
+
+
+@media screen and (max-width: 1800px){
+  .media_number {font-size: 40px;}
+}
+@media screen and (max-width: 1700px){
+  .media_coverage_box {max-width: 100%;width: 12%;}
+ /* .media_coverage_box:not(:last-child):before {height: 121%;width: 3px;right: -9px;top: -6px;}*/
+ .media_coverage_box p {
+  font-size: 16px;
+ }
+  
+}
+@media screen and (max-width: 1600px){
+  
+  .media_coins_icon {width: 180px;top: -140px;}
+  .media_coverage_box {width: auto;}
+  .media_number {font-size: 29px;}        
+  
+}
+@media screen and (max-width: 1440px){
+  
+  .media_coins_icon {width: 170px;top: -150px;}
+  .media_coverage_list {padding: 82px 0 105px;}
+  .media_number {
+      min-width: 100px;
+  }
+
+}
+@media screen and (max-width: 1300px){
+
+  .media_coins_icon {width: 150px;top: -140px;}
+  .media_coverage_list {flex-wrap: wrap;padding: 72px 0 70px;}
+  .media_coverage_box  { margin:0 25px;}
+  .media_coverage_box:not(:last-child):before { right: -29px; top: -5px;}
+}
+@media screen and (max-width: 1200px){
+
+  .media_coins_icon {width: 140px;top: -130px;}
+  .media_coverage_box {width: 19%;margin: 13px 0px;}
+  .media_coverage_list {flex-wrap: wrap;padding: 72px 0 45px;}
+  .media_single_quabe_3 {opacity: 0.6;}
+  
+}
+@media screen and (max-width: 1024px){
+
+  .media_coins_icon {width: 130px;top: -110px;}
+  .media_coverage_list {padding: 42px 0 35px;}
+  .media_number {font-size: 26px;letter-spacing: 1px;line-height: 1;}
+  .media_single_quabe_3 { max-width: 120px; top: -44%; right: 20px;}
+  .media_coverage_box { width: auto; margin: 0 24px 28px;}
+  .media_coverage_box:not(:last-child):before { height: 130%;}
+  
+}
+@media screen and (max-width: 900px){
+  
+  .media_coins_icon {width: 110px;top: -100px;}
+  .media_coverage_list {flex-wrap: wrap;padding: 32px 0 35px;}
+
+}
+@media screen and (max-width: 767px){
+ 
+  .media_coins_icon {top: -110px;}
+  .media_coverage_box { width: auto; margin: 0 23px 30px;}
+  .media_number {font-size: 23px;letter-spacing: 1px;}
+  .media_coverage_box p {font-size: 14px;margin: 10px 0 0 0;}
+  .media_single_quabe_3 { max-width: 120px; top: -44%; right: 20px;}
+}
+@media screen and (max-width: 600px){
+
+  .media_coverage_box {width: 33%;}
+  .media_coverage_box:not(:last-child):before {display: none;}
+  .media_coverage_list {align-items: flex-start !important;}
+  .media_coverage_list {padding: 22px 0 25px;}
+  
+}
+@media screen and (max-width: 479px){
+
+  .media_coins_icon {left: 20px;top: -90px;}
+  .media_coverage_box {width: 44%;margin: 13px 10px;}
+  .media_single_quabe_3 img {max-width: 80px;}        
+  .media_coins_icon { width: 80px; left: -20px; top: -81px;}
+
+  .media_single_quabe_3 { top: -29%; right: 30px;}
+
+
+}
+@media screen and (max-width: 374px){
+  
+  .media_coverage_box {width: 43%;}
+  .media_number {font-size: 20px;}
+  .media_coverage_box p {font-size: 14px;margin: 5px 0 0 0;}
+
+}
+
+/* /************************** media_coverage relative ************************** / */

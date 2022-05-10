@@ -238,43 +238,43 @@ export const BlockchainTrendsData = [
 ];
 export const DiscussionTopicData = [
   {
-    image: "/image/discussion_topics_icon_1.png",
+    image: "/image/discussion1.gif",
     discription: "NFTs and the future of the Metaverse",
   },
   {
-    image: "/image/discussion_topics_icon_2.png",
+    image: "/image/discussion2.gif",
     discription: "From Web 2.0 to Web 3.0",
   },
   {
-    image: "/image/discussion_topics_icon_3.png",
+    image: "/image/discussion3.gif",
     discription: "Current state of DeFi",
   },
   {
-    image: "/image/discussion_topics_icon_4.png",
+    image: "/image/discussion4.gif",
     discription: "Navigating Blockchain and Digital Assets as a VC",
   },
   {
-    image: "/image/discussion_topics_icon_5.png",
+    image: "/image/discussion5.gif",
     discription: "Decentralized Autonomous Organizations (DAOs)",
   },
   {
-    image: "/image/discussion_topics_icon_1.png",
+    image: "/image/discussion1.gif",
     discription: "NFTs and the future of the Metaverse",
   },
   {
-    image: "/image/discussion_topics_icon_2.png",
+    image: "/image/discussion2.gif",
     discription: "From Web 2.0 to Web 3.0",
   },
   {
-    image: "/image/discussion_topics_icon_3.png",
+    image: "/image/discussion3.gif",
     discription: "Current state of DeFi",
   },
   {
-    image: "/image/discussion_topics_icon_4.png",
+    image: "/image/discussion4.gif",
     discription: "Navigating Blockchain and Digital Assets as a VC",
   },
   {
-    image: "/image/discussion_topics_icon_5.png",
+    image: "/image/discussion5.gif",
     discription: "Decentralized Autonomous Organizations (DAOs)",
   },
 ];
@@ -335,62 +335,6 @@ export const SpeakerData = [
     position: "Job Title 1, Job Title 2 vvCompany name",
 
   },
-  {
-    image: "/image/speaker_4.jpg",
-    link: "#.",
-    name: "DAVID CHAUM",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_5.jpg",
-    link: "#.",
-    name: "TIM DRAPER",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_1.jpg",
-    link: "#.",
-    name: "RASHID HAZARI",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_2.jpg",
-    link: "#.",
-    name: "KATHLEEN BREITMAN",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_3.jpg",
-    link: "#.",
-    name: "JUSTIN FISHER",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_4.jpg",
-    link: "#.",
-    name: "DAVID CHAUM",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_5.jpg",
-    link: "#.",
-    name: "TIM DRAPER",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
-  {
-    image: "/image/speaker_1.jpg",
-    link: "#.",
-    name: "RASHID HAZARI",
-    position: "Job Title 1, Job Title 2 vvCompany name",
-
-  },
 ];
 export const TestimonialData = [
   {
@@ -415,6 +359,9 @@ export const TestimonialData = [
 
 export const Tickets = [
   {
+    img1: "/image/business_icon1.png",
+    img2: "/image/business_icon2.png",
+    img3: "/image/cube-fill.png",
     title: "STANDARD",
     price: "US$ 295",
     date: "Valid till February 15, 2022",
@@ -431,6 +378,9 @@ export const Tickets = [
     ],
   },
   {
+    img1: "/image/business_icon1.png",
+    img2: "/image/business_icon2.png",
+    img3: "/image/business_icon3.png",
     title: "BUSINESS",
     price: "US$ 595",
     date: "Valid till February 15, 2022",
@@ -448,6 +398,9 @@ export const Tickets = [
     ],
   },
   {
+    img1: "/image/vip-icon.png",
+    img2: "/image/vip-icon.png",
+    img3: "/image/vip-icon.png",
     title: "STANDARD",
     price: "US$ 295",
     date: "Valid till February 15, 2022",
@@ -498,25 +451,21 @@ export const WhyAttendData = [
     image: "/image/why_attend_icon_1.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Draft new regulations, meet potential partners, network with global blockchain experts",
-    link: "#.",
   },
   {
     image: "/image/why_attend_icon_2.png",
     title: "WHY SHOULD ENTERPRISES ATTEND?",
     discription: "Explore innovative blockchain products, network with regional governments and potential partners",
-    link: "#.",
   },
   {
     image: "/image/why_attend_icon_3.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Showcase innovations, get brand exposure and network with investors to help raise funds",
-    link: "#.",
   },
   {
     image: "/image/why_attend_icon_4.png",
     title: "WHY SHOULD GOVERNMENTS ATTEND?",
     discription: "Meet curated startups/ICOs, network with elites from enterprises, governments and global blockchain experts ",
-    link: "#.",
   },
 ]
 

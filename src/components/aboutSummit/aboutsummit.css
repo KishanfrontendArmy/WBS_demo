@@ -10,6 +10,24 @@
 .about_summit_left {
   width: 55.35%;
 } */
+.about_summit_single-cube {
+  position: absolute;
+  left: 0;
+  top:-14%;
+}
+.about_summit_single-cube span {
+  animation: rotedAnimation  100s infinite;
+  display: inline-block;
+}
+.about_summit_bottom-cube {
+  position: absolute;
+  right: 0;
+  bottom: -6%;
+  z-index: -1;
+}
+.about_summit_bottom-cube span {
+  display: inline-block; 
+}
 
 .about_summit_left h2 {
   text-align: left;
@@ -33,21 +51,5 @@
   font-size: 17px;
   line-height: 24px;
   padding: 13px 0 0 0;
-}
-
-.about_summit_left_btn_box_otr {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.about_summit_btn_box {
-  max-width: 328px;
-  width: 19%;
-  margin: 0 51px 0 0;
-}
-
-.about_summit_btn_box:last-child {
-  width: 31%;
 }
 /******************** About Summit CSS ********************/

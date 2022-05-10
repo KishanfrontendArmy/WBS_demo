@@ -1,146 +1,610 @@
 /******************** Parellax CSS ********************/
+.parellax_bg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  z-index: -1;
+  opacity: 0.30;
+}
+.parellax-cube-top {
+  position: absolute;
+  right: 16%;
+  top: -2%;
+}
 .parellax_bg {
-  background: url(/public/image/parellax_bg_img.png) top no-repeat;
-  background-attachment: fixed;
-  padding: 381px 0 448px 0;
+/*background: url(../images/parellax_bg_img.png) top no-repeat;*/
+background-repeat: no-repeat;
+background-position: top;
+background-attachment: fixed;
+padding: 381px 0 448px 0;
+
 }
 .parellax_bg h2 {
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 53px;
-  text-align: center;
-  font-weight: 900;
+color: #ffffff;
+font-size: 60px;
+line-height: 53px;
+text-align: center;
+font-weight: 900;
 }
 
 .tickets_wbs_title {
-  padding: 0 0 85px 0;
+padding: 0 0 85px 0;
 }
-
-.tickets_wbs_list {
-  gap: 64px;
+.tickets_wbs_list:hover > *,
+.tickets_wbs_list:focus-within > * {
+opacity: 0.6;
 }
-
+.tickets_wbs_list  {
+margin: 0 -22px;
+}
 .tickets_wbs_price_box {
-  width: 33.33%;
-  background: #0f1025;
+  padding: 0 22px;
+}
+.tickets_wbs_list:hover > :hover,
+.tickets_wbs_list:focus-within > :focus {
+transform: scale(1.1);
+opacity: 1;
+outline: none;
+}
+
+.tickets_wbs_list:hover > :focus:not(:hover) {
+transform: scale(1.05);
+}
+.tickets_wbs_price_box_bg {
+background: #0f1025;
+overflow: hidden;
+cursor: pointer;
+}
+.tickets_wbs_price_box, .tickets_wbs_price_box_bg {
+  transition: 300ms opacity, 300ms transform;
 }
 
 .tickets_wbs_price_box_top {
-  background: #5c56c8;
+background: #5c56c8;
+position: relative;
 }
 
 .tickets_wbs_price_points {
-  padding: 37px 30px 38px 47px;
+padding: 37px 30px 38px 47px;
+position: relative;
 }
-
+.top_shape  {
+  position: absolute;
+  left: -10px;
+  background-color: #0f1025;
+  height: 70px;
+  top: 40px;
+  transform: rotate(-6deg)translateX(-0em);
+  z-index: 0;
+  width: 580px;
+  transition: all ease-in-out 0.3s 0s;
+}
+.top_shape.is_show {
+  top: -40px;
+}
 .tickets_wbs_price_points ul li {
-  font-size: 23px;
-  line-height: 46px;
-  color: #ffffff;
-  list-style: none;
-  padding-left: 37px;
-  position: relative;
+font-size: 23px;
+line-height: 46px;
+color: #ffffff;
+list-style: none;
+padding-left: 37px;
+position: relative;
 }
 .tickets_wbs_price_points ul li:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 14px;
+position: absolute;
+content: "";
+left: 0;
+top: 14px;
 }
 .tickets_wbs_price_points ul li.right_point:before {
-  background: url(/public/image/tick_green.png);
-  width: 23px;
-  height: 18px;
+background: url(/public/image/tick_green.png);
+width: 23px;
+height: 18px;
 }
 .tickets_wbs_price_points ul li.cancel_point:before {
-  background: url(/public/image/close_red.png);
-  width: 18px;
-  height: 18px;
+background: url(/public/image/close_red.png);
+width: 18px;
+height: 18px;
 }
 .tickets_wbs_price_points ul li.cancel_point {
-  color: #7c7c7c;
+color: #7c7c7c;
 }
 .tickets_wbs_price_box_top_text {
-  text-align: center;
-  padding: 60px 0 67px;
-}
-
-.tickets_wbs_price_box_top_text h5 {
-  font-size: 39px;
-  line-height: 34px;
-  padding: 0 0 32px 0;
-  color: #e57139;
-}
-
-.tickets_wbs_price_box_top_text h3 {
-  font-size: 51px;
-  color: #ffffff;
-}
-
-.tickets_wbs_price_box_top_text .a_btn {
-  padding: 17px 0 24px 0;
+text-align: center;
+padding: 60px 0 67px;
 }
 
 .tickets_wbs_price_box_top_text .a_btn a {
-  font-size: 20px;
+  background-color: #5c56c8;
+}
+.tickets_wbs_price_box_top_text .a_btn a:hover {
+  background: #fff;
+  color: #5c56c8;
+}
+.tickets_wbs_price_box_top_text h5 {
+font-size: 39px;
+line-height: 34px;
+padding: 0 0 32px 0;
+color: #e57139;
+}
+
+.tickets_wbs_price_box_top_text h3 {
+font-size: 51px;
+color: #ffffff;
+}
+
+.tickets_wbs_price_box_top_text .a_btn {
+padding: 17px 0 24px 0;
+}
+
+.tickets_wbs_price_box_top_text .a_btn a {
+font-size: 20px;
 }
 
 .tickets_wbs_price_box_top_text p {
-  font-size: 20px;
-  font-weight: 600;
+font-size: 20px;
+font-weight: 600;
 }
 section.why_attend {
-  padding: 230px 0 0 0;
+padding: 230px 0 0 0;
 }
 
 .why_attend_title {
-  padding: 0 0 65px 0;
+padding: 0 0 65px 0;
 }
-.why_attend_list {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  gap: 38px;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(2, 50%);
+/* .why_attend_list {
+max-width: 1400px;
+margin: 0 auto;
+display: grid;
+gap: 38px;
+flex-wrap: wrap;
+grid-template-columns: repeat(2, 50%);
+} */
+
+.why_attend_list .why_attend_box_bg {
+background: #eaecfd;
+padding:51px 39px 30px 59px;
 }
 
-.why_attend_list .why_attend_box {
-  background: #eaecfd;
-  padding: 51px 59px 30px;
+.row {
+  --bs-gutter-y: 2.4rem;
+  --bs-gutter-x: 3rem;
 }
 
 .why_attend_box_top {
-  margin: 0 0 22px 0;
+margin: 0 0 22px 0;
 }
 
 .why_attend_box_top .why_attend_box_icon {
-  width: 87px;
-  height: 87px;
-  border-radius: 100%;
-  background: #ea8141;
-  flex: 0 0 87px;
+width: 87px;
+height: 87px;
+border-radius: 100%;
+background: #ea8141;
+flex: 0 0 87px;
 }
 
 .why_attend_box_top .why_attend_box_icon img {
-  width: max-content;
+width:60px;
 }
 
+/************************** keyframes ***************************/
+
+
+canvas#c {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.more_less_testi_input {
+  position: absolute;
+  opacity: 0;
+}
+.content-box {
+  overflow: hidden;
+  -moz-transition: max-height 0.4s ease-in-out;
+  -webkit-transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
+  max-height: 100%;
+}
+.more_less_testi_input ~ .more_less_testi_more_btn:after {
+  content: "Read More \0BB";
+  font-size: 18px;
+  line-height: 28px;
+  color: #ea8141;
+}
+
+.more_less_testi_input:checked ~ .more_less_testi_more_btn:after  {
+  content: "Read Less \0AB";
+}
+
+.more_less_testi_input ~ .content-box {
+  max-height: 4em;
+}
+
+.more_less_testi_input:checked ~ .content-box {
+  max-height: 100em;
+}
+
+/* .more_less_testi_input {
+  position: absolute;
+  opacity: 0;
+}
+.more_less_testi_input ~ .content-box {
+  max-height: 4em;
+}
+.more_less_testi_input:checked ~ .more_less_testi_more_btn:after {
+  content: "Read Less \0AB";
+}
+.more_less_testi_input ~ .more_less_testi_more_btn:after {
+  content: "Read More \0BB";
+  font-size: 18px;
+  line-height: 28px;
+  color: #ea8141;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+} */
+
 .why_attend_box_top h3 {
-  font-size: 30px;
-  color: #0d0e1d;
-  margin: 0 0 0 23px;
-  padding: 0 40px 0 0;
+font-size: 30px;
+color: #0d0e1d;
+margin: 0 0 0 23px;
+padding: 0 40px 0 0;
+font-weight: 700;
 }
 
 .why_attend_box p {
-  font-size: 18px;
-  line-height: 28px;
-  color: #0d0e1d;
+font-size: 18px;
+line-height: 28px;
+color: #0d0e1d;
+}
+.why_attend_box p:not(:last-child){
+padding-bottom: 20px;
 }
 
 .why_attend_box p a {
-  color: #ea8141;
-  text-decoration: underline;
+color: #ea8141;
+text-decoration: underline;
 }
+
+/****************** TICKETS TO WBS DUBAI icon Animation ******************/
+/******** standard *********/
+.tickets_wbs_price_box_top span {
+  display: inline-block;
+}
+.standard_icon_1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.standard_icon_1 svg, .standard_icon_1 img, .standard_icon_2 svg, .standard_icon_2 img, .standard_icon_3 svg, .standard_icon_3 img {
+  -webkit-animation: rotation 20s infinite linear;
+}
+.tickets_wbs_price_box .standard_icon_1, .tickets_wbs_price_box .standard_icon_2, .tickets_wbs_price_box .standard_icon_3 { 
+  transition: all ease-in-out 0.3s 0s;
+}
+.standard_icon_2 {
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.standard_icon_3 {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.tickets_wbs_price_box:hover .standard_icon_1{
+  transform: scale(1.2) !important;
+  left: 30px;
+  top: 30px;
+}
+
+.tickets_wbs_price_box:hover .standard_icon_2{
+  transform: scale(1.2) !important;
+  right: 15px;
+  top: 30px;
+}
+.tickets_wbs_price_box:hover .standard_icon_3{
+  transform: scale(1.2) !important;
+  left: 20px;
+  bottom: 20px;
+}
+/******** standard *********/
+
+/******** BUSINESS ********/
+.business_icon_1 svg, .business_icon_1 img, .business_icon_2 svg, .business_icon_2 img {
+  -webkit-animation: rotation 20s infinite linear;
+}
+.tickets_wbs_price_box .business_icon_1, .tickets_wbs_price_box .business_icon_2, .tickets_wbs_price_box .business_icon_3 { 
+  transition: all ease-in-out 0.3s 0s;
+}
+.business_icon_1 {
+position: absolute;
+left: 20px;
+top: 50px;
+}
+.tickets_wbs_price_box:hover .business_icon_1{
+  transform: scale(1.2) !important;
+  left: 20px;
+  top: 50px;
+}
+
+.business_icon_2 {
+  position: absolute;
+  right: 5px;
+  bottom: 100px;
+}
+.tickets_wbs_price_box:hover .business_icon_2{
+  transform: scale(1.1) !important;
+}
+.business_icon_3 {
+  position: absolute;
+  left: -15px;
+  bottom: 15px;
+}
+.tickets_wbs_price_box:hover .business_icon_3{
+  transform: scale(1.1) !important;
+  left: 0;
+  bottom: 30px;
+}
+/******** BUSINESS ********/
+
+/******** VIP ********/
+.vip_icon_1 svg, .vip_icon_1 img, .vip_icon_2 svg, .vip_icon_2 img, .vip_icon_3 svg, .vip_icon_3 img {
+  -webkit-animation: rotation 40s infinite linear;
+}
+.tickets_wbs_price_box .vip_icon_1, .tickets_wbs_price_box .vip_icon_2, .tickets_wbs_price_box .vip_icon_3 { 
+  transition: all ease-in-out 0.3s 0s;
+}
+.vip_icon_1 {
+position: absolute;
+left: -40px;
+top: 0px;
+}
+.tickets_wbs_price_box:hover .vip_icon_1{
+  transform: scale(1.2) !important;
+  left: 20px;
+  top: 35px;
+}
+
+.vip_icon_2 {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+.tickets_wbs_price_box:hover .vip_icon_2{
+  transform: scale(1.1) !important;
+}
+.vip_icon_3 {
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+}
+.tickets_wbs_price_box:hover .vip_icon_3{
+  transform: scale(1.1) !important;
+  left: 15px;
+  bottom: 15px;
+}
+/******** VIP ********/
+/****************** TICKETS TO WBS DUBAI icon Animation ******************/
 /******************** Parellax CSS ********************/
+
+
+
+
+/* /************************** parellax_bg ************************** / */
+.tickets_wbs_price_box_top_text { position: relative; z-index: 1;}
+@media (max-width: 1700px) {
+
+    .tickets_wbs_price_box:hover .standard_icon_1 {
+        transform: scale(1.2) !important;
+        left: 0;
+        top: 20px;
+    }
+    .tickets_wbs_price_box:hover .standard_icon_2 {
+        right: 0;
+    }
+
+    .standard_icon_3 {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        max-width: 60px;
+    }
+    .tickets_wbs_price_box:hover .standard_icon_3 {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .business_icon_3, .business_icon_2 {
+        max-width: 80px;
+    }
+
+    .tickets_wbs_price_box:hover .vip_icon_3 { transform: scale(1.1) !important; left: 0; bottom: 0;}
+    .vip_icon_3 {
+        max-width: 60px;
+    }
+    .vip_icon_2 {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    } 
+
+    .tickets_wbs_price_points ul li { font-size: 20px; line-height: 40px;}
+    .why_attend_box_top h3 {font-size: 25px;}
+}
+@media (max-width: 1600px) {
+    .parellax_bg {    padding: 340px 0px 278px 0;}
+    .tickets_wbs_price_box_top_text {padding: 50px 0 57px;}
+    .tickets_wbs_title {padding: 0 0 75px 0;}
+    .parellax_bg h2 {font-size: 55px;line-height: 58px;}
+    .tickets_wbs_price_box_top_text h5 {font-size: 36px;line-height: 38px;padding: 0 0 25px 0;}    
+    .tickets_wbs_price_box_top_text h3 {font-size: 40px;}    
+    .tickets_wbs_price_box_top_text .a_btn {padding: 17px 0 18px 0;}
+    .tickets_wbs_price_points {padding: 30px;}
+    .why_attend_box_top h3 {font-size: 22px;margin: 0 0 0 18px;padding: 0 0 0 0;}
+    section.why_attend {padding: 210px 0 0 0;}
+    .why_attend_title {padding: 0 0 55px 0;}
+    .parellax-cube-top { max-width: 300px;}
+
+    .standard_icon_3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 50px;
+    }
+    .tickets_wbs_price_box:hover .standard_icon_1 {
+        transform: scale(1.1) !important;
+        left: 0;
+        top: 0;
+    }
+
+    .business_icon_3, .business_icon_2 {
+        max-width: 60px;
+    }
+    .vip_icon_1, .vip_icon_2 {
+        max-width: 80px;
+    }
+    .tickets_wbs_price_points ul li { font-size: 18px; line-height: 36px;}
+}
+@media (max-width: 1400px) {
+
+    .parellax_bg {padding: 250px 0px 228px 0;}
+    section.why_attend {padding: 180px 0 0 0;}
+    .why_attend_title {padding: 0 0 50px 0;}
+    .tickets_wbs_title {padding: 0 0 65px 0;}
+    .parellax_bg h2 {font-size: 52px;line-height: 57px;}    
+    .tickets_wbs_price_box_top_text h5 {font-size: 34px;line-height: 36px;padding: 0 0 20px 0;}
+    .tickets_wbs_price_box_top_text h3 {font-size: 30px;}
+    .tickets_wbs_price_box_top_text {padding: 40px 0 67px;}
+    .why_attend_box_top h3 {font-size: 22px;margin: 0 0 0 18px;padding: 0 19px 0 0;}
+    .why_attend_list .why_attend_box_bg {padding: 40px;}
+    .parellax-cube-top {
+        right: 9%;
+    }
+    .vip_icon_1, .vip_icon_2 {
+        max-width: 60px;
+    }
+
+    .tickets_wbs_price_box:hover .standard_icon_2 {
+        transform: scale(1.1);
+    }
+    .tickets_wbs_price_points {
+        padding: 25px;
+    }
+    .tickets_wbs_price_points ul li {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .tickets_wbs_price_points ul li.right_point:before { width: 19px; height: 15px; background-size: 100%;}
+    .tickets_wbs_price_points ul li.cancel_point:before { background-size: 100%; }
+    
+}
+@media (max-width: 1200px) {
+
+    .tickets_wbs_price_points {padding: 10px 30px 30px;}
+    .tickets_wbs_title {padding: 0 0 55px 0;}
+    .parellax_bg h2 {font-size: 45px;line-height: 51px;}    
+    .tickets_wbs_price_box {width: 50%; padding-bottom: 25px;}
+    .parellax_bg {padding: 210px 0px 188px 0;}
+    section.why_attend {padding: 150px 0 0 0;}
+    .why_attend_box p {font-size: 17px;line-height: 26px;}    
+    
+}
+@media (max-width: 992px) {
+
+    .tickets_wbs_price_box {width: 100%;padding-bottom: 50px;margin: 0 auto;}
+    .parellax_bg {padding: 190px 0px 148px 0;}
+    .parellax_bg h2 {font-size: 40px;line-height: 42px;}
+    .tickets_wbs_title {padding: 0 0 45px 0;}
+    .tickets_wbs_price_box_top_text h5 {font-size: 30px;line-height: 32px;padding: 0 0 12px 0;}
+    .tickets_wbs_price_points ul li {font-size: 20px;line-height: 43px;padding-left: 36px;}    
+    section.why_attend {padding: 130px 0 0 0;}
+    .why_attend_box {width: 100%;} 
+    .why_attend_title {padding: 0 0 40px 0;}
+    .why_attend_box_top {margin: 0 0 16px 0;}
+    .why_attend_list .why_attend_box_bg {padding: 30px;}
+
+    .parellax-cube-top { right: 0; max-width: 250px; top: -1%;}
+    .tickets_wbs { position: relative; z-index: 9;}
+    .tickets_wbs_list { max-width: 500px; margin: 0 auto;}
+
+}
+@media (max-width: 768px) { 
+
+    
+    .parellax_bg h2 {font-size: 34px;line-height: 38px;}
+    .tickets_wbs_title {padding: 0 0 35px 0;}
+    .why_attend_title {padding: 0 0 35px 0;}
+    .parellax_bg {padding: 170px 0px 118px 0;}
+    section.why_attend {padding: 80px 0 0 0;}
+    .why_attend_box_top h3 {font-size: 20px;margin: 0 0 0 18px;padding: 0 0 0 0;}
+    .why_attend_list .why_attend_box_bg {padding: 26px;}
+    .why_attend_box_top {margin: 0 0 10px 0;}
+    .tickets_wbs_price_points ul li {font-size: 18px;line-height: 39px;padding-left: 36px;}
+    .tickets_wbs_price_box_top_text {padding: 30px 0 67px;}
+    .tickets_wbs_price_box_top_text h5 {font-size: 27px;line-height: 30px;padding: 0 0 7px 0;}
+    .tickets_wbs_price_box_top_text h3 {font-size: 25px;}
+    .tickets_wbs_price_points {padding: 10px 20px 20px;}
+    .why_attend_box p {font-size: 16px;line-height: 26px;}
+    .tickets_wbs_price_box {
+         padding: 0 0 40px 0 ;
+    }
+    .tickets_wbs_list:hover > *, .tickets_wbs_list:focus-within > * { opacity: 1;}
+}
+@media (max-width: 576px) { 
+
+    .parellax_bg h2 {font-size: 24px;line-height: 33px;}
+    .tickets_wbs_price_box_top_text h5 {font-size: 20px;line-height: 23px;}    
+    .tickets_wbs_price_box_top_text h3 {font-size: 20px;}
+    .tickets_wbs_price_box_top_text p {font-size: 16px;font-weight: 600;}
+    .why_attend_title {padding: 0 0 26px 0;}
+    .why_attend_list .why_attend_box_bg {padding: 22px;}
+    .why_attend_box_top .why_attend_box_icon {width: 57px;height: 57px;flex: 0 0 57px;}
+    .why_attend_box_top .why_attend_box_icon img {width: 38px;}
+    .why_attend_box_top h3 {font-size: 19px;}
+    .parellax_bg {padding: 120px 0px 68px 0;}
+    .parellax-cube-top { max-width: 180px; top: 0%;}
+    
+
+}
+@media (max-width: 480px) { 
+    .tickets_wbs_list:hover > :hover, .tickets_wbs_list:focus-within > :focus {
+        transform: scale(1);
+    }
+    .tickets_wbs_price_points ul li { font-size: 16px; line-height: 1.5; padding-left: 36px; margin-bottom: 21px;}
+    .tickets_wbs_price_points ul li:last-child {
+        margin-bottom: 0;
+    }
+    .tickets_wbs_price_points ul li:before { top: 6px;}
+      .why_attend_box_top h3 {font-size: 16px;}
+      .parellax-cube-top { max-width: 130px; top: -1%;}
+      .standard_icon_2 { right: 0; top: 0; max-width: 50px;}
+      .tickets_wbs_price_box:hover .standard_icon_2 {
+        top: 0;
+      }
+      .standard_icon_3 { left: -10px; max-width: 40px;}
+      .tickets_wbs_price_box:hover .standard_icon_3 {
+        left: 0;
+      }
+      .tickets_wbs_price_box:hover .standard_icon_3 { left: -10px; bottom: -10px;}
+
+    .business_icon_1 { left: 0; top: 0;}
+    .business_icon_3, .business_icon_2 { max-width: 50px;}
+    .tickets_wbs_price_box:hover .business_icon_1 { left: 10px; top: 10px;}
+    .business_icon_2 { right: 0px; bottom: 150px;}
+    .tickets_wbs_price_box:hover .business_icon_3 { 
+        bottom: 20px;
+     }
+     .vip_icon_2 { right: -10px; top: -10px;}
+     .tickets_wbs_price_box:hover .vip_icon_3 { left: -20px; bottom: -20px;}
+}
+
+
+/* /************************** parellax_bg ************************** / */

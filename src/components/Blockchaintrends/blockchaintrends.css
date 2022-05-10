@@ -14,6 +14,9 @@
   position: relative;
   z-index: 1;
 }
+blockchain_trends_button_nextlord-icon {
+  transform: scale(-1);
+}
 .blockchain_trends_button_box {
   position: absolute;
   bottom: -120px;
@@ -54,6 +57,13 @@
 }
 .session_title_img {
   padding: 18px 0 0 0;
+}
+.blockchain_trends_button_next lord-icon {
+  transform: scale(-1);
+}
+.blockchain_trends_button_box > div lord-icon {
+  width: 90px;
+  height: 90px;
 }
 /******************** Blockchain Trends CSS ********************/
 
@@ -157,3 +167,170 @@ section.blockchain_trends {
   padding: 0 0 94px 0;
 }
 /******************** Sessions CSS ********************/
+
+
+/* /************************** blockchain_trends ************************** / */
+
+
+@media screen and (max-width: 1800px){
+
+}
+
+@media screen and (max-width: 1700px){
+    
+    .blockchain_trends_text_slider_otr {padding: 53px 53px 58px 60px;margin-left: -8.33333333%;}
+    .blockchain-cube-bottom{ max-width: 350px;}
+    .blockchain_trends_coins_otr { top: -30%;}
+    .blockchain_trends_coins img {
+        max-width: 200px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1600px){
+
+    .blockchain_trends_text_slider_otr {padding: 40px;}    
+    .sessions_list h5 {padding: 160px 0 31px 0;font-size: 36px;letter-spacing: 1px;}
+    
+}
+
+@media screen and (max-width: 1440px){
+
+    .blockchain_trends_slider {margin: 88px 0 0 0;}
+    .blockchain_trends_text_slider_otr {padding: 35px;}
+    .blockchain_trends_button_box > div {width: 83px;height: 83px;}    
+    .blockchain_trends_text_slide_box p {font-size: 22px;line-height: 29px;}
+    .sessions_list p {font-size: 22px;line-height: 32px;}    
+    .blockchain_trends_quotes {margin: 18% 0 0% 0;}
+    .blockchain_trends_quote h3 {font-size: 36px;line-height: 47px;}
+    .sessions_list h5 {padding: 140px 0 31px 0;font-size: 33px;}    
+
+    .blockchain_trends_coins_otr {
+        top: -25%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1300px){
+
+    .blockchain_trends_button_box > div {width: 73px;height: 73px;}
+    .blockchain_trends_text_slide_box h3 {font-size: 36px;line-height: 44px;padding: 0 0 24px 0;}
+    .blockchain_trends_text_slide_box p {font-size: 20px;line-height: 27px;color: #f3f3f3;}
+    .session_title_img img {max-width: 520px;}
+    .sessions_list h5 {padding: 110px 0 31px 0;font-size: 30px;letter-spacing: 1px;}
+    .sessions_list p {font-size: 20px;line-height: 28px;}    
+    .blockchain_trends_quotes {margin: 15% 0 0% 0;}
+    .blockchain_trends_quote {padding: 30px 0;}
+    .blockchain_trends_quote h3 {font-size: 33px;line-height: 44px;}
+    section.blockchain_trends {padding: 0 0 74px 0;}
+    .blockchain_trends_slider {margin: 78px 0 0 0;}
+    
+    
+}
+
+@media screen and (max-width: 1200px){
+
+    .blockchain_trends_text_slider_otr {padding: 25px;}    
+    .session_title_img img {max-width: 460px;}
+    .blockchain_trends_text_slide_box h3 {font-size: 30px;line-height: 38px;padding: 0 0 15px 0;}
+    .blockchain_trends_button_box > div {width: 68px;height: 68px;}
+    .sessions_list h5 {padding: 90px 0 25px 0;font-size: 26px;}    
+    .blockchain_trends_button_box {bottom: -100px;width: 100%;}    
+    .blockchain_trends_quotes_icon {max-width: 65px;}
+    .blockchain_trends_quote h3 {font-size: 28px;line-height: 37px;}
+    .blockchain_trends_quote {padding: 25px 0;}    
+    .blockchain_trends_quotes_slider_btns {padding: 30px 0 0 0;}
+    section.blockchain_trends {padding: 0 0 64px 0;}
+    .blockchain_trends_quote_detail_box h4 {font-size: 30px;line-height: 47px;}
+    .blockchain_trends_coins img { max-width: 100px;}
+    .blockchain_trends_coins_otr { top: -13%;}
+    .blockchain-cube-bottom { max-width: 250px;}
+
+}
+
+@media screen and (max-width: 1024px){
+    
+    .blockchain_trends_sessions {flex-wrap: wrap;}
+    .blockchain_trends_quotes {margin: 14% 0 0% 0;}
+    .blockchain_trends_slider {margin: 58px 0 0 0;}
+    .blockchain_trends_image_slider {width: 100% !important;padding-bottom: 4%;}
+    .blockchain_trends_text_slider_otr {width: 100% !important;padding: 25px;margin-left: 0;}    
+    .sessions_list h5 {padding: 140px 0 25px 0;}   
+    .blockchain_trends_quote_detail_box h4 {font-size: 28px;line-height: 45px;} 
+    .blockchain_trends_quote_detail_box p {font-size: 18px;}
+    .blockchain-cube-bottom { max-width: 200px; left: auto; bottom: 4%; right: 0;}
+
+    
+}
+
+@media screen and (max-width: 900px){
+    
+    .blockchain_trends_slider {margin: 48px 0 0 0;}
+    .blockchain_trends_text_slide_box h3 {font-size: 28px;line-height: 36px;padding: 0 0 12px 0;}
+    .blockchain_trends_text_slide_box p:not(:last-child) {padding-bottom: 18px;}
+    .blockchain_trends_text_slide_box p {font-size: 19px;line-height: 25px;}
+    .blockchain_trends_button_box > div {width: 58px;height: 58px;}    
+    .blockchain_trends_button_box {bottom: -82px;}    
+    .blockchain_trends_quotes_icon {max-width: 60px;}
+    .blockchain_trends_quote h3 {font-size: 26px;line-height: 35px;}
+    .blockchain_trends_quote {padding: 20px 0;}
+    .blockchain_trends_quote_detail_box h4 {font-size: 24px;line-height: 43px;}    
+    .blockchain_trends_quote_detail_box p {font-size: 17px;}
+    .blockchain_trends_quotes_slider_btns {padding: 25px 0 0 0;}
+
+}
+
+@media screen and (max-width: 767px){
+
+    .blockchain_trends_button_next img, .blockchain_trends_button_prev img {max-width: 29px;}
+    .blockchain_trends_button_box > div { width: 50px; height: 50px;}
+}
+
+@media screen and (max-width: 600px){
+    .blockchain_trends_text_slider_otr {padding: 20px;}
+    .blockchain_trends_text_slide_box h3 {font-size: 23px;line-height: 34px;padding: 0 0 10px 0;}
+    .blockchain_trends_text_slide_box p:not(:last-child) {padding-bottom: 14px;}
+    .blockchain_trends_text_slide_box p {font-size: 16px;line-height: 23px;color: #f3f3f3;}
+    .sessions_list h5 {padding: 120px 0 20px 0;font-size: 24px;letter-spacing: 1px;}
+    .sessions_list p {font-size: 17px;line-height: 25px;}
+    .sessions_list .a_btn {margin: 25px 0 0 0;}
+    .blockchain_trends_quote_detail_box h4 {font-size: 22px;line-height: 41px;}    
+    .blockchain_trends_quote_detail_box {padding: 0 0 0 22px;}
+    section.blockchain_trends {padding: 0 0 40px 0;}
+    .blockchain_trends_quote h3 {font-size: 22px;font-weight: 500;line-height: 32px;}
+    .blockchain_trends_quote {padding: 18px 0;}
+    .blockchain_trends_quotes_icon {max-width: 58px;}
+    .blockchain_trends_button_next img, .blockchain_trends_button_prev img {max-width: 24px;}
+    .session_title_img img {max-width: 100%;}
+    .blockchain_trends_quotes {
+        margin-top: 18%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 479px){
+    
+    .blockchain_trends_slider {margin: 30px 0 0 0;}
+    .blockchain_trends_text_slide_box p {font-size: 15px;line-height: 23px;}
+    .sessions_list p {font-size: 16px;line-height: 23px;}    
+    .blockchain-cube-bottom { bottom: 170px; max-width: 130px;}
+    .blockchain_trends_coins_otr { top: -8%;}
+
+
+}
+
+@media screen and (max-width: 374px){
+
+    .blockchain_trends_text_slider_otr {padding: 15px;}    
+    .blockchain_trends_text_slide_box h3 {font-size: 22px;line-height: 33px;padding: 0 0 8px 0;}
+    .sessions_list h5 {padding: 110px 0 20px 0;font-size: 24px;}
+    .blockchain_trends_quote_detail_box h4 {font-size: 20px;line-height: 38px;}
+    
+}
+
+
+/* /************************** blockchain_trends ************************** / */
+
