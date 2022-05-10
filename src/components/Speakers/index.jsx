@@ -21,7 +21,6 @@ const Speaker = () => {
                     <div className="speakers_list_otr row" id="myList" >
 
                         {speakers && speakers.length > 0 && speakers.map((data, index) => {
-                            console.log("dataImage",data.image);
                             return (
 
                                 <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp" data-wow-delay={data.time}>
@@ -52,7 +51,6 @@ const Speaker = () => {
                         <div className="modal fade speaker_model_otr" id="speaker_model_1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="speaker_model_1_Title" aria-hidden="true">
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 {SpeakermodalData && SpeakermodalData.length > 0 && SpeakermodalData.map((data, index) => {
-                                    console.log("data-->",data.image)
                                     return (
                                         <div key={`speaker_model_box ${index}`} className="modal-content speaker_model_box">
                                             <button type="button" className="speaker_model_close" data-bs-dismiss="modal" aria-label="Close">
