@@ -130,9 +130,7 @@
   padding: 24px 0 34px;
 }
 
-.speaker_model_left_box {
-  width: 32%;
-}
+
 
 .speaker_model_right_box p {
   font-size: 26px;
@@ -322,6 +320,10 @@ a#loadMore {
       font-size: 44px;
       width: 45px;
       height: 45px;
+  }
+
+  .speaker_model_otr .modal-dialog .speaker_model_box {
+    padding: 20px;
   }
   
   

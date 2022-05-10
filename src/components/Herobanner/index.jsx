@@ -41,19 +41,19 @@ const Herobanner = () => {
                                             <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                                                 <li>
                                                     <a href="#." download="" className="dropdown-item">
-                                                        <span className="fa fa-apple"></span>Apple
+                                                        <span className="fab fa-apple"></span>Apple
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#." download="" className="dropdown-item">
-                                                        <span className="fa fa-google"></span>
+                                                        <span className="fab fa-google"></span>
                                                         Google
                                                         <span className="stats">(online)</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#." download="" className="dropdown-item">
-                                                        <span className="fa fa-envelope"></span>
+                                                        <span className="fas fa-envelope"></span>
                                                         Outlook
                                                     </a>
                                                 </li>

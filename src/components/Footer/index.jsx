@@ -8,7 +8,7 @@ const Footer = () => {
 
         <footer className="footer">
             <div className="container">
-                <div className="footer_inr d-flex justify-content-between">
+                <div className="footer_inr d-flex row justify-content-between">
                     <div className="ft_left col-md-3">
                         <div className="ft_logo wow fadeInUp">
                             <a href="#">

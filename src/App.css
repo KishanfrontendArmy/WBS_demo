@@ -3,3 +3,47 @@
 /* @import '/node_modules/swiper/swiper.min.css';
 @import '/node_modules/swiper/modules/navigation/navigation.min.css'; 
 @import '/node_modules/swiper/modules/pagination/pagination.min.css'; */
+
+
+
+
+@keyframes spin {
+
+    0% {
+      transform: rotate3d(0, 1, 0, 0);
+    }
+
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+
+  }
+
+  @keyframes rotation {
+      from {
+          -webkit-transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(359deg);
+      }
+  }
+
+  @keyframes jumpLeftRight{
+    0%{
+        transform: rotate(-25deg);
+    }
+  
+    100%{
+        transform: rotate(25deg);
+    }
+  }
+
+  @keyframes rotedAnimation{
+    0%{
+      transform: rotate(0deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+  }

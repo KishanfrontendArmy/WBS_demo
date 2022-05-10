@@ -14,6 +14,7 @@
   position: absolute;
   right: 16%;
   top: -2%;
+  z-index: 1;
 }
 .parellax_bg {
 /*background: url(../images/parellax_bg_img.png) top no-repeat;*/
@@ -140,8 +141,9 @@ padding: 17px 0 24px 0;
 
 .tickets_wbs_price_box_top_text .a_btn a {
 font-size: 20px;
+font-weight: 700;
 }
-
+.standard_icon_1 img, .standard_icon_2 img {max-width: 60px;}
 .tickets_wbs_price_box_top_text p {
 font-size: 20px;
 font-weight: 600;
@@ -532,6 +534,11 @@ top: 0px;
     section.why_attend {
         padding-top: 100px;
     }
+
+    .blockchain_trends:after {
+      top: 98%;
+      height: 12%;
+  }
 }
 @media (max-width: 992px) {
 
@@ -546,7 +553,7 @@ top: 0px;
     .why_attend_box_top {margin: 0 0 16px 0;}
     .why_attend_list .why_attend_box_bg {padding: 30px;}
 
-    .parellax-cube-top { right: 0; max-width: 250px; top: -1%;}
+    .parellax-cube-top { right: 0; max-width: 170px; top: 1%;}
     .tickets_wbs { position: relative; z-index: 9;}
     .tickets_wbs_list { max-width: 500px; margin: 0 auto;}
 .parellax_bg {
@@ -556,7 +563,9 @@ top: 0px;
     max-width: 600px;
     margin: 0 auto;
 }
-
+.blockchain_trends:after {
+  top: 96%;
+}
 }
 @media (max-width: 768px) { 
 
@@ -577,6 +586,14 @@ top: 0px;
          padding: 0 0 40px 0 ;
     }
     .tickets_wbs_list:hover > *, .tickets_wbs_list:focus-within > * { opacity: 1;}
+
+    .blockchain_trends:after {
+      top: 99%;
+      height: 8%;
+  }
+  .parellax-cube-top {
+    top: 1%;
+  }
 }
 @media (max-width: 576px) { 
 
@@ -593,7 +610,10 @@ top: 0px;
     .why_attend_box {
         padding: 0;
     }
-    
+    .blockchain_trends:after {
+      top: 100%;
+      height: 5%;
+  }
 
 }
 @media (max-width: 480px) { 
@@ -606,7 +626,7 @@ top: 0px;
     }
     .tickets_wbs_price_points ul li:before { top: 6px;}
       .why_attend_box_top h3 {font-size: 16px;}
-      .parellax-cube-top { max-width: 130px; top: -1%;}
+      .parellax-cube-top { max-width: 130px; top: 1%;}
       .standard_icon_2 { right: 0; top: 0; max-width: 50px;}
       .tickets_wbs_price_box:hover .standard_icon_2 {
         top: 0;
@@ -651,6 +671,12 @@ top: 0px;
 }
 .why_attend_box p:not(:last-child) {
     padding-bottom: 15px;
+}
+.blockchain_trends:after {
+  top: 99%;
+} 
+.parellax-cube-top {
+  top: 0;
 }
 }
 

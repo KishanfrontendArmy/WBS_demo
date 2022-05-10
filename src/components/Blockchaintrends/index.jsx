@@ -22,7 +22,7 @@ const BlockchainTrends = () => {
                     <div className="title_box col-md-10 mx-auto wow fadeInUp">
                         <h2>Be the first <br />to catch the wind of <br /><strong className="text_org">emerging Blockchain trends</strong></h2>
                     </div>
-                    <div className="blockchain_trends_slider  d-flex align-items-center flex-wrap">
+                    <div className="blockchain_trends_slider  row align-items-center flex-wrap">
                         <div className="blockchain_trends_image_slider col-md-9 swiper wow fadeInLeft">
                             <Swiper slidesPerView={1}
                                 loop={true}

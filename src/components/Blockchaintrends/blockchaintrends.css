@@ -12,6 +12,7 @@
   background: url(/public/image/hero-bg-shap-up.png)no-repeat bottom;
   background-size: 100% 100%;
   position: absolute;
+  z-index: 1;
 }
 
 
@@ -198,8 +199,6 @@ section.blockchain_trends {
 /******************** Sessions CSS ********************/
 
 
-/* /************************** blockchain_trends ************************** / */
-
 
 @media screen and (max-width: 1800px){
 
@@ -372,6 +371,3 @@ section.blockchain_trends {
     .blockchain_trends_quote_detail_img { max-width: 80px; height: 80px;}
     
 }
-
-
-/* /************************** blockchain_trends ************************** / */

@@ -1,6 +1,6 @@
 export const SpeakermodalData = [
   {
-    image: "/image/speaker_model_img_1.jpg",
+    image: "/image/speaker_1.jpg",
     name: "RASHID HAZARI",
     jobtitle: "Job Title 1, Job Title 2",
     companyname: "Company name",

@@ -329,11 +329,50 @@ a:hover {
 
 
 /* /************************** Common CSS ************************** / *
+/************************** keyframes ***************************/
+@keyframes spin {
 
+    0% {
+      transform: rotate3d(0, 1, 0, 0);
+    }
 
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+
+  }
+
+  @-webkit-keyframes rotation {
+      from {
+          -webkit-transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(359deg);
+      }
+  }
+
+  @keyframes jumpLeftRight{
+    0%{
+        transform: rotate(-25deg);
+    }
+  
+    100%{
+        transform: rotate(25deg);
+    }
+  }
+
+  @keyframes rotedAnimation{
+    0%{
+      transform: rotate(0deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+/************************** keyframes ***************************/
 
 /* ****************Animate CSS strat******************************** */
-@charset "UTF-8";
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -3410,3 +3449,47 @@ a:hover {
 }
 /* ****************Animate CSS End******************************** */
 
+
+
+
+
+@keyframes spin {
+
+    0% {
+      transform: rotate3d(0, 1, 0, 0);
+    }
+
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+
+  }
+
+  @-webkit-keyframes rotation {
+      from {
+          -webkit-transform: rotate(0deg);
+      }
+      to {
+          -webkit-transform: rotate(359deg);
+      }
+  }
+
+  @keyframes jumpLeftRight{
+    0%{
+        transform: rotate(-25deg);
+    }
+  
+    100%{
+        transform: rotate(25deg);
+    }
+  }
+
+  @keyframes rotedAnimation{
+    0%{
+      transform: rotate(0deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+  }
