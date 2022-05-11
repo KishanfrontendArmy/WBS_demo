@@ -5,9 +5,14 @@ import { SpeakermodalData } from '../../data';
 
 const Speaker = () => {
     const [speakers, setSpeakers] = useState(SpeakerData);
+    const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
     const loadMore = () => {
         setSpeakers([...speakers, ...SpeakerData]);
+    }
+
+    const speakerHandler = (body) => {
+        setSelectedSpeaker(body);
     }
 
     return (
@@ -27,12 +32,10 @@ const Speaker = () => {
                                     <div className="speaker_img">
                                         <img className="img-fluid" src={data.image} alt="" />
                                         <div className="speaker_plus">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#speaker_model_1">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#speaker_model_1" onClick={() => speakerHandler(data)}>
                                                 +
                                             </button>
-                                            {/* <a href={data.link}>
-                                                +
-                                            </a> */}
+
                                         </div>
                                     </div>
                                     <div className="speaker_name">
@@ -50,26 +53,22 @@ const Speaker = () => {
                     <div className="speaker_model_list">
                         <div className="modal fade speaker_model_otr" id="speaker_model_1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="speaker_model_1_Title" aria-hidden="true">
                             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                {SpeakermodalData && SpeakermodalData.length > 0 && SpeakermodalData.map((data, index) => {
-                                    return (
-                                        <div key={`speaker_model_box ${index}`} className="modal-content speaker_model_box">
-                                            <button type="button" className="speaker_model_close" data-bs-dismiss="modal" aria-label="Close">
-                                                <span>+</span>
-                                            </button>
-                                            <div className="speaker_model_box_inr row d-flex align-items-start justify-content-between">
-                                                <div className="speaker_model_left_box col-sm-12 col-md-5 col-lg-4">
-                                                    <img className="img-fluid" src={data.image} alt="" />
-                                                </div>
-                                                
-                                                <div className="speaker_model_right_box col-sm-12 col-md-7 col-lg-8">
-                                                    <h5 id="speaker_model_1_Title">{data.name}</h5>
-                                                    <strong>{data.jobtitle} <br />{data.companyname}</strong>
-                                                    <p>{data.discription}</p>
-                                                </div>
-                                            </div>
+                                <div key={`speaker_model_box`} className="modal-content speaker_model_box">
+                                    <button type="button" className="speaker_model_close" data-bs-dismiss="modal" aria-label="Close">
+                                        <span>+</span>
+                                    </button>
+                                    <div className="speaker_model_box_inr row d-flex align-items-start justify-content-between">
+                                        <div className="speaker_model_left_box col-sm-12 col-md-5 col-lg-4">
+                                            <img className="img-fluid" src={selectedSpeaker?.image} alt="" />
                                         </div>
-                                    )
-                                })}
+
+                                        <div className="speaker_model_right_box col-sm-12 col-md-7 col-lg-8">
+                                            <h5 id="speaker_model_1_Title">{selectedSpeaker?.name}</h5>
+                                            <strong>{selectedSpeaker?.jobtitle} <br />{selectedSpeaker?.companyname}</strong>
+                                            <p>{selectedSpeaker?.discription}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

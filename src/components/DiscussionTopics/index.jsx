@@ -15,22 +15,22 @@ const DiscussionTopic = () => {
     const sliderForSingleBreakPoint = {
         320: {
             slidesPerView: 1,
-          },
-          480: {
+        },
+        480: {
             slidesPerView: 2,
-          },
-          768: {
+        },
+        768: {
             slidesPerView: 3,
-          },
-          1024: {
+        },
+        1024: {
             slidesPerView: 3,
-          },
-          1025: {
+        },
+        1025: {
             slidesPerView: 4,
-          },
-          1400: {
+        },
+        1400: {
             slidesPerView: 5,
-          }
+        }
     }
     return (
 
@@ -45,15 +45,15 @@ const DiscussionTopic = () => {
                             slidesPerView={5}
                             spaceBetween={14}
                             loop={true}
-                            breakpoints={sliderForSingleBreakPoint}
-                            // loop={true}
-                            // autoplay={{
-                            //     delay: 3500,
-                            //     disableOnInteraction: false,
-                            // }}
                             pagination={{
                                 el: ".discussion_topics_slider .swiper-pagination",
                                 dynamicBullets: true,
+                                clickable: true,
+                            }}
+                            breakpoints={sliderForSingleBreakPoint}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
                             }}
                             className="swiper-wrapper">
                             {DiscussionTopicData && DiscussionTopicData.length > 0 && DiscussionTopicData.map((data, index) => {

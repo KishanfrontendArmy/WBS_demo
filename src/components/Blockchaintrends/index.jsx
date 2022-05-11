@@ -26,6 +26,10 @@ const BlockchainTrends = () => {
                         <div className="blockchain_trends_image_slider col-md-9 swiper wow fadeInLeft">
                             <Swiper slidesPerView={1}
                                 loop={true}
+                                autoplay={{
+                                    delay: 2500,
+                                    disableOnInteraction: false,
+                                }}
                                 navigation={{
                                     nextEl: " .blockchain_trends_button_next ",
                                     prevEl: " .blockchain_trends_button_prev "
@@ -58,6 +62,10 @@ const BlockchainTrends = () => {
                             <div thumbsslider="" className="blockchain_trends_text_slider swiper">
                                 <Swiper slidesPerView={1}
                                     loop={true}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
+                                    }}
                                     navigation={{
                                         nextEl: " .blockchain_trends_button_next ",
                                         prevEl: ".blockchain_trends_button_prev"
@@ -117,6 +125,10 @@ const BlockchainTrends = () => {
                             <div className="blockchain_trends_quotes_slider swiper">
                                 <Swiper slidesPerView={1}
                                     loop={true}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
+                                    }}
                                     navigation={{
                                         nextEl: " .blockchain_trends_quotes_slider_next ",
                                         prevEl: " .blockchain_trends_quotes_slider_prev "
@@ -149,13 +161,13 @@ const BlockchainTrends = () => {
                                         )
                                     })}
                                 </Swiper>
-                                <div className="blockchain_trends_quotes_slider_btns">
-                                    <div className="blockchain_trends_quotes_slider_next">
-                                        <img className="img-fluid" src="/image/left_arrow_blue.png" alt="" />
-                                    </div>
-                                    <div className="blockchain_trends_quotes_slider_prev">
-                                        <img className="img-fluid" src="/image/right_arrow_blue.png" alt="" />
-                                    </div>
+                            </div>
+                            <div className="blockchain_trends_quotes_slider_btns">
+                                <div className="blockchain_trends_quotes_slider_next">
+                                    <img className="img-fluid" src="/image/left_arrow_blue.png" alt="" />
+                                </div>
+                                <div className="blockchain_trends_quotes_slider_prev">
+                                    <img className="img-fluid" src="/image/right_arrow_blue.png" alt="" />
                                 </div>
                             </div>
                         </div>

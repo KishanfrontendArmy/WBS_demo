@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./event.css";
 import WOW from 'wowjs';
+import { FaArrowCircleUp } from 'react-icons/fa';
+import { Button } from './Styles';
 import Header from "../Header";
 import Herobanner from "../Herobanner";
 import Testimonial from "../Testimonial";
@@ -24,11 +26,36 @@ function Event() {
       live: false
     }).init();
   })
+  const [visible, setVisible] = useState(false)
 
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true)
+    }
+    else if (scrolled <= 300) {
+      setVisible(false)
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
 
 
   return (
     <>
+      <Button className="Top_icon">
+        <FaArrowCircleUp onClick={scrollToTop}
+          style={{ display: visible ? 'inline' : 'none' }} />
+      </Button>
       <Header />
       <Herobanner />
       <Testimonial />

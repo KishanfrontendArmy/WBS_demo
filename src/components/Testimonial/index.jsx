@@ -31,6 +31,11 @@ const Testimonial = () => {
                     <div className="row">
                         <div className='testi_video_slider swiper col-12 col-md-10 mx-auto'>
                             <Swiper slidesPerView={1}
+                                loop={true}
+                                autoplay={{
+                                    delay: 3000,
+                                    disableOnInteraction: false,
+                                }}
                                 navigation={{
                                     nextEl: ".testi_video_slider_arrow .swiper-button-next",
                                     prevEl: ".testi_video_slider_arrow .swiper-button-prev"

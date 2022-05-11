@@ -1,13 +1,3 @@
-export const SpeakermodalData = [
-  {
-    image: "/image/speaker_1.jpg",
-    name: "RASHID HAZARI",
-    jobtitle: "Job Title 1, Job Title 2",
-    companyname: "Company name",
-    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-  },
-];
 export const Footermenu = [
   {
     heading: "Media",
@@ -303,16 +293,23 @@ export const SpeakerData = [
     image: "/image/speaker_1.jpg",
     link: "#.",
     name: "RASHID HAZARI",
+    value: 'rashid',
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".1s",
-
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_2.jpg",
     link: "#.",
+    value: 'kathleen',
     name: "KATHLEEN BREITMAN",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".2s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_3.jpg",
@@ -320,6 +317,9 @@ export const SpeakerData = [
     name: "JUSTIN FISHER",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".3s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_4.jpg",
@@ -327,6 +327,9 @@ export const SpeakerData = [
     name: "DAVID CHAUM",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".4s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_5.jpg",
@@ -334,6 +337,9 @@ export const SpeakerData = [
     name: "TIM DRAPER",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".5s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_1.jpg",
@@ -341,6 +347,9 @@ export const SpeakerData = [
     name: "RASHID HAZARI",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".6s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_2.jpg",
@@ -348,6 +357,9 @@ export const SpeakerData = [
     name: "KATHLEEN BREITMAN",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".7s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
   {
     image: "/image/speaker_3.jpg",
@@ -355,6 +367,9 @@ export const SpeakerData = [
     name: "JUSTIN FISHER",
     position: "Job Title 1, Job Title 2 vvCompany name",
     time: ".8s",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    jobtitle: "Job Title 1, Job Title 2",
+    companyname: "Company name",
   },
 ];
 export const TestimonialData = [
