@@ -161,13 +161,14 @@ const BlockchainTrends = () => {
                                         )
                                     })}
                                 </Swiper>
-                            </div>
-                            <div className="blockchain_trends_quotes_slider_btns">
-                                <div className="blockchain_trends_quotes_slider_next">
-                                    <img className="img-fluid" src="/image/left_arrow_blue.png" alt="" />
-                                </div>
-                                <div className="blockchain_trends_quotes_slider_prev">
-                                    <img className="img-fluid" src="/image/right_arrow_blue.png" alt="" />
+
+                                <div className="blockchain_trends_quotes_slider_btns">
+                                    <div className="blockchain_trends_quotes_slider_next">
+                                        <img className="img-fluid" src="/image/left_arrow_blue.png" alt="" />
+                                    </div>
+                                    <div className="blockchain_trends_quotes_slider_prev">
+                                        <img className="img-fluid" src="/image/right_arrow_blue.png" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
