@@ -447,26 +447,31 @@ export const Badges = [
     count: "28",
     total: "M+",
     description: "GENERAL MEDIA",
+    time: ".2s",
   },
   {
     count: "37",
     total: "M+",
     description: "TARGETED MEDIA",
+    time: ".4s",
   },
   {
     count: "430",
     total: "K+",
     description: "TWITTER",
+    time: ".6s",
   },
   {
     count: "380",
     total: "K+",
     description: "LINKEDIN",
+    time: ".8s",
   },
   {
     count: "160",
     total: "K+",
     description: "DIRECT EMAIL",
+    time: "1s",
   },
 ];
 
