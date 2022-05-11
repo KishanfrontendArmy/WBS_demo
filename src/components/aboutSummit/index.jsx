@@ -42,7 +42,7 @@ const AboutSummit = () => {
                 </div>
             </div>
             <div className="about_summit_bottom-cube wow zoomIn">
-                {/* style="display: inline-block;" */}
+             
                 <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
                     <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
                 </span>

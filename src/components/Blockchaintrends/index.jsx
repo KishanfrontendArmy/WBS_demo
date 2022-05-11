@@ -44,7 +44,9 @@ const BlockchainTrends = () => {
                                         <SwiperSlide key={`blockchain_trends_image_slide_box ${index}`} className="swiper-slide blockchain_trends_image_slide_box" >
                                             <img src={data.image} alt="" />
                                             <div className="scale_img_animation">
-                                                <img className='img-fluid' src={data.textimage} alt="" />
+                                                <div class="session_title_img">
+                                                    <img className='img-fluid' src={data.textimage} alt="" />
+                                                </div>
                                             </div>
                                         </SwiperSlide>
                                     )
@@ -65,7 +67,6 @@ const BlockchainTrends = () => {
                                         draggable: true,
 
                                     }}
-                                    // breakpoints={sliderForSingleBreakPoint}
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
                                         return (
