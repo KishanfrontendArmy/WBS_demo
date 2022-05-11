@@ -17,20 +17,20 @@ const Header = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse header_right flex-grow-0" id="navbarNav">
-                        <ul className="navbar-nav d-flex justify-content-between align-items-center">
-                            <li className="nav-item">
-                                <a className="nav-link p-0 active" aria-current="page" href="#">Home</a>
+                        <ul className="navbar-nav d-flex justify-content-between align-items-center" >
+                            <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" >
+                                <a className="nav-link p-0 active" aria-current="page" href="#bannerlink">Home</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                                 <a className="nav-link p-0" href="#speakerslink">SPEAKERS</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                                 <a className="nav-link p-0" href="#testimonialslink">TESTIMONIALS</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                                 <a className="nav-link p-0" href="#sponsorslink">SPONSORS</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                                 <a className="nav-link p-0" href="#medialink">MEDIA</a>
                             </li>
                             <li className="nav-item dropdown" id="navbarNavDarkDropdown">

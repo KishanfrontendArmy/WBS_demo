@@ -93,6 +93,7 @@ a {
   text-transform: uppercase;
   border: 2px solid;
   border-radius: 5px;
+  margin: 10px;
   padding: 12px 15px;
   display: inline-block;
   transition: all 0.3s ease-in-out 0s;
