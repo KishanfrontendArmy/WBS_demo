@@ -53,8 +53,9 @@ function Event() {
   return (
     <>
       <Button className="Top_icon">
-        <FaArrowCircleUp onClick={scrollToTop}
-          style={{ display: visible ? 'inline' : 'none' }} />
+        {/* <FaArrowCircleUp onClick={scrollToTop}
+          style={{ display: visible ? 'inline' : 'none' }} /> */}
+          <img src="/image/bottom_up.svg" alt="" onClick={scrollToTop}  style={{ display: visible ? 'inline' : 'none' }} />
       </Button>
       <Header />
       <Herobanner />
