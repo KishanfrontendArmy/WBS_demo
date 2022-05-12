@@ -179,7 +179,7 @@ a {
 .text_org {
   color: #e57139;
 }
-.scale_img_animation  img:hover {transform: scale(1.1);}
+.scale_img_animation  img:hover {transform: scale(1);}
 .scale_img_animation img {transition: all ease-in-out 0.3s 0s;}
 .scale_img_animation {overflow: hidden; cursor: pointer; display: inline-block;}
 
