@@ -197,7 +197,7 @@ a:hover {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;   
 }
 .fa-envelope { color: #DAA603;}
 /****************** Common CSS *******************/
@@ -206,6 +206,8 @@ a:hover {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
 }
+.Top_icon {bottom: 62px !important;}
+
 
 /* /************************** Common CSS ************************** / */
 
