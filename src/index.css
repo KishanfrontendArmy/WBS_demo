@@ -292,7 +292,7 @@ a:hover {
 
 @media screen and (max-width: 900px){
 
-
+    .Top_icon {left: 92% !important; }
 }
 
 @media screen and (max-width: 767px){
@@ -301,15 +301,15 @@ a:hover {
     .container {padding: 0 30px;} 
     .title_box_small h2 {font-size: 31px;line-height: 42px;}
     .title_box_small > p {font-size: 18px;line-height: 30px;padding: 13px 0 40px;}
+    .Top_icon {left: 90% !important;}    
     
 }   
 @media screen and (max-width: 600px){
     .title_box_small h2 { font-size: 21px; line-height: 32px;}
     .title_box h2 {font-size: 23px;line-height: 30px;}
-    canvas#c {
-        width: 130px;
-        height: 130px;
-    }
+    canvas#c {width: 130px;height: 130px;}
+    .Top_icon {left: 88% !important;}    
+    
 }
 @media screen and (max-width: 479px){
     
@@ -318,6 +318,7 @@ a:hover {
     .text_link {font-size: 16px;}
     .title_box_small h2 {font-size: 24px;line-height: 35px;}
     .title_box_small > p {font-size: 17px;line-height: 28px;}    
+    .Top_icon {left: 85% !important;}
 
 }   
 @media screen and (max-width: 374px){
@@ -325,6 +326,7 @@ a:hover {
     .title_box h2 {font-size: 20px;line-height: 23px;}
     .container {padding: 0 15px;} 
     .title_box_small h2 {font-size: 22px;line-height: 32px;}    
+    .Top_icon {left: 83% !important;}
 
 }   
 

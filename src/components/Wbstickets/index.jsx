@@ -20,7 +20,7 @@ const WbsTickets = () => {
         })
     }
     return (
-        <div className="parellax_bg relative parallax-window w2 page-section" data-parallax="scroll" data-image-src="/image/parellax_bg_img.png" id="bookticketslink">
+        <div className="parellax_bg relative  w2 page-section"  id="bookticketslink">
             <div className="container">
                 <section className="tickets_wbs">
                     <div className="tickets_wbs_title wow fadeInUp" data-wow-delay="0.2s">

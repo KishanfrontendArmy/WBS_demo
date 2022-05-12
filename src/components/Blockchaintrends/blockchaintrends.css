@@ -12,6 +12,7 @@
   background: url(/public/image/hero-bg-shap-up.png)no-repeat bottom;
   background-size: 100% 100%;
   position: absolute;
+  z-index: 1;
 }
 
 

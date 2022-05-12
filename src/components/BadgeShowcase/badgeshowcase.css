@@ -8,6 +8,7 @@
   background: url(/public/image/hero-bg-shap-down1.png)no-repeat bottom;
   background-size: 100% 100%;
   position: absolute;
+  z-index: 1;
 }
 section.media_coverage_img_sec {
     padding: 210px 0 251px;

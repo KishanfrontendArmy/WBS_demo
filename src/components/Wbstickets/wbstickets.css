@@ -17,7 +17,7 @@
   z-index: 1;
 }
 .parellax_bg {
-/*background: url(../images/parellax_bg_img.png) top no-repeat;*/
+background: url(../../../public/image/parellax_bg_img.png) top no-repeat;
 background-repeat: no-repeat;
 background-position: top;
 background-attachment: fixed;
