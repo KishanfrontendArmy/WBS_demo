@@ -132,7 +132,7 @@
 @media screen and (max-width: 767px){
       
   .about_summit_left_btn_box_otr {display: flex !important;flex-wrap: wrap;}
-  .about_summit_single-cube { left: -25px; width: auto;}
+  .about_summit_single-cube { left: -25px; width: auto; opacity: 0.3;}
   
 
 
@@ -149,10 +149,13 @@
   padding: 0;
   width: 100%;
   flex: unset;}
+  .about_summit_bottom-cube.wow.zoomIn {
+    opacity: 0.3;
+  }
 }
 @media screen and (max-width:479px){
       
-  .about_summit_left_btn_box_otr .about_summit_btn_box {width: 100%;padding-bottom: 20px !important;padding: 0;}
+  .about_summit_left_btn_box_otr .about_summit_btn_box {width: 100%;padding-bottom: 0 !important;padding: 0;}
   .about_summit_left_btn_box_otr {display: flex !important;flex-wrap: wrap;}
   .about_summit_right {padding-top: 20px;}    
   .about_summit_bottom-cube.wow.zoomIn { max-width: 100px; bottom: -20px;}

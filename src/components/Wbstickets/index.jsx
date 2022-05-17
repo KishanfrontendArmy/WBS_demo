@@ -247,7 +247,7 @@ const WbsTickets = () => {
                         </div>
                     </div> */}
 
-                    <div className="col-12 col-md-8 col-lg-10 mx-auto">
+                    <div className="col-12 col-xl-12 col-xxl-10 mx-auto">
                         <div className="why_attend_list row">
                             {WhyAttendData && WhyAttendData.length > 0 && WhyAttendData.map((data, index) => {
                                 return (

@@ -88,6 +88,9 @@ section.event_manage_by {
   .event_manage_top_right_icon img.img-fluid {
       max-width: 180px;
   }
+  .event_manage_by_inr {
+    align-items: flex-start !important;
+  }
 }
 
 
@@ -102,6 +105,7 @@ section.event_manage_by {
       width: 50%;
   }
   .event_manage_by_title { width: 100%;}
+  
 }
 @media (max-width: 1400px) {
 
@@ -171,7 +175,12 @@ section.event_manage_by {
   .trescon_logo:before {
       bottom: 16px;
   }
-
+  .event_manage_left_icon {
+    opacity: 0.3;
+    right: 0;
+    transform: scaleX(-1);
+    left: auto !important;
+  }
 }
 @media (max-width: 768px) { 
 
@@ -189,6 +198,7 @@ section.event_manage_by {
   .trescon_logo img { max-width: 300px;}
   .event_manage_top_right_icon img.img-fluid { max-width: 140px;}
   .event_manage_top_right_icon { right: 1%; top: -5%;}
+  
       
 
 }

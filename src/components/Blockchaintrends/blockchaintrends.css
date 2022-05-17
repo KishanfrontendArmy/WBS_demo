@@ -119,6 +119,7 @@
 }
 .blockchain_trends_quotes {
   margin: 20% 0 0% 0;
+  z-index: 15;
 }
 
 .blockchain_trends_quotes_icon {
@@ -185,6 +186,7 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  z-index: 9;
 }
 .blockchain_trends_quotes_slider_btns > div:hover {
   background: #ea8141;
@@ -282,6 +284,11 @@ section.blockchain_trends {
     .blockchain-cube-bottom { max-width: 250px;}
 
     .sessions_list h5 { font-size: 25px;}
+    .blockchain_trends_text_slider_otr {
+      margin-left: -16.333333%;
+      width: 40.333333%;
+    }
+
 
 }
 
@@ -320,7 +327,9 @@ section.blockchain_trends {
 @media screen and (max-width: 767px){
 
     .blockchain_trends_button_next img, .blockchain_trends_button_prev img {max-width: 29px;}
-    .blockchain_trends_button_box > div { width: 50px; height: 50px;}
+    .blockchain_trends_button_box > div { width: 60px; height: 60px; padding: 8px;}
+    .blockchain-cube-bottom { opacity: 0.3;}
+    
 }
 
 @media screen and (max-width: 600px){

@@ -560,7 +560,7 @@ top: 0px;
     padding: 100px 0;
 }
 .why_attend_list.row {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 .blockchain_trends:after {
@@ -626,7 +626,7 @@ top: 0px;
     }
     .tickets_wbs_price_points ul li:before { top: 6px;}
       .why_attend_box_top h3 {font-size: 16px;}
-      .parellax-cube-top { max-width: 130px; top: 1%;}
+      .parellax-cube-top { max-width: 130px; top: 1%; opacity: 0.7;}
       .standard_icon_2 { right: 0; top: 0; max-width: 50px;}
       .tickets_wbs_price_box:hover .standard_icon_2 {
         top: 0;

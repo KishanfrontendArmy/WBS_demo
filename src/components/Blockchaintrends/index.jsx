@@ -26,6 +26,7 @@ const BlockchainTrends = () => {
                         <div className="blockchain_trends_image_slider col-md-9 swiper wow fadeInLeft">
                             <Swiper slidesPerView={1}
                                 loop={true}
+                                allowTouchMove={false}
                                 autoplay={{
                                     delay: 2500,
                                     disableOnInteraction: false,
@@ -36,8 +37,6 @@ const BlockchainTrends = () => {
                                 }}
                                 scrollbar={{
                                     el: ".swiper-scrollbar",
-                                    draggable: true,
-                                    loop: true,
                                 }}
 
                                 // breakpoints={sliderForSingleBreakPoint}
@@ -62,6 +61,7 @@ const BlockchainTrends = () => {
                             <div thumbsslider="" className="blockchain_trends_text_slider swiper">
                                 <Swiper slidesPerView={1}
                                     loop={true}
+                                    allowTouchMove={false}
                                     autoplay={{
                                         delay: 2500,
                                         disableOnInteraction: false,
@@ -72,8 +72,6 @@ const BlockchainTrends = () => {
                                     }}
                                     scrollbar={{
                                         el: ".swiper-scrollbar",
-                                        draggable: true,
-
                                     }}
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
@@ -135,7 +133,6 @@ const BlockchainTrends = () => {
                                     }}
                                     scrollbar={{
                                         el: ".swiper-scrollbar",
-                                        draggable: true,
                                         loop: true,
                                     }}
 

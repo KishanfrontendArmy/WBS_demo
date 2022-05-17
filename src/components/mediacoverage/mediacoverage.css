@@ -88,8 +88,10 @@
 
   .media_coins_icon {width: 150px;top: -140px;}
   .media_coverage_list {flex-wrap: wrap;padding: 72px 0 70px;}
-  .media_coverage_box  { margin:0 25px;}
+  .media_coverage_box  { margin:0 22px;}
   .media_coverage_box:not(:last-child):before { right: -29px; top: -5px;}
+  .media_coverage_box:last-child { max-width: 120px;}
+  
 }
 @media screen and (max-width: 1200px){
 
@@ -124,7 +126,9 @@
   .media_coverage_box { width: auto; margin: 0 23px 30px;}
   .media_number {font-size: 23px;letter-spacing: 1px;}
   .media_coverage_box p {font-size: 14px;margin: 10px 0 0 0;}
-  .media_single_quabe_3 { max-width: 120px; top: -44%; right: 20px;}
+  .media_single_quabe_3 { max-width: 120px; top: -44%; right: 20px; opacity: 0.3;}
+  .media_coverage_box:last-child { max-width: unset;} 
+  .media_coverage_box { width: calc(33.33% - 46px); margin: 0 23px 30px;}
 }
 @media screen and (max-width: 600px){
 

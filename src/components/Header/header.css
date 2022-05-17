@@ -22,7 +22,9 @@ header.header_main {
   font-weight: 700;
   text-align: center;
 }
-
+.header_main.fixed nav.navbar {
+  padding: 0;
+}
 .header_left h6 span {
   display: block;
   background: #e57139;
@@ -97,6 +99,21 @@ header.header_main {
 .header_right ul li .dropdown-menu  li {
   margin: 0;
 }
+.header_left {
+  transform-origin:left center;
+}
+.header_right {
+  transform-origin:right center;
+}
+.header_left , .header_right  {
+  transition: all linear 0.3s 0s;
+}
+.header_main.fixed .header_left , .header_main.fixed .header_right  {
+  transform: scale(0.8);
+}
+.header_main.fixed {
+  padding: 8px 0;
+}
 /******************** Header CSS ********************/
 
 
@@ -112,16 +129,17 @@ header.header_main {
 }
 @media screen and (max-width: 1200px){
   .header_left h6 {font-size: 20px;}
-
+  .show ul li a {font-size: 22px;}
+  .header_right ul li {margin: 15px 0px;}
+  .show .btn_white_bdr, .show .btn_orange {padding-top: 20px;}
 }
 @media screen and (max-width: 1024px){
-  .show ul li a {font-size: 22px;}
+  
   .show ul {display: flex !important;}
   .show {padding-top: 0px;display: flex;flex-wrap: wrap;justify-content: center;}
-  .show .btn_white_bdr, .show .btn_orange {padding-top: 20px;}
   .show ul {width: 100%;display: flex !important;}
   .navbar-dark .navbar-toggler {border: none !important;}
-  .header_right ul li {margin: 15px 0px;}
+ 
   header.header_main {overflow: hidden;}
 
 }
@@ -148,10 +166,11 @@ header.header_main {
 .show .btn_white_bdr, .show .btn_orange {
   padding-top: 0;
 }
-
+.header_right .a_btn:nth-child(2) {
+  margin-bottom: 15px;
+}
 }
 @media screen and (max-width: 374px){
-.header_right .a_btn:nth-child(2) { margin-bottom: 10px;}
 .header_left h6 { font-size: 16px;}
 .header_right ul li a.dropdown-item { font-size: 14px; padding: 6px 20px;}
 .navbar-expand-lg .navbar-nav { margin: 15px 0;}

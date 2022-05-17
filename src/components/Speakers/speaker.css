@@ -36,20 +36,24 @@
 }
 
 .speaker_plus button {
-  color: #ffffff;
+  align-items: center;
+  background: #0e1526;
+  border: none;
+  color: #fff;
+  display: flex;
   font-size: 50px;
   font-weight: 700;
-  width: 55px;
   height: 55px;
-  background: #0e1526;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  border: none;
   outline: none;
-}
+  width: 55px;
+  transition: all 0.3s ease 0s;
+  }
 .speakers_inr .a_btn {
   text-align: center;
+}
+.speaker_plus button:hover {
+  background: #e5713a;
 }
 
 .speakers_inr .a_btn {
@@ -79,22 +83,25 @@
 }
 
 .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
+  align-items: center;
+  background: #0e1526;
+  border: none;
+  color: #fff;
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  height: 55px;
+  justify-content: center;
+  outline: none;
   position: absolute;
   right: 4px;
   top: 4px;
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: 600;
   width: 55px;
-  height: 55px;
-  background: #0e1526;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  outline: none;
+  transition: all 0.3s ease 0s;
 }
-
+.speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close:hover{
+  background: #e5713a;
+  }
 .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close span {
   transform: rotate(45deg);
 }
@@ -291,6 +298,8 @@ a#loadMore {
   
   .speaker_model_right_box, .speaker_model_left_box {
       padding: 0 0 0 0;
+      width: 100%;
+
   }
   .speaker_model_right_box {
       padding-top: 30px;
@@ -304,6 +313,11 @@ a#loadMore {
       .speaker_model_right_box h5 {
           font-size: 26px;
       }
+
+      .speaker_model_otr .modal-dialog .speaker_model_box:before {
+        width: 260px;
+        height: 270px;
+      }
   }
   @media (max-width: 374px) { 
   
@@ -311,21 +325,24 @@ a#loadMore {
           font-size: 22px;
         }
         .speaker_model_right_box p { font-size: 15px; line-height: 27px; }
-        .speaker_model_right_box strong {
-      padding: 10px 0;
-      font-size: 18px;
-  }
-  
-  .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
-      font-size: 44px;
-      width: 45px;
-      height: 45px;
-  }
+        .speaker_model_right_box strong { padding: 10px 0; font-size: 18px;}
+      
+      .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
+          font-size: 44px;
+          width: 45px;
+          height: 45px;
+      }
 
-  .speaker_model_otr .modal-dialog .speaker_model_box {
-    padding: 20px;
-  }
-  
+      .speaker_model_otr .modal-dialog .speaker_model_box {
+        padding: 20px;
+      }
+      .speaker_model_otr .modal-dialog .speaker_model_box:before {
+        width: 200px;
+        height: 200px;
+      }
+      .speaker_model_otr .modal-dialog {
+        padding: 0 15px;
+      }
   
   }
   

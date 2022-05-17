@@ -28,14 +28,14 @@ const Testimonial = () => {
                             <img className="img-fluid" data-parallax='{"scale": 1.2, "x": 50, "y": -15, "rotateZ":30}' src="/image/single_quabe_1.png" />
                         </div>
                     </div>
-                    <div className="row">
-                        <div className='testi_video_slider swiper col-12 col-md-10 mx-auto'>
+                    <div className="row mx-0">
+                        <div className='testi_video_slider swiper col-12 col-lg-10 mx-auto'>
                             <Swiper slidesPerView={1}
                                 loop={true}
                                 autoplay={{
                                     delay: 3000,
                                     // autoplayDisableOnMouseEnter: false,
-                                    disableOnInteraction: true,
+                                    disableOnInteraction: false,
                                     pauseOnMouseEnter: true,
 
                                 }}
@@ -55,10 +55,10 @@ const Testimonial = () => {
                                 })}
 
                                 <div className="testi_video_slider_arrow wow zoomIn">
-                                    <div className="swiper-button-next" data-parallax='{"x": 30, "y": 0}'>
+                                    <div className="swiper-button-next" >
                                         <img className="img-fluid" src="/image/right-arrow.png" alt="" />
                                     </div>
-                                    <div className="swiper-button-prev" data-parallax='{"x": -30, "y": 0}'>
+                                    <div className="swiper-button-prev">
                                         <img className="img-fluid" src="/image/left-arrow.png" alt="" />
                                     </div>
                                 </div>
