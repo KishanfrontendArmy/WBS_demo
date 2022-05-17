@@ -44,10 +44,10 @@ const Header = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <div className="a_btn a_btn_bdr btn_white_bdr">
-                            <a href="#.">Enquire</a>
+                        <div className="a_btn a_btn_bdr btn_white_bdr" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                            <a href="#medialink">Enquire</a>
                         </div>
-                        <div className="a_btn a_btn_fill btn_orange">
+                        <div className="a_btn a_btn_fill btn_orange" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
                             <a href="#bookticketslink">Book Tickets</a>
                         </div>
                     </div>

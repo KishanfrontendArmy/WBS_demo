@@ -4,15 +4,15 @@
   position: relative;
 }
 .blockchain_trends:after {
+  z-index: 1;
   content: "";
   left: 0;
-  top: 93%;
+  top: 96%;
   right: 0;
   height: 20%;
   background: url(/public/image/hero-bg-shap-up.png)no-repeat bottom;
   background-size: 100% 100%;
   position: absolute;
-  z-index: 1;
 }
 
 

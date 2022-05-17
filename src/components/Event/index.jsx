@@ -30,10 +30,10 @@ function Event() {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
+    if (scrolled > 400) {
       setVisible(true)
     }
-    else if (scrolled <= 300) {
+    else if (scrolled <= 400) {
       setVisible(false)
     }
   };
@@ -52,10 +52,9 @@ function Event() {
 
   return (
     <>
-      <Button className="Top_icon">
-        {/* <FaArrowCircleUp onClick={scrollToTop}
-          style={{ display: visible ? 'inline' : 'none' }} /> */}
-          <img src="/image/bottom_up.svg" alt="" onClick={scrollToTop}  style={{ display: visible ? 'inline' : 'none' }} />
+      <Button className="Top_icon" style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}>
+        <img src="/image/bottom_up.svg" alt="" />
+        {/* <FaArrowCircleUp onClick={scrollToTop} /> */}
       </Button>
       <Header />
       <Herobanner />

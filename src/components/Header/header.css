@@ -117,7 +117,7 @@ header.header_main {
 @media screen and (max-width: 1024px){
   .show ul li a {font-size: 22px;}
   .show ul {display: flex !important;}
-  .show {padding-top: 50px;display: flex;flex-wrap: wrap;justify-content: center;}
+  .show {padding-top: 0px;display: flex;flex-wrap: wrap;justify-content: center;}
   .show .btn_white_bdr, .show .btn_orange {padding-top: 20px;}
   .show ul {width: 100%;display: flex !important;}
   .navbar-dark .navbar-toggler {border: none !important;}

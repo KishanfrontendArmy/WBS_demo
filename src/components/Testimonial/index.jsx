@@ -34,8 +34,12 @@ const Testimonial = () => {
                                 loop={true}
                                 autoplay={{
                                     delay: 3000,
-                                    disableOnInteraction: false,
+                                    // autoplayDisableOnMouseEnter: false,
+                                    disableOnInteraction: true,
+                                    pauseOnMouseEnter: true,
+
                                 }}
+
                                 navigation={{
                                     nextEl: ".testi_video_slider_arrow .swiper-button-next",
                                     prevEl: ".testi_video_slider_arrow .swiper-button-prev"
@@ -63,7 +67,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

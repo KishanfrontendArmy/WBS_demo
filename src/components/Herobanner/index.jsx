@@ -59,27 +59,13 @@ const Herobanner = () => {
                                                 </li>
                                             </ul>
                                         </div>
-                                        {/* <!-- <a href="#." className="text_link text_link_org">Add to Calendar</a>
-                                        <div id="calDropdown" className="cal-dropdown-content show">
-                                            <a href="#." download="">
-                                                <span className="fab fa-apple"></span>
-                                                Apple
-                                            </a>
-                                            <a href="#." download="">
-                                                <span className="fab fa-apple"></span>
-                                                Apple
-                                            </a>
-                                            <a href="#." download="">
-                                                <span className="fab fa-apple"></span>
-                                                Apple
-                                            </a>
-                                        </div> --> */}
+
                                     </div>
                                     <div className="a_btn a_btn_bdr btn_org_bdr">
                                         <a href="#.">Enquire Now</a>
                                     </div>
                                     <div className="a_btn a_btn_fill btn_orange">
-                                        <a href="#.">Book Tickets</a>
+                                        <a href="bookticketslink">Book Tickets</a>
                                     </div>
                                     <small>Reserve your tickets for upcoming events at special prices</small>
                                     <div className="fill_img_box">
