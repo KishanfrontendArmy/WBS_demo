@@ -42,6 +42,7 @@ const DiscussionTopic = () => {
                     </div>
                     <div className="discussion_topics_slider swiper">
                         <Swiper
+
                             slidesPerView={5}
                             spaceBetween={14}
                             loop={true}
@@ -56,7 +57,7 @@ const DiscussionTopic = () => {
                                 disableOnInteraction: false,
                             }}
                             className="swiper-wrapper">
-                            {DiscussionTopicData && DiscussionTopicData.length > 0 && DiscussionTopicData.map((data, index) => {
+                            {DiscussionTopicData?.map((data, index) => {
                                 return (
                                     <SwiperSlide key={`discussion_topics_slide_item ${index}`}>
                                         <div className="swiper-slide discussion_topics_slide_item d-flex align-items-center justify-content-center flex-column wow fadeInRight" data-wow-delay={data.time} >

@@ -98,6 +98,8 @@
 .hero_banner_text_right {
   padding: 0 21px;
   text-align: center;
+  position: relative;
+  z-index: 9;
 }
 .hero_banner_text_left h1 sup {
   vertical-align: -10px;
@@ -120,7 +122,15 @@
 .hero_banner_text_right .btn_org_bdr {
   margin: 21px 0;
 }
-
+.hero_banner_text_right .btn_org_bdr a:hover{
+  border-color: #ffffff;
+  background: no-repeat;
+}
+.hero_banner_text_right .a_btn_fill.btn_orange a:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0d1329;
+}
 .hero_banner_text_right small {
   font-size: 14px;
   text-align: center;

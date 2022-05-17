@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './blockchaintrends.css';
 import "./swiper.min.css";
 import { BlockchainTrendsData, BlockchainSessionsData } from '../../data';
@@ -6,14 +6,35 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import * as $ from 'jquery';
+
 import { loadAnimation } from "lottie-web";
 import { defineLordIconElement } from "lord-icon-element";
 
-import SwiperCore, { Navigation, Scrollbar, Autoplay } from 'swiper';
-SwiperCore.use([Navigation, Scrollbar, Autoplay]);
+import SwiperCore, { Navigation, Scrollbar, Autoplay, Thumbs } from 'swiper';
+SwiperCore.use([Navigation, Scrollbar, Autoplay, Thumbs]);
+
 
 const BlockchainTrends = () => {
     defineLordIconElement(loadAnimation);
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+    document.getElementsByClassName("secandary")[1]?.addEventListener("mouseover", function () {
+        document.getElementById('mainSwiper').swiper.autoplay.stop();
+    });
+
+    document.getElementsByClassName("secandary")[1]?.addEventListener("mouseout", function () {
+        document.getElementById('mainSwiper').swiper.autoplay.start();
+    });
+
+    document.getElementsByClassName("secandary")[0]?.addEventListener("mouseover", function () {
+        document.getElementById('subSwiper').swiper.autoplay.stop();
+    });
+
+    document.getElementsByClassName("secandary")[0]?.addEventListener("mouseout", function () {
+        document.getElementById('subSwiper').swiper.autoplay.start();
+    });
+
     return (
         <>
 
@@ -23,22 +44,24 @@ const BlockchainTrends = () => {
                         <h2>Be the first <br />to catch the wind of <br /><strong className="text_org">emerging Blockchain trends</strong></h2>
                     </div>
                     <div className="blockchain_trends_slider  row align-items-center flex-wrap">
-                        <div className="blockchain_trends_image_slider col-md-9 swiper wow fadeInLeft">
+                        <div className="blockchain_trends_image_slider col-md-9 swiper wow fadeInLeft secandary">
+
                             <Swiper slidesPerView={1}
+                                id="mainSwiper"
+                                thumbs={{ swiper: thumbsSwiper }}
                                 loop={true}
-                                allowTouchMove={false}
                                 autoplay={{
                                     delay: 2500,
                                     disableOnInteraction: false,
+                                    pauseOnMouseEnter: true
                                 }}
                                 navigation={{
                                     nextEl: " .blockchain_trends_button_next ",
                                     prevEl: " .blockchain_trends_button_prev "
                                 }}
-                                scrollbar={{
-                                    el: ".swiper-scrollbar",
-                                }}
-
+                                // scrollbar={{
+                                //     el: ".swiper-scrollbar",
+                                // }}
                                 // breakpoints={sliderForSingleBreakPoint}
                                 className="swiper-wrapper">
                                 {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
@@ -58,21 +81,22 @@ const BlockchainTrends = () => {
                             </Swiper>
                         </div>
                         <div className="blockchain_trends_text_slider_otr col-md-4">
-                            <div thumbsslider="" className="blockchain_trends_text_slider swiper">
-                                <Swiper slidesPerView={1}
+                            <div thumbsslider="" className="blockchain_trends_text_slider swiper secandary">
+                                <Swiper id="subSwiper" slidesPerView={1} onSwiper={setThumbsSwiper}
                                     loop={true}
-                                    allowTouchMove={false}
                                     autoplay={{
                                         delay: 2500,
                                         disableOnInteraction: false,
+                                        pauseOnMouseEnter: true
                                     }}
+                                    allowTouchMove={false}
                                     navigation={{
                                         nextEl: " .blockchain_trends_button_next ",
                                         prevEl: ".blockchain_trends_button_prev"
                                     }}
-                                    scrollbar={{
-                                        el: ".swiper-scrollbar",
-                                    }}
+                                    // scrollbar={{
+                                    //     el: ".swiper-scrollbar",
+                                    // }}
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
                                         return (

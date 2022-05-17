@@ -65,7 +65,7 @@ const Herobanner = () => {
                                         <a href="#.">Enquire Now</a>
                                     </div>
                                     <div className="a_btn a_btn_fill btn_orange">
-                                        <a href="bookticketslink">Book Tickets</a>
+                                        <a href="#bookticketslink">Book Tickets</a>
                                     </div>
                                     <small>Reserve your tickets for upcoming events at special prices</small>
                                     <div className="fill_img_box">

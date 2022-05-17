@@ -7,8 +7,11 @@ import 'swiper/css';
 import 'swiper/css/navigation'
 
 import SwiperCore, { Navigation, Scrollbar, Autoplay } from 'swiper';
+import * as $ from 'jquery';
 import { TestimonialData } from '../../data';
 SwiperCore.use([Navigation, Scrollbar, Autoplay]);
+
+
 
 const Testimonial = () => {
     return (
@@ -39,7 +42,14 @@ const Testimonial = () => {
                                     pauseOnMouseEnter: true,
 
                                 }}
-
+                                // onSlideChange={(e) => {
+                                //     $('.swiper-slide').each(function () {
+                                //         var youtubePlayer = $(this).find('iframe').get(0);
+                                //         if (youtubePlayer) {
+                                //             youtubePlayer.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                                //         }
+                                //     });
+                                // }}
                                 navigation={{
                                     nextEl: ".testi_video_slider_arrow .swiper-button-next",
                                     prevEl: ".testi_video_slider_arrow .swiper-button-prev"

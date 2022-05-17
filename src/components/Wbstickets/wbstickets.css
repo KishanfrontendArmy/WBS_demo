@@ -17,10 +17,11 @@
   z-index: 1;
 }
 .parellax_bg {
-background: url(../../../public/image/parellax_bg_img.png) top no-repeat;
+background: url(../../../public/image/shape_bg.jpg) top no-repeat;
 background-repeat: no-repeat;
 background-position: top;
 background-attachment: fixed;
+background-size:cover;
 padding: 381px 0 448px 0;
 
 }
@@ -133,6 +134,7 @@ color: #e57139;
 .tickets_wbs_price_box_top_text h3 {
 font-size: 51px;
 color: #ffffff;
+font-weight:700;
 }
 
 .tickets_wbs_price_box_top_text .a_btn {

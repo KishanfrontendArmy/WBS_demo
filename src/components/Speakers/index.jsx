@@ -4,11 +4,12 @@ import { SpeakerData } from '../../data';
 import { SpeakermodalData } from '../../data';
 
 const Speaker = () => {
-    const [speakers, setSpeakers] = useState(SpeakerData);
+    const [step, setStep] = useState(1);
+    const [showSpeaker, setShowSpeaker] = useState(8);
     const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
     const loadMore = () => {
-        setSpeakers([...speakers, ...SpeakerData]);
+        setStep((step + 1));
     }
 
     const speakerHandler = (body) => {
@@ -25,30 +26,34 @@ const Speaker = () => {
                     </div>
                     <div className="speakers_list_otr row" id="myList" >
 
-                        {speakers && speakers.length > 0 && speakers.map((data, index) => {
-                            return (
+                        {SpeakerData?.map((data, index) => {
+                            if (index < (step * showSpeaker)) {
+                                return (
+                                    <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp" data-wow-delay={data.time}>
+                                        <div className="speaker_img">
+                                            <img className="img-fluid" src={data.image} alt="" />
+                                            <div className="speaker_plus">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#speaker_model_1" onClick={() => speakerHandler(data)}>
+                                                    +
+                                                </button>
 
-                                <div key={`speaker_img ${index}`} className="speaker_box col-12 col-sm-6 col-md-4 col-lg-3 px-1 wow fadeInUp" data-wow-delay={data.time}>
-                                    <div className="speaker_img">
-                                        <img className="img-fluid" src={data.image} alt="" />
-                                        <div className="speaker_plus">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#speaker_model_1" onClick={() => speakerHandler(data)}>
-                                                +
-                                            </button>
-
+                                            </div>
+                                        </div>
+                                        <div className="speaker_name">
+                                            <h3>{data.name}</h3>
+                                        </div>
+                                        <div className="speaker_position">
+                                            <p>{data.position}</p>
                                         </div>
                                     </div>
-                                    <div className="speaker_name">
-                                        <h3>{data.name}</h3>
-                                    </div>
-                                    <div className="speaker_position">
-                                        <p>{data.position}</p>
-                                    </div>
-                                </div>
-                            )
+                                )
+                            } else {
+                                return null;
+                            }
                         })}
 
                     </div>
+
 
                     <div className="speaker_model_list">
                         <div className="modal fade speaker_model_otr" id="speaker_model_1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="speaker_model_1_Title" aria-hidden="true">
@@ -73,14 +78,16 @@ const Speaker = () => {
                         </div>
                     </div>
 
-                    <div className="a_btn a_btn_fill btn_orange wow fadeInUp">
-                        <a id="loadMore" onClick={loadMore}>
-                            VIEW MORE speakers
-                            <svg xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" width="13px" height="12px">
-                                <path fillRule="evenodd" fill="rgb(255, 255, 255)" d="M6.277,11.406 L0.148,0.791 L12.406,0.791 L6.277,11.406 Z" />
-                            </svg>
-                        </a>
-                    </div>
+                    {SpeakerData?.length > (showSpeaker * step) && (
+                        <div className="a_btn a_btn_fill btn_orange wow fadeInUp">
+                            <a id="loadMore" onClick={loadMore}>
+                                VIEW MORE speakers
+                                <svg xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" width="13px" height="12px">
+                                    <path fillRule="evenodd" fill="rgb(255, 255, 255)" d="M6.277,11.406 L0.148,0.791 L12.406,0.791 L6.277,11.406 Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="speakers-cube-bottom wow zoomIn">
