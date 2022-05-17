@@ -35,7 +35,7 @@ const Testimonial = () => {
                                 autoplay={{
                                     delay: 3000,
                                     // autoplayDisableOnMouseEnter: false,
-                                    disableOnInteraction: true,
+                                    disableOnInteraction: false,
                                     pauseOnMouseEnter: true,
 
                                 }}

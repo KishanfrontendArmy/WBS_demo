@@ -28,7 +28,7 @@ const AboutSummit = () => {
                             </div>
                             <div className="about_summit_btn_box col-12 col-sm-6 col-md-4">
                                 <div className="a_btn a_btn_bdr btn_white_bdr">
-                                    <a href="#.">Book Tickets</a>
+                                    <a href="#bookticketslink">Book Tickets</a>
                                 </div>
                                 <p>Reserve your tickets for upcoming events at special prices</p>
                             </div>
@@ -42,7 +42,7 @@ const AboutSummit = () => {
                 </div>
             </div>
             <div className="about_summit_bottom-cube wow zoomIn">
-             
+
                 <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
                     <img className="img-fluid" src="/image/cube-6-png.png" alt="" />
                 </span>
