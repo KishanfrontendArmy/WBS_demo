@@ -518,22 +518,22 @@ export const SpeakerData = [
 ];
 export const TestimonialData = [
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
   {
-    link: "https://www.youtube.com/embed/C0DPdy98e4c",
+    link: "https://www.youtube.com/embed/C0DPdy98e4c?enablejsapi=1&version=3&playerapiid=ytplayer",
   },
 ];
 
