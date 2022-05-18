@@ -104,6 +104,7 @@ header.header_main {
 }
 .header_right {
   transform-origin:right center;
+  height: auto !important;
 }
 .header_left , .header_right  {
   transition: all linear 0.3s 0s;
@@ -168,6 +169,9 @@ header.header_main {
 }
 .header_right .a_btn:nth-child(2) {
   margin-bottom: 15px;
+}
+.navbar-expand-lg .navbar-nav {
+  margin-bottom: 20px;
 }
 }
 @media screen and (max-width: 374px){

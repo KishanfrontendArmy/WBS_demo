@@ -17,6 +17,10 @@ section.who_attends {
   padding: 54px 0 60px;
 }
 
+.who_attends_sector.nav-pills {
+  justify-content: center !important;
+}
+
 .who_attends_sector_item {
   background: #ea8141;
   border-radius: 50px;
