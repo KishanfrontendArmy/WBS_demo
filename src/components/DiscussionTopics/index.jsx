@@ -15,9 +15,11 @@ const DiscussionTopic = () => {
     const sliderForSingleBreakPoint = {
         320: {
             slidesPerView: 1,
+            autoHeight: true,
         },
         480: {
             slidesPerView: 2,
+            autoHeight: false,
         },
         768: {
             slidesPerView: 3,
@@ -48,7 +50,6 @@ const DiscussionTopic = () => {
                             loop={true}
                             pagination={{
                                 el: ".discussion_topics_slider .swiper-pagination",
-                                dynamicBullets: true,
                                 clickable: true,
                             }}
                             breakpoints={sliderForSingleBreakPoint}

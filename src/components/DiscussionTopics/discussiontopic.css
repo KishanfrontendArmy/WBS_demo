@@ -19,27 +19,19 @@
 .discussion_topics_img img {
     max-width: 110px;
 }
-.discussion_topics_slider .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  width: 92px;
-  height: 10px;
-  border-radius: 0;
-  background: #202249;
-  opacity: 1;
-  transform: scale(1) translateX(-221%);
-}
 .discussion_topics_slider .swiper-pagination-bullet {
   width: 92px;
   height: 10px;
   border-radius: 0;
   background: #202249;
   opacity: 1;
-  transform: scale(1) translateX(-221%);
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.discussion_topics_slider .swiper-pagination {
+/* .discussion_topics_slider .swiper-pagination {
   width: 297px !important;
   bottom: 0  !important;
-}
+} */
 
 .discussion_topics_slider
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -78,7 +70,8 @@
   .discussion_topics_slide_item  {
     padding: 35px 0;
   }
-  
+  .discussion_topics_slider .swiper-pagination-bullet {
+    width: 70px;}
 }
 @media screen and (max-width: 1440px){
 
@@ -100,7 +93,9 @@
     font-size: 16px;
 }
   .discussion_topics_slide_item { padding: 30px 0; }
-
+  .discussion_topics_slider .swiper-pagination-bullet {
+    width: 50px;
+}
 }
 @media screen and (max-width: 1024px){
   
@@ -114,13 +109,20 @@
   .discussion_topics {padding: 78px 0 0 0;}
   .discussion_topics_slide_item p {font-size: 17px;line-height: 22px;}
   .discussion_topics_img img { max-width: 70px;}
+  .discussion_topics_slider .swiper-pagination-bullet {
+    width: 40px;
+    height:8px;
+}
 
 }
 @media screen and (max-width: 767px){
 
   .discussion_topics {padding: 68px 0 0 0;}
   .discussion_topics_slider {padding: 45px 0px 60px 0;}
-  
+  .discussion_topics_slider .swiper-pagination-bullet {
+    width: 30px;
+    height:8px;
+}
 
 }
 @media screen and (max-width: 600px){
@@ -140,6 +142,10 @@
   font-size: 20px;
 }
 .navbar-expand-lg .navbar-nav{margin-bottom:0;}
+.discussion_topics_slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 6px;
+}
 }
 @media screen and (max-width: 480px){
   .discussion_topics_slider {padding:30px 0px 10px 0; max-width: 300px;}
@@ -147,18 +153,15 @@
 .discussion_topics {
   padding-top: 40px;
 }
-.discussion_topics_slider .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  width: 50px;
-  height: 6px;
-  transform: scale(1) translateX(-230%);
-}
-.discussion_topics_slider .swiper-pagination {
-  width: 170px !important;
-  bottom: 0 !important;
+.discussion_topics_slider .swiper.swiper-wrapper {
+  padding-bottom: 30px;
 }
 }
 @media screen and (max-width: 374px){
-
+  .discussion_topics_slider .swiper-pagination-bullet {
+    width: 15px;
+    height: 5px;
+}
 }
 
 /* /************************** discussion_topics ************************** / */
