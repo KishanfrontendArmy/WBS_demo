@@ -20,7 +20,7 @@ const WbsTickets = () => {
         })
     }
     return (
-        <div className="parellax_bg relative  w2 page-section"  id="bookticketslink">
+        <div className="parellax_bg relative  w2 page-section" id="bookticketslink">
             <div className="container">
                 <section className="tickets_wbs">
                     <div className="tickets_wbs_title wow fadeInUp" data-wow-delay="0.2s">
@@ -163,95 +163,12 @@ const WbsTickets = () => {
                     <div className="why_attend_title wow fadeInUp">
                         <h2>WHY ATTEND?</h2>
                     </div>
-                    {/* <div className="col-12 col-xl-12 col-xxl-10 mx-auto">
-                        <div className="why_attend_list row">
-                            <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                                <div className="why_attend_box_bg">
-                                    <div className="why_attend_box_top d-flex align-items-center">
-                                        <div className="why_attend_box_icon d-flex align-items-center justify-content-center">
-                                            <img className="img-fluid" src="/image/why_attend_icon_new_1.gif" alt="" />
-                                        </div>
-                                        <h3>WHY SHOULD GOVERNMENTS ATTEND?</h3>
-                                    </div>
-                                    <input type="checkbox" id={`read-more-box`} onClick={(e) => Automoreless(e.target.checked)} className={`more_less_testi_input more_less_testi_input`} name="accordion-footer-item" />
-                                    <div className="content-box">
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                    </div>
-                                    <label for="read-more-box1" className="more_less_testi_more_btn"></label>
-                                </div>
-                            </div>
-                            <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                                <div className="why_attend_box_bg">
-                                    <div className="why_attend_box_top d-flex align-items-center">
-                                        <div className="why_attend_box_icon d-flex align-items-center justify-content-center">
-                                            <img className="img-fluid" src="/image/why_attend_icon_new_2.gif" alt="" />
-                                        </div>
-                                        <h3>WHY SHOULD ENTERPRISES ATTEND?</h3>
-                                    </div>
-                                    <input type="checkbox" id={`read-more-box`} onClick={(e) => Automoreless(e.target.checked)} className={`more_less_testi_input more_less_testi_input`} name="accordion-footer-item" />
-                                    <div className="content-box">
-                                        <p>Explore innovative blockchain products, network with regional governments and potential partners </p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                    </div>
-
-                                    <label for="read-more-box2" className="more_less_testi_more_btn"></label>
-                                </div>
-                            </div>
-                            <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                                <div className="why_attend_box_bg">
-                                    <div className="why_attend_box_top d-flex align-items-center">
-                                        <div className="why_attend_box_icon d-flex align-items-center justify-content-center">
-                                            <img className="img-fluid" src="/image/why_attend_icon_new_3.gif" alt="" />
-                                        </div>
-                                        <h3>WHY SHOULD GOVERNMENTS ATTEND?</h3>
-                                    </div>
-                                    <input type="checkbox" id={`read-more-box`} onClick={(e) => Automoreless(e.target.checked)} className={`more_less_testi_input more_less_testi_input`} name="accordion-footer-item" />
-                                    <div className="content-box">
-                                        <p>Showcase innovations, get brand exposure and network with investors to help raise funds </p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                    </div>
-
-                                    <label for="read-more-box3" className="more_less_testi_more_btn"></label>
-                                </div>
-                            </div>
-                            <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
-                                <div className="why_attend_box_bg">
-                                    <div className="why_attend_box_top d-flex align-items-center">
-                                        <div className="why_attend_box_icon d-flex align-items-center justify-content-center">
-                                            <img className="img-fluid" src="/image/why_attend_icon_new_4.gif" alt="" />
-                                        </div>
-                                        <h3>WHY SHOULD GOVERNMENTS ATTEND?</h3>
-                                    </div>
-                                    <input type="checkbox" id={`read-more-box`} onClick={(e) => Automoreless(e.target.checked)} className={`more_less_testi_input more_less_testi_input`} name="accordion-footer-item" />
-                                    <div className="content-box">
-                                        <p>Showcase innovations, get brand exposure and network with investors to help raise funds </p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                        <p>Draft new regulations, meet potential partners, network with global blockchain experts</p>
-                                    </div>
-
-                                    <label for="read-more-box4" className="more_less_testi_more_btn"></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
 
                     <div className="col-12 col-xl-12 col-xxl-10 mx-auto">
                         <div className="why_attend_list row">
                             {WhyAttendData && WhyAttendData.length > 0 && WhyAttendData.map((data, index) => {
                                 return (
-                                    <div className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay={data.time}>
+                                    <div key={`why_attend_box ${index}`} className="why_attend_box col-12 col-md-6 wow fadeInUp" data-wow-delay={data.time}>
                                         <div className="why_attend_box_bg">
 
                                             <div className="why_attend_box_top d-flex align-items-center">
@@ -269,7 +186,7 @@ const WbsTickets = () => {
                                                 <p>{data.discription} </p>
 
                                             </div>
-                                            <label for={`read-more-box${(index)}`} className="more_less_testi_more_btn"></label>
+                                            <label htmlFor={`read-more-box${(index)}`} className="more_less_testi_more_btn"></label>
 
 
                                         </div>
