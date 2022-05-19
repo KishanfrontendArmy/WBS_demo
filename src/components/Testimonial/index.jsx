@@ -14,7 +14,6 @@ SwiperCore.use([Navigation, Scrollbar, Autoplay]);
 const Testimonial = () => {
 
     const videopauseonswipe = () => {
-        // alert("Inside")
         $('.yt_player_iframe').each(function () {
             this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
         })
@@ -22,8 +21,6 @@ const Testimonial = () => {
 
     window.addEventListener('scroll', () => {
         const rect = document.querySelector('iframe').getBoundingClientRect();
-        console.log("document.documentElement.clientHeight", document.documentElement.clientHeight)
-        console.log("rect", rect);
         if (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -90,7 +87,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 

@@ -111,7 +111,6 @@ a {
     position: relative;
 }
 .who_attends_sector.nav-pills li {
-    padding: 15px 20px;
     z-index: 0;
 }
 .who_attends_sector.nav-pills li button.tabbs_button{
@@ -121,7 +120,8 @@ a {
     text-transform: uppercase;
     padding: 0;
     background: none !important;
-    opacity:1;
+    opacity:0.5;
+    padding: 15px 20px;
 }
 .who_attends_tabs_box .slider
 {
@@ -130,7 +130,6 @@ a {
   border-radius:3px;
   background-color:#e57139;
   position:absolute;
-  z-index:-1;
   bottom:0;
   transition:all .4s linear;
   left: 50%;
@@ -138,9 +137,7 @@ a {
   top: 0;
   bottom: 0; 
 }
-.tabbs_button.active .slider {
-    left: 0;
-}
+
 .who_attends_sector.nav-pills li button.tabbs_button.active{
     opacity:1;
 }
@@ -425,11 +422,8 @@ a:hover {
     .container {padding: 0 15px;} 
     .title_box_small h2 {font-size: 22px;line-height: 32px;}    
     .Top_icon {left: 83% !important;}
-    .who_attends_sector.nav-pills li {
+    .who_attends_sector.nav-pills li button.tabbs_button{
         padding: 15px 18px;
-    }
-    .who_attends_sector.nav-pills {
-        padding: 0 0;
     }
 }   
 

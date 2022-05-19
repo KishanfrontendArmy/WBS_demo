@@ -76,84 +76,6 @@ export const SponserData = [
     image: "/image/sponsors-logos.jpg",
   },
 ];
-export const WhoAttendPeopleData = [
-  {
-    people: "CEOs / CTOs / COOs / CIOs",
-  },
-  {
-
-    people: "Heads of Automation",
-  },
-  {
-    people: "Business Heads",
-  },
-  {
-    people: "VPs / Directors",
-  },
-  {
-    people: "Heads of Analytics",
-  },
-  {
-    people: "Managing Partners / Principals / Managing Director",
-  },
-  {
-    people: "AI Professionals",
-  },
-  {
-    people: "Digital Officers",
-  },
-  {
-    people: "VPs of IT",
-  },
-  {
-    people: "Heads of Data Science",
-  },
-  {
-    people: "Developers Investors",
-  },
-];
-export const WhoAttendData = [
-  {
-    Sector: "Governments",
-    time: ".1s",
-  },
-  {
-    Sector: "Retail",
-    time: ".2s",
-  },
-  {
-    Sector: "Ecommerce",
-    time: ".3s",
-  },
-  {
-    Sector: "Transportation",
-    time: ".4s",
-  },
-  {
-    Sector: "Tourism & Hospitality",
-    time: ".5s",
-  },
-  {
-    Sector: "Utilities",
-    time: ".6s",
-  },
-  {
-    Sector: "Real Estate & Infrastructure",
-    time: ".7s",
-  },
-  {
-    Sector: "BFSI",
-    time: ".8s",
-  },
-  {
-    Sector: "Fintech",
-    time: ".9s",
-  },
-  {
-    Sector: "Healthcare",
-    time: "1s",
-  },
-];
 
 export const BlockchainSessionsData = [
   {
@@ -659,6 +581,95 @@ export const WhyAttendData = [
     discription: "Meet curated startups/ICOs, network with elites from enterprises, governments and global blockchain experts ",
     time: ".8s",
   },
+]
+
+export const blockchainSummit = [
+  {
+    name: 'SECTOR',
+    type: 0,
+    child: [
+      {
+        Sector: "Governments",
+        time: ".1s",
+      },
+      {
+        Sector: "Retail",
+        time: ".2s",
+      },
+      {
+        Sector: "Ecommerce",
+        time: ".3s",
+      },
+      {
+        Sector: "Transportation",
+        time: ".4s",
+      },
+      {
+        Sector: "Tourism & Hospitality",
+        time: ".5s",
+      },
+      {
+        Sector: "Utilities",
+        time: ".6s",
+      },
+      {
+        Sector: "Real Estate & Infrastructure",
+        time: ".7s",
+      },
+      {
+        Sector: "BFSI",
+        time: ".8s",
+      },
+      {
+        Sector: "Fintech",
+        time: ".9s",
+      },
+      {
+        Sector: "Healthcare",
+        time: "1s",
+      },
+    ],
+  },
+  {
+    name: "PROFILE",
+    type: 1,
+    child: [
+      {
+        people: "CEOs / CTOs / COOs / CIOs",
+      },
+      {
+
+        people: "Heads of Automation",
+      },
+      {
+        people: "Business Heads",
+      },
+      {
+        people: "VPs / Directors",
+      },
+      {
+        people: "Heads of Analytics",
+      },
+      {
+        people: "Managing Partners / Principals / Managing Director",
+      },
+      {
+        people: "AI Professionals",
+      },
+      {
+        people: "Digital Officers",
+      },
+      {
+        people: "VPs of IT",
+      },
+      {
+        people: "Heads of Data Science",
+      },
+      {
+        people: "Developers Investors",
+      },
+    ]
+  }
 ]
 
 export const ShowCaseData = [
