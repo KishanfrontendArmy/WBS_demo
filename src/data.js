@@ -590,43 +590,43 @@ export const blockchainSummit = [
     child: [
       {
         Sector: "Governments",
-        time: ".1s",
+        timedelay: ".3s",
       },
       {
         Sector: "Retail",
-        time: ".2s",
+        timedelay: ".3s",
       },
       {
         Sector: "Ecommerce",
-        time: ".3s",
+        timedelay: ".3s",
       },
       {
         Sector: "Transportation",
-        time: ".4s",
+        timedelay: ".3s",
       },
       {
         Sector: "Tourism & Hospitality",
-        time: ".5s",
+        timedelay: ".3s",
       },
       {
         Sector: "Utilities",
-        time: ".6s",
+        timedelay: ".3s",
       },
       {
         Sector: "Real Estate & Infrastructure",
-        time: ".7s",
+        timedelay: ".3s",
       },
       {
         Sector: "BFSI",
-        time: ".8s",
+        timedelay: ".3s",
       },
       {
         Sector: "Fintech",
-        time: ".9s",
+        timedelay: ".3s",
       },
       {
         Sector: "Healthcare",
-        time: "1s",
+        timedelay: ".3s",
       },
     ],
   },
@@ -636,37 +636,48 @@ export const blockchainSummit = [
     child: [
       {
         people: "CEOs / CTOs / COOs / CIOs",
+        timedelay: ".3s",
       },
       {
 
         people: "Heads of Automation",
+        timedelay: ".3s",
       },
       {
         people: "Business Heads",
+        timedelay: ".3s",
       },
       {
         people: "VPs / Directors",
+        timedelay: ".3s",
       },
       {
         people: "Heads of Analytics",
+        timedelay: ".3s",
       },
       {
         people: "Managing Partners / Principals / Managing Director",
+        timedelay: ".3s",
       },
       {
         people: "AI Professionals",
+        timedelay: ".3s",
       },
       {
         people: "Digital Officers",
+        timedelay: ".3s",
       },
       {
         people: "VPs of IT",
+        timedelay: ".3s",
       },
       {
         people: "Heads of Data Science",
+        timedelay: ".3s",
       },
       {
         people: "Developers Investors",
+        timedelay: ".3s",
       },
     ]
   }

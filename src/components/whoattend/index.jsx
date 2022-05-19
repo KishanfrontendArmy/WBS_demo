@@ -45,33 +45,32 @@ const WhoAttend = () => {
 
                     </ul>
                     <div className="tab-content" id="pills-tabContent">
-                        {selected.type === 0 &&
-                            <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                <div className="who_attends_sector p-0 d-flex align-items-center justify-content-between">
+                        {/* {selected.type === 0 && */}
+                        <div className={selected.type === 0 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div className="who_attends_sector p-0 d-flex align-items-center justify-content-between" >
+                                {selected.child?.map((data, index) => {
+                                    return (
+                                        <div key={`who_attends_sector_item ${index}`} className="who_attends_sector_item">
+                                            <small> {data.Sector}</small>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        {/* }
+                        {selected.type === 1 && */}
+                        <div className={selected.type === 1 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div className="who_attends_points">
+                                <ul className="d-flex align-items-center justify-content-between flex-wrap">
                                     {selected.child?.map((data, index) => {
                                         return (
-                                            <div key={`who_attends_sector_item ${index}`} className="who_attends_sector_item" data-wow-delay={data.time}>
-                                                <small> {data.Sector}</small>
-                                            </div>
+                                            <li key={`who_attends_points ${index}`} className="col-12 col-sm-6 col-md-4"> {data.people}</li>
                                         )
                                     })}
-                                </div>
+                                </ul>
                             </div>
-                        }
-                        {selected.type === 1 &&
-                            <div className="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                <div className="who_attends_points">
-                                    <ul className="d-flex align-items-center justify-content-between flex-wrap">
-                                        {selected.child?.map((data, index) => {
-                                            return (
-                                                <li key={`who_attends_points ${index}`} className="col-12 col-sm-6 col-md-4">  {data.people}</li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                            </div>
-                        }
-
+                        </div>
+                        {/* } */}
                     </div>
                 </div>
             </div>

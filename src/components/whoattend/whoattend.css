@@ -53,7 +53,11 @@ section.who_attends {
   left: 0;
 }
 /******************** Who Attends Image CSS ********************/
+.who_attends_tabs_box .tab-content .tab-pane.active {opacity: 1;visibility: visible;transform: translateY(0);position: relative;transition: all 0.5s ease-in-out 0s;}
 
+.who_attends_tabs_box .tab-content .tab-pane {opacity: 0;transition: all 0s ease-in-out 0s;transform: translateY(30px);visibility: hidden;position: absolute;left: 0;right: 0;display: unset;}
+
+.who_attends_tabs_box .tab-content {position: relative;}
 /* /************************** who_attends ************************** / */
 
 

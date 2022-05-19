@@ -170,14 +170,17 @@ header.header_main {
 .header_right .a_btn:nth-child(2) {
   margin-bottom: 15px;
 }
-.navbar-expand-lg .navbar-nav {
+header .navbar-expand-lg .navbar-nav {
   margin-bottom: 20px;
 }
 }
 @media screen and (max-width: 374px){
 .header_left h6 { font-size: 16px;}
-.header_right ul li a.dropdown-item { font-size: 14px; padding: 6px 20px;}
-.navbar-expand-lg .navbar-nav { margin: 15px 0;}
+.header_right ul li a.dropdown-item {
+  font-size: 14px;
+  padding: 4px 20px;
+}
+header .navbar-expand-lg .navbar-nav { margin: 15px 0;}
 }
 
 /* /************************** header_main ************************** / */
