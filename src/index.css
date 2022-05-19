@@ -91,7 +91,7 @@ a {
   letter-spacing: 1px;
   color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid !important;
+  border: 2px solid #e57139 !important;
   border-radius: 5px;
   padding: 12px 15px;
   display: inline-block;

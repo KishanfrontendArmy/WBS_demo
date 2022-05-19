@@ -128,7 +128,7 @@
 }
 .hero_banner_text_right .a_btn_fill.btn_orange a:hover {
   background: #ffffff;
-  border-color: #ffffff;
+  border-color: #ffffff !important;
   color: #0d1329;
 }
 .hero_banner_text_right small {
