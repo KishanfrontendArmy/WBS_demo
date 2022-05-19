@@ -122,6 +122,7 @@ padding: 60px 0 67px;
 }
 .tickets_wbs_price_box_top_text .a_btn a:hover {
   background: #fff;
+  border: #e57139 !important;
   color: #5c56c8;
 }
 .tickets_wbs_price_box_top_text h5 {
