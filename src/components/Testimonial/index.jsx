@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './testimonial.css';
 import "./swiper.min.css";
 
@@ -11,20 +11,33 @@ import * as $ from 'jquery';
 import { TestimonialData } from '../../data';
 SwiperCore.use([Navigation, Scrollbar, Autoplay]);
 
-
-
-
-
 const Testimonial = () => {
+
     const videopauseonswipe = () => {
         // alert("Inside")
         $('.yt_player_iframe').each(function () {
             this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
         })
     };
+
+    window.addEventListener('scroll', () => {
+        const rect = document.querySelector('iframe').getBoundingClientRect();
+        console.log("document.documentElement.clientHeight", document.documentElement.clientHeight)
+        console.log("rect", rect);
+        if (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        ) {
+        } else {
+            videopauseonswipe();
+        }
+    });
+
     return (
 
-        <section className="testimonials relative page-section" id="testimonialslink">
+        <section className="testimonials relative page-section" id="testimonialslink" >
             <div className="testimonials_cube-1 ">
                 {/* <!-- <canvas id="c"></canvas> --> */}
                 <span >
@@ -46,8 +59,9 @@ const Testimonial = () => {
                                 loop={true}
                                 autoplay={{
                                     delay: 3000,
-                                    disableOnInteraction: false,
+                                    disableOnInteraction: true,
                                     pauseOnMouseEnter: true
+
                                 }}
                                 navigation={{
                                     nextEl: ".testi_video_slider_arrow .swiper-button-next",
@@ -58,7 +72,7 @@ const Testimonial = () => {
                                 {TestimonialData && TestimonialData.length > 0 && TestimonialData.map((data, index) => {
                                     return (
                                         <SwiperSlide key={`swiper-slide testi_video_slide_item ${index}`} className="swiper-slide testi_video_slide_item" >
-                                            <iframe class="yt_player_iframe" src={data.link} title="YouTube video player" frameBorder="0" allowscriptaccess="always" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <iframe fraction="0.8" className="yt_player_iframe" src={data.link} title="YouTube video player" frameBorder="0" allowscriptaccess="always" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </SwiperSlide>
                                     )
                                 })}
@@ -76,7 +90,7 @@ const Testimonial = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
