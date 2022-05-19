@@ -7,7 +7,6 @@ const AboutSummit = () => {
             <div className="container">
                 <div className="about_summit_inr row flex-wrap relative align-items-start">
                     <div className="about_summit_single-cube wow zoomIn">
-                        {/* style="display: inline-block;" */}
                         <span data-parallax='{"scale": 0.8, "x": 20, "y": -20, "rotateZ":-30}'>
                             <img className="img-fluid" src="/image/single-cube-new-1.png" alt="" />
                         </span>

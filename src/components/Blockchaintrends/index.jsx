@@ -5,9 +5,6 @@ import { BlockchainTrendsData, BlockchainSessionsData } from '../../data';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
-
-import * as $ from 'jquery';
-
 import { loadAnimation } from "lottie-web";
 import { defineLordIconElement } from "lord-icon-element";
 
@@ -59,10 +56,6 @@ const BlockchainTrends = () => {
                                     nextEl: " .blockchain_trends_button_next ",
                                     prevEl: " .blockchain_trends_button_prev "
                                 }}
-                                // scrollbar={{
-                                //     el: ".swiper-scrollbar",
-                                // }}
-                                // breakpoints={sliderForSingleBreakPoint}
                                 className="swiper-wrapper">
                                 {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
                                     return (
@@ -94,9 +87,6 @@ const BlockchainTrends = () => {
                                         nextEl: " .blockchain_trends_button_next ",
                                         prevEl: ".blockchain_trends_button_prev"
                                     }}
-                                    // scrollbar={{
-                                    //     el: ".swiper-scrollbar",
-                                    // }}
                                     className="swiper-wrapper">
                                     {BlockchainTrendsData && BlockchainTrendsData.length > 0 && BlockchainTrendsData.map((data, index) => {
                                         return (
@@ -129,9 +119,6 @@ const BlockchainTrends = () => {
                             <p>Connect with prospective business partners in an exclusive innovation-focused event with an access to interactive sessions, networking areas, breakouts and meeting spaces.
                             </p>
                             <div className="a_btn a_btn_fill btn_orange">
-                                {/* <Link to={'/'}>
-                                    Become a Sponsor
-                                </Link> */}
                                 <a href="#">Become a Sponsor</a>
                             </div>
                         </div>

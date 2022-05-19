@@ -141,32 +141,6 @@ a {
 .who_attends_sector.nav-pills li button.tabbs_button.active{
     opacity:1;
 }
-/* .tabbs_button {
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #ffffff !important;
-    text-transform: uppercase;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 14px 40px;
-    display: inline-block;
-    transition: all 0.3s ease-in-out 0s;
-    border: 2px solid #ffffff !important;
-    margin: 0 15px;
-    background: none !important;
-  }
-  .tabbs_button:hover {
-      background-color: #fff !important;
-      color: #e57139 !important;
-  }
-  .tabbs_button.active {
-      color: #fff !important; 
-  }
-.tabbs_button.active {
-    background: #e57139 !important;
-    border-color: #e57139 !important;
-    
-} */
 
 .btn_orange a:hover {
   background: none;
