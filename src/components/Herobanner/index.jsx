@@ -1,5 +1,6 @@
 import React from 'react';
 import './herobanner.css';
+import { headerMenu } from '../../data'
 
 const Herobanner = () => {
     return (
@@ -62,7 +63,7 @@ const Herobanner = () => {
 
                                     </div>
                                     <div className="a_btn a_btn_bdr btn_org_bdr">
-                                        <a href="#.">Enquire Now</a>
+                                        <a href={headerMenu.enquire.url} target="_blank" rel="noreferrer">Enquire Now</a>
                                     </div>
                                     <div className="a_btn a_btn_fill btn_orange">
                                         <a href="#bookticketslink">Book Tickets</a>

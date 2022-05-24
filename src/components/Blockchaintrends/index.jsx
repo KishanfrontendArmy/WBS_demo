@@ -119,7 +119,7 @@ const BlockchainTrends = () => {
                             <p>Connect with prospective business partners in an exclusive innovation-focused event with an access to interactive sessions, networking areas, breakouts and meeting spaces.
                             </p>
                             <div className="a_btn a_btn_fill btn_orange">
-                                <a href="#">Become a Sponsor</a>
+                                <a href="https://wbsevent.netlify.app/sponsors" target="_blank" rel="noreferrer">Become a Sponsor</a>
                             </div>
                         </div>
                         <div className="blockchain_trends_quotes col-12 col-lg-6 wow fadeInRight relative">

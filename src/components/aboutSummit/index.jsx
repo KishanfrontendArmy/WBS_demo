@@ -1,6 +1,8 @@
 import React from 'react';
 import './aboutsummit.css';
 
+import { AbountSummit } from '../../data';
+
 const AboutSummit = () => {
     return (
         <section className="about_summit relative page-section">
@@ -21,7 +23,7 @@ const AboutSummit = () => {
                         <div className="about_summit_left_btn_box_otr row m-0">
                             <div className="about_summit_btn_box col-12 col-sm-6 col-md-3 p-0">
                                 <div className="a_btn a_btn_fill btn_orange">
-                                    <a href="#.">Sponsor</a>
+                                    <a href={AbountSummit.sponsorUrl} target="_blank" rel="noreferrer">Sponsor</a>
                                 </div>
                                 <p>Explore sponsorship opportunities</p>
                             </div>

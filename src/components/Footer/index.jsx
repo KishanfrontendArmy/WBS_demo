@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer_inr d-flex row justify-content-between">
                     <div className="ft_left col-md-3">
                         <div className="ft_logo wow fadeInUp">
-                            <a href="#">
+                            <a href="/">
                                 <img className="img-fluid" src="/image/ft_logo.png" alt="" />
                             </a>
                         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                                 {Footerimage && Footerimage.length > 0 && Footerimage.map((data, index) => {
                                     return (
                                         <li key={`ft_social_media ${index}`}>
-                                            <a href="#">
+                                            <a href={data.url} target="_blank" rel="noreferrer">
                                                 <img className="img-fluid" src={data.image} alt="" />
                                             </a>
                                         </li>
@@ -54,7 +54,9 @@ const Footer = () => {
                             <ul>
                                 {Footermenu && Footermenu.length > 0 && Footermenu.map((data, index) => {
                                     return (
-                                        <li key={`ft_right_menu ${index}`}><a href="#">{data.heading}</a></li>
+                                        <li key={`ft_right_menu ${index}`}>
+                                            <a href={data.url} target="_blank" rel="noreferrer">{data.heading}</a>
+                                        </li>
                                     )
                                 })}
                             </ul>
@@ -64,7 +66,9 @@ const Footer = () => {
                             <ul>
                                 {Footermenu1 && Footermenu1.length > 0 && Footermenu1.map((data, index) => {
                                     return (
-                                        <li key={`ft_right ${index}`}><a href="#">{data.about}</a></li>
+                                        <li key={`ft_right ${index}`}>
+                                            <a href={data.url} target="_blank" rel="noreferrer">{data.about}</a>
+                                        </li>
                                     )
                                 })}
                             </ul>

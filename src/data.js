@@ -1,39 +1,59 @@
+export const AbountSummit = {
+  sponsorUrl: "https://worldblockchainsummit.com/#sponsor"
+}
 export const Footermenu = [
   {
     heading: "Media",
+    url: "https://wbsevent.netlify.app/media"
   },
   {
     heading: "Sponsorship",
+    url: "https://wbsevent.netlify.app/sponsors"
   },
   {
     heading: "Affiliate Program",
+    url: "https://wbsevent.netlify.app/affiliate-program"
   },
   {
     heading: "Sponsors",
+    url: "https://wbsevent.netlify.app/sponsors"
   },
   {
     heading: "MCookie Policyedia",
+    url: "https://wbsevent.netlify.app/plicy"
   },
   {
     heading: "Privacy Policy",
+    url: "https://wbsevent.netlify.app/privacy-policy"
   },
   {
     heading: "General Terms & Conditions",
+    url: "https://wbsevent.netlify.app/terms-condition"
   },
 ];
 
+export const headerMenu = {
+  enquire: {
+    url: 'https://worldblockchainsummit.com/#register'
+  }  
+};
+
 export const Footermenu1 = [
   {
-    about: "About Us"
+    about: "About Us",
+    url: "https://wbsevent.netlify.app/terms-condition"
   },
   {
-    about: "Blog"
+    about: "Blog",
+    url: "https://wbsevent.netlify.app/blog"
   },
   {
-    about: "News"
+    about: "News",
+    url: "https://wbsevent.netlify.app/news"
   },
   {
-    about: "Attend For Free"
+    about: "Attend For Free",
+    url: "https://wbsevent.netlify.app/attend"
   },
 ];
 export const Footerdiscription = [
@@ -47,18 +67,23 @@ export const Footerdiscription = [
 export const Footerimage = [
   {
     image: "/image/Vector Smart Object.png",
+    url: "/"
   },
   {
     image: "/image/Vector Smart Object-2.png",
+    url: "/"
   },
   {
     image: "/image/Vector Smart Object-3.png",
+    url: "/"
   },
   {
     image: "/image/Vector Smart Object-4.png",
+    url: "/"
   },
   {
     image: "/image/Vector Smart Object-5.png",
+    url: "/"
   },
 ];
 export const EventManageData = [
