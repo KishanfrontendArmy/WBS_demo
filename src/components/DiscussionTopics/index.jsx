@@ -38,7 +38,7 @@ const DiscussionTopic = () => {
             items:2
         },
         768:{
-            items:3
+            items:3,
         },
         1024:{
             items:3
@@ -58,18 +58,20 @@ const DiscussionTopic = () => {
                     <div className="title_box_small wow fadeInUp">
                         <h2>DISCUSSION TOPICS</h2>
                     </div>
-                    <div className="discussion_topics_slider swiper">
+                    <div className="discussion_topics_slider">
                         <OwlCarousel className='owl-carousel owl-theme' 
                             loop={true}
                             margin={14} 
-                            nav={false}
-                            navigation={false}
+                            nav={true}
+                            navigation="true"
                             responsive={brekpoint}
-                            autoPlay={true}
+                            autoplay={true}
+                            autoplayHoverPause={true}
+                            autoplayTimeout={2000}
                         >
                             {DiscussionTopicData?.map((data, index) => {
                                 return (
-                                    <div className="discussion_topics_slide_item d-flex align-items-center justify-content-start flex-column wow fadeInRight" data-wow-delay={data.time} >
+                                    <div key={`discussion_topic_${index}`} className="discussion_topics_slide_item d-flex align-items-center justify-content-start flex-column wow fadeInRight" data-wow-delay={data.time} >
                                         <div className="discussion_topics_img">
                                             <img className='img-fluid' data-parallax='{"scale":1.2}' src={data.image} alt="" />
                                         </div>

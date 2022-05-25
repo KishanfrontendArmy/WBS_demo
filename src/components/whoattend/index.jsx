@@ -33,9 +33,9 @@ const WhoAttend = () => {
 
                 <div className="who_attends_tabs_box">
                     <ul className="who_attends_sector nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
-                        <div class="slider"></div>
+                        <div className="slider"></div>
                         {blockchainSummit?.map((res, ind) => (
-                            <li className="nav-item" role="presentation ">
+                            <li key={`blockchain_sumimt_${ind}`} className="nav-item" role="presentation ">
                                 <button type="button" onClick={() => handleSelection(res)} className={selected.name === res.name ? "nav-link tabbs_button active" : "nav-link tabbs_button"} id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
                                     {res.name}
                                 </button>
@@ -46,7 +46,7 @@ const WhoAttend = () => {
                     </ul>
                     <div className="tab-content" id="pills-tabContent">
                         {/* {selected.type === 0 && */}
-                        <div className={selected.type === 0 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div className={selected.type === 0 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabIndex="0">
                             <div className="who_attends_sector p-0 d-flex align-items-center justify-content-between" >
                                 {selected.child?.map((data, index) => {
                                     return (
@@ -59,7 +59,7 @@ const WhoAttend = () => {
                         </div>
                         {/* }
                         {selected.type === 1 && */}
-                        <div className={selected.type === 1 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div className={selected.type === 1 ? "tab-pane wow show active" : "tab-pane wow"} id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabIndex="0">
                             <div className="who_attends_points">
                                 <ul className="d-flex align-items-center justify-content-between flex-wrap">
                                     {selected.child?.map((data, index) => {

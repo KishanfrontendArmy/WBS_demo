@@ -1,0 +1,349 @@
+/******************** Speakers CSS ********************/
+.speaker_name h3 {
+    color: #f9f9f9;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 17px 0 10px;
+  }
+  
+  .speaker_position p {
+    color: #f9f9f9;
+    font-size: 22px;
+    padding: 0 20px 0 0;
+    line-height: 30px;
+  }
+  .speaker_plus {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+  
+  .speaker_img {
+    position: relative;
+    overflow: hidden;
+  }
+  .speaker_box {
+    cursor: pointer;
+  }
+  .speaker_img img {
+      filter: grayscale(1);
+      transition: all ease-in-out 0.2s 0s;
+      width: 100%;
+  }
+  .speaker_box:hover  .speaker_img img {
+      filter: grayscale(0);
+      transform: scale(1.2);
+  }
+  
+  .speaker_plus button {
+    align-items: center;
+    background: #0e1526;
+    border: none;
+    color: #fff;
+    display: flex;
+    font-size: 50px;
+    font-weight: 700;
+    height: 55px;
+    justify-content: center;
+    outline: none;
+    width: 55px;
+    transition: all 0.3s ease 0s;
+    }
+  .speakers_inr .a_btn {
+    text-align: center;
+  }
+  .speaker_plus button:hover {
+    background: #e5713a;
+  }
+  
+  .speakers_inr .a_btn {
+    text-align: center;
+    padding: 117px 0 0 0;
+  }
+  
+  .speakers_inr .a_btn a svg {
+    margin: 0 0 0 5px;
+  }
+  
+  .speakers_inr .a_btn a svg path {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .speakers_inr .a_btn a:hover svg path {
+    fill: #e5713a;
+  }
+  .speaker_model_otr .modal-dialog {
+    max-width: 1420px;
+  }
+  
+  .speaker_model_otr .modal-dialog .speaker_model_box {
+    position: relative;
+    padding: 40px;
+    z-index: 0;
+  }
+  
+  .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
+    align-items: center;
+    background: #0e1526;
+    border: none;
+    color: #fff;
+    display: flex;
+    font-size: 50px;
+    font-weight: 600;
+    height: 55px;
+    justify-content: center;
+    outline: none;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 55px;
+    transition: all 0.3s ease 0s;
+  }
+  .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close:hover{
+    background: #e5713a;
+    }
+  .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close span {
+    transform: rotate(45deg);
+  }
+  .speaker_model_otr .modal-dialog .speaker_model_box:before {
+    position: absolute;
+    content: "";
+    width: 296px;
+    height: 418px;
+    background: #e57139;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .speaker_model_right_box h5 {
+    font-size: 33px;
+    line-height: 39px;
+    letter-spacing: 1px;
+    color: #0e1526;
+    font-weight: 800;
+  }
+  
+  .speaker_model_right_box {
+    /*width: 62%;*/
+    padding-left: 50px;
+  }
+  
+  .speaker_model_right_box strong {
+    display: inline-block;
+    font-weight: 400;
+    color: #0e1526;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 24px 0 34px;
+  }
+  
+  
+  
+  .speaker_model_right_box p {
+    font-size: 26px;
+    line-height: 36px;
+    color: #0e1526;
+  }
+  .speaker_model_otr {
+    background: rgb(14 21 38 / 78%);
+  }
+  .speakers-cube-bottom {
+    position: absolute;
+    left: -3%;
+    bottom: -7%;
+    z-index: 1;
+  }
+  .speakers_list_otr {
+    --bs-gutter-x: .255rem;
+    --bs-gutter-y: 3.5rem;
+  }
+  a#loadMore {
+    cursor: pointer;
+  }
+  /******************** Speakers CSS ********************/
+  
+  
+  
+  /* /************************** speakers ************************** / */
+  
+     
+  
+  @media screen and (max-width: 1800px){
+      
+  }
+  @media screen and (max-width: 1700px){
+      
+  }
+  
+  @media screen and (max-width: 1600px){
+      .speaker_name h3 {font-size: 30px;font-weight: 800;padding: 15px 0 8px;}
+      .speakers_inr .a_btn {text-align: center;padding: 105px 0 0 0;}
+      .speakers-cube-bottom { max-width: 150px;}
+  }
+  
+  @media screen and (max-width: 1440px){
+      
+      .speaker_name h3 {font-size: 25px;font-weight: 800;padding: 15px 0 8px;}
+      .speakers_inr .a_btn {text-align: center;padding: 90px 0 0 0;}
+  
+  }
+  
+  @media screen and (max-width: 1300px){
+      
+      .speaker_name h3 {font-size: 22px;padding: 15px 0 8px;}
+      .speaker_position p {font-size: 20px;padding: 0 18px 0 0;line-height: 28px;}
+      .speakers_inr .a_btn {text-align: center;padding: 77px 0 0 0;}
+      
+  }
+  
+  @media screen and (max-width: 1200px){
+      .speakers-cube-bottom { max-width: 100px;} 
+     
+      
+  }
+  
+  @media screen and (max-width: 1024px){
+  
+      .speaker_box {width: 33.33% !important;}
+      .speaker_position p {font-size: 18px;padding: 0 18px 0 0;line-height: 25px;}
+      .speakers_inr .a_btn {padding: 65px 0 0 0;}
+  
+  }
+  
+  @media screen and (max-width: 900px){
+      .speaker_box {width: 50% !important;}
+      .speakers_list_otr {--bs-gutter-y: 2.5rem !important;}
+      .speakers_inr .a_btn {padding: 55px 0 0 0;}
+      
+  }
+  @media screen and (max-width: 767px){
+  
+      .speaker_name h3 {font-size: 20px;padding: 15px 0 8px;}
+      .speaker_position p {font-size: 16px;padding: 0 19px 0 0;line-height: 21px;}
+      .speakers_list_otr {--bs-gutter-y: 2rem !important;}
+      
+  }
+  @media screen and (max-width: 600px){
+      
+      .speaker_box {width: 100% !important;}
+      .speaker_img img {width: 100%;}
+      .speakers_inr .a_btn {padding: 50px 0 0 0;}
+      .speakers-cube-bottom { max-width: 100px; bottom: 2%; z-index: -1;}
+  
+  }
+  @media screen and (max-width: 479px){
+      
+  }
+  @media screen and (max-width: 374px){
+      
+      .speakers_list_otr {--bs-gutter-y: 1.5rem !important;}
+      .title_box_small > p {font-size: 17px;line-height: 28px;padding: 13px 0 35px;}
+      
+      
+  }
+  
+  
+  /* /************************** speakers ************************** / */
+  
+  
+  
+  /* /************************** Modal Popup ************************** / */
+  
+  
+  @media (max-width: 1600px) {
+    .speaker_model_otr .modal-dialog {
+        padding: 0 20px;
+    }   
+    }
+    @media (max-width: 1400px) {
+    
+       .speaker_model_right_box p {
+        font-size: 20px;
+       }
+    }
+    @media (max-width: 1200px) {
+    
+     .speaker_model_right_box p {
+        font-size: 18px;
+        line-height: 34px;
+       } 
+       .speaker_model_right_box {
+        padding-left: 30px;
+       } 
+       .speaker_model_otr .modal-dialog .speaker_model_box {
+        padding: 30px;
+       }
+    
+       .speaker_model_right_box strong { font-size: 20px; line-height: 24px; padding: 15px 0 30px;}
+    
+       .speaker_model_otr .modal-dialog .speaker_model_box:before { width: 296px; height: 338px;}
+    
+    }
+    @media (max-width: 992px) {
+    .speaker_model_otr .modal-dialog .speaker_model_box:before {
+        width: 266px;
+        height: 308px;
+    }
+        .speaker_model_right_box p {
+        font-size: 17px;
+        line-height: 32px;
+       } 
+    }
+    @media (max-width: 768px) { 
+    
+    .speaker_model_otr .modal-dialog {
+        padding: 0 20px;
+        max-width: 500px;
+    } 
+    
+    .speaker_model_right_box, .speaker_model_left_box {
+        padding: 0 0 0 0;
+        width: 100%;
+  
+    }
+    .speaker_model_right_box {
+        padding-top: 30px;
+    }
+        .modal-dialog-scrollable .modal-content {
+            overflow-y: auto;
+        }
+    }
+    @media (max-width: 576px) { 
+        .speaker_model_right_box strong { padding: 15px 0 20px;}
+        .speaker_model_right_box h5 {
+            font-size: 26px;
+        }
+  
+        .speaker_model_otr .modal-dialog .speaker_model_box:before {
+          width: 260px;
+          height: 270px;
+        }
+    }
+    @media (max-width: 374px) { 
+    
+          .speaker_model_right_box h5 {
+            font-size: 22px;
+          }
+          .speaker_model_right_box p { font-size: 15px; line-height: 27px; }
+          .speaker_model_right_box strong { padding: 10px 0; font-size: 18px;}
+        
+        .speaker_model_otr .modal-dialog .speaker_model_box .speaker_model_close {
+            font-size: 44px;
+            width: 45px;
+            height: 45px;
+        }
+  
+        .speaker_model_otr .modal-dialog .speaker_model_box {
+          padding: 20px;
+        }
+        .speaker_model_otr .modal-dialog .speaker_model_box:before {
+          width: 200px;
+          height: 200px;
+        }
+        .speaker_model_otr .modal-dialog {
+          padding: 0 15px;
+        }
+    
+    }
+    
+    /* /************************** Modal Popup ************************** / */

@@ -7,7 +7,7 @@ const Herobanner = () => {
         <section className="hero_banner parallax-window w1 page-section" data-parallax="scroll" data-image-src="/image/hero_banner-new1.jpg" id="bannerlink">
             <div className="hero_banner_inr">
                 <div className="hero_banner_video">
-                    <img className="img-fluid" src="/image/hero_banner.png" alt="" />
+                    <img className="img-fluid" src="image/hero_banner.png" alt="banner-image" />
                 </div>
                 <div className="hero_banner_text">
                     <div className="container">

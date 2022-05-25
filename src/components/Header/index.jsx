@@ -1,19 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 import { headerMenu } from '../../data';
 
 const Header = () => {
-
     return (
         <header className="header_main">
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container justify-content-between align-items-center">
                     <div className="header_left">
+                        <Link to="/" style={{color: '#fff'}}>
                         <h6>
                             <span><strong>22</strong><sup>nd</sup> Edition</span>
                             #WBSDubai
                         </h6>
+                        </Link>
                     </div>
                     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
