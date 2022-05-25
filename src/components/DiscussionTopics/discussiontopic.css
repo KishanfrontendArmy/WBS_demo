@@ -9,6 +9,7 @@
   background: #0f1025;
   transition: all ease-in-out 0.3s 0s;
   cursor: pointer;
+  height: 100%;
 }
 .discussion_topics_slide_item:hover {
   background: #5c56c8;
@@ -45,6 +46,39 @@
   line-height: 25px;
 }
 
+.discussion_topics_slider {
+  position: relative;
+}
+.discussion_topics_slider  .owl-carousel {
+  position: static;
+}
+.discussion_topics_slider .owl-carousel .owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+  background: #202249 !important;
+  border-radius: 0;
+  height: 10px !important;
+  opacity: 1;
+  transition: all .3s ease-in-out 0s;
+  width: 92px !important;
+  margin: 0 4px !important;
+}
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot.active {
+  background-color: #5c56c8 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  margin: 0 !important;
+  opacity: 0 !important;
+}
+.discussion_topics_slider .owl-stage {display: flex;}
 /******************** Discussion Topics CSS ********************/
 
 
@@ -77,6 +111,10 @@
   }
   .discussion_topics_slider .swiper-pagination-bullet {
     width: 70px;}
+
+    .discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+      width: 70px !important;
+  }
 }
 @media screen and (max-width: 1440px){
 
@@ -101,6 +139,10 @@
   .discussion_topics_slider .swiper-pagination-bullet {
     width: 50px;
 }
+
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+  width: 50px !important;
+}
 }
 @media screen and (max-width: 1024px){
   
@@ -118,7 +160,10 @@
     width: 40px;
     height:8px;
 }
-
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+  width: 40px !important;
+  height: 8px !important;
+}
 }
 @media screen and (max-width: 767px){
 
@@ -153,7 +198,7 @@
 }
 }
 @media screen and (max-width: 479px){
-  .discussion_topics_slider {padding:30px 0px 10px 0; max-width: 300px;}
+  .discussion_topics_slider {padding:30px 0px; max-width: 300px;}
   .discussion_topics_slide_item { min-height:auto; height:auto !important;}
 .discussion_topics {
   padding-top: 40px;
@@ -161,12 +206,20 @@
 .discussion_topics_slider .swiper.swiper-wrapper {
   padding-bottom: 30px;
 }
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+  width: 30px !important;
+  height: 6px !important;
+}
 
 }
 @media screen and (max-width: 374px){
   .discussion_topics_slider .swiper-pagination-bullet {
     width: 15px;
     height: 5px;
+}
+.discussion_topics_slider .owl-carousel .owl-dots .owl-dot {
+  width: 15px !important;
+  height: 5px !important;
 }
 }
 

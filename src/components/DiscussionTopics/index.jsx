@@ -1,15 +1,11 @@
 import React from 'react';
+
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 import './discussiontopic.css';
 import { DiscussionTopicData } from '../../data';
-import "./swiper.min.css";
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/navigation'
-import 'swiper/css/pagination';
-
-import SwiperCore, { Navigation, Scrollbar, Autoplay, Pagination } from 'swiper';
-SwiperCore.use([Navigation, Scrollbar, Autoplay, Pagination]);
-
 
 const DiscussionTopic = () => {
     const sliderForSingleBreakPoint = {
@@ -34,6 +30,26 @@ const DiscussionTopic = () => {
             slidesPerView: 5,
         }
     }
+    const brekpoint = {
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        1024:{
+            items:3
+        },
+        1025:{
+            items:4
+        },
+        1400:{
+            items:5
+        }
+    }
     return (
 
         <section className="discussion_topics page-section">
@@ -43,42 +59,29 @@ const DiscussionTopic = () => {
                         <h2>DISCUSSION TOPICS</h2>
                     </div>
                     <div className="discussion_topics_slider swiper">
-                        <Swiper
-
-                            slidesPerView={5}
-                            spaceBetween={14}
+                        <OwlCarousel className='owl-carousel owl-theme' 
                             loop={true}
-                            pagination={{
-                                el: ".discussion_topics_slider .swiper-pagination",
-                                clickable: true,
-                            }}
-                            breakpoints={sliderForSingleBreakPoint}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: false,
-                            }}
-                            className="swiper-wrapper">
+                            margin={14} 
+                            nav={false}
+                            navigation={false}
+                            responsive={brekpoint}
+                            autoPlay={true}
+                        >
                             {DiscussionTopicData?.map((data, index) => {
                                 return (
-                                    <SwiperSlide key={`discussion_topics_slide_item ${index}`}>
-                                        <div className="swiper-slide discussion_topics_slide_item d-flex align-items-center justify-content-start flex-column wow fadeInRight" data-wow-delay={data.time} >
-                                            <div className="discussion_topics_img">
-                                                <img className='img-fluid' data-parallax='{"scale":1.2}' src={data.image} alt="" />
-                                            </div>
-                                            <p>{data.discription}</p>
+                                    <div className="discussion_topics_slide_item d-flex align-items-center justify-content-start flex-column wow fadeInRight" data-wow-delay={data.time} >
+                                        <div className="discussion_topics_img">
+                                            <img className='img-fluid' data-parallax='{"scale":1.2}' src={data.image} alt="" />
                                         </div>
-                                    </SwiperSlide>
+                                        <p>{data.discription}</p>
+                                    </div>
                                 )
                             })}
-                        </Swiper>
-                        <div className="swiper-pagination"></div>
+                        </OwlCarousel>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
     )
 }
 export default DiscussionTopic
