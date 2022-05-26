@@ -1,10 +1,12 @@
 import React from 'react';
+import { Parallax,  } from 'react-parallax';
 import './herobanner.css';
 import { headerMenu } from '../../data'
 
 const Herobanner = () => {
     return (
-        <section className="hero_banner parallax-window w1 page-section" data-parallax="scroll" data-image-src="/image/hero_banner-new1.jpg" id="bannerlink">
+        <Parallax blur={0} bgImage="image/hero_banner-new1.jpg" bgImageAlt="Banner">
+        <section className="hero_banner parallax-window w1 page-section" id="bannerlink">
             <div className="hero_banner_inr">
                 <div className="hero_banner_video">
                     <img className="img-fluid" src="image/hero_banner.png" alt="banner-image" />
@@ -79,6 +81,7 @@ const Herobanner = () => {
                 </div>
             </div>
         </section>
+        </Parallax>
     )
 }
 
