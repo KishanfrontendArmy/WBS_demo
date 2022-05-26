@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './header.css';
 import * as $ from 'jquery';
 import { headerMenu } from '../../data';
@@ -50,41 +50,73 @@ const Header = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse header_right flex-grow-0" id="navbarNav">
-                        <ul className="navbar-nav d-flex justify-content-between align-items-center" >
                             {(window.location.pathname === '/') ? 
-                                <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                                    <a className="nav-link p-0 active" aria-current="page" href="#bannerlink">Home</a>
-                                </li>
+                                <ul className="navbar-nav d-flex justify-content-between align-items-center" >
+                                    <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                        <a className="nav-link p-0 active" aria-current="page" href="#bannerlink">Home</a>
+                                    </li>
+                                    <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                                        <a className="nav-link p-0" href="#speakerslink">SPEAKERS</a>
+                                    </li>
+                                    <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                                        <a className="nav-link p-0" href="#testimonialslink">TESTIMONIALS</a>
+                                    </li>
+                                    <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                                        <a className="nav-link p-0" href="#sponsorslink">SPONSORS</a>
+                                    </li>
+                                    <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                                        <a className="nav-link p-0" href="#medialink">MEDIA</a>
+                                    </li>
+                                    <li className="nav-item dropdown" id="navbarNavDarkDropdown">
+                                        <a className="nav-link p-0 dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" >
+                                            GALLERY
+                                        </a>
+                                        <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a className="dropdown-item" href="#">test 1</a></li>
+                                            <li><a className="dropdown-item" href="#">Test 2</a></li>
+                                            <li><a className="dropdown-item" href="#">Test 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             :
-                                <li className="nav-item">
-                                    <Link className="nav-link p-0 active" to="/">
-                                        Home
-                                    </Link>
-                                </li>
+                                <ul className="navbar-nav d-flex justify-content-between align-items-center" >
+                                    <li className="nav-item">
+                                        <Link className="nav-link p-0 active" to="/">
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link smooth className="nav-link p-0" to="/#speakerslink">
+                                            SPEAKERS
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link smooth className="nav-link p-0" to="/#testimonialslink">
+                                            TESTIMONIALS
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link smooth className="nav-link p-0" to="/#sponsorslink">
+                                            SPONSORS
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link smooth className="nav-link p-0" to="/#medialink">
+                                            MEDIA
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item dropdown" id="navbarNavDarkDropdown">
+                                        <a className="nav-link p-0 dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" >
+                                            GALLERY
+                                        </a>
+                                        <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a className="dropdown-item" href="#">test 1</a></li>
+                                            <li><a className="dropdown-item" href="#">Test 2</a></li>
+                                            <li><a className="dropdown-item" href="#">Test 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             }
-                                <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                                    <a className="nav-link p-0" href="#speakerslink">SPEAKERS</a>
-                                </li>
-                                <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                                    <a className="nav-link p-0" href="#testimonialslink">TESTIMONIALS</a>
-                                </li>
-                                <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                                    <a className="nav-link p-0" href="#sponsorslink">SPONSORS</a>
-                                </li>
-                                <li className="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                                    <a className="nav-link p-0" href="#medialink">MEDIA</a>
-                                </li>
-                                <li className="nav-item dropdown" id="navbarNavDarkDropdown">
-                                    <a className="nav-link p-0 dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" >
-                                        GALLERY
-                                    </a>
-                                    <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a className="dropdown-item" href="#">test 1</a></li>
-                                        <li><a className="dropdown-item" href="#">Test 2</a></li>
-                                        <li><a className="dropdown-item" href="#">Test 3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
                         <div className="a_btn a_btn_bdr btn_white_bdr">
                             <a href={headerMenu.enquire.url} target="_blank" rel="noreferrer">Enquire</a>
                         </div>
