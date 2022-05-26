@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-
+import * as $ from 'jquery';
 import { headerMenu } from '../../data';
 
 const Header = () => {
+    useEffect(() => {
+        var sections = $('.page-section'), 
+        nav = $('.header_main'), 
+        nav_height = nav.outerHeight();
+        $('.header_right ul li:first a').addClass('active');
+        $('.page-section:first').addClass('active');
+        $(window).on('scroll', function () {
+        var cur_pos = $(this).scrollTop();
+        sections.each(function() {
+            var top = $(this).offset().top - nav_height,
+                bottom = top + $(this).outerHeight();
+            if (cur_pos >= top && cur_pos <= bottom) {
+            nav.find('.header_right a').removeClass('active');
+            sections.removeClass('active');
+            $(this).addClass('active');
+            nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+
+            }
+        });
+        });
+        nav.find('.header_right a').on('click', function () {
+        var jQueryel = $(this)
+            , id = jQueryel.attr('href');
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - nav_height + 16
+        }, 500);
+        return false;
+        });
+    })
     return (
         <header className="header_main">
             <nav className="navbar navbar-expand-lg navbar-dark">
