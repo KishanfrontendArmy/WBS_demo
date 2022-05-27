@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './header.css';
 import * as $ from 'jquery';
 import { headerMenu } from '../../data';
+import Button from '../Button';
 
 const Header = () => {
     useEffect(() => {
@@ -117,12 +118,8 @@ const Header = () => {
                                     </li>
                                 </ul>
                             }
-                        <div className="a_btn a_btn_bdr btn_white_bdr">
-                            <a href={headerMenu.enquire.url} target="_blank" rel="noreferrer">Enquire</a>
-                        </div>
-                        <div className="a_btn a_btn_fill btn_orange" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                            <a href="#bookticketslink">Book Tickets</a>
-                        </div>
+                        <Button name="Enquire" type="a_btn_bdr btn_white_bdr" href={headerMenu.enquire.url}/>
+                        <Button name="Book Tickets" type="a_btn_fill btn_orange" href="#bookticketslink"/>
                     </div>
                 </div>
             </nav>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutsummit.css';
-
+import Button from '../Button';
 import { AbountSummit } from '../../data';
 
 const AboutSummit = () => {
@@ -22,15 +22,18 @@ const AboutSummit = () => {
                         <p>Designed in an intimate luxurious setting, we make sure all the spotlight is on you to help you raise funds for your ICOs/IEOs/STOs/IDOs or reduce your sales cycle like no other event!</p>
                         <div className="about_summit_left_btn_box_otr row m-0">
                             <div className="about_summit_btn_box col-12 col-sm-6 col-md-3 p-0">
-                                <div className="a_btn a_btn_fill btn_orange">
+                                <Button href={AbountSummit.sponsorUrl} type="a_btn_fill btn_orange" name="Sponsor" target="_blank" />
+                                
+                                {/* <div className="a_btn a_btn_fill btn_orange">
                                     <a href={AbountSummit.sponsorUrl} target="_blank" rel="noreferrer">Sponsor</a>
-                                </div>
+                                </div> */}
                                 <p>Explore sponsorship opportunities</p>
                             </div>
                             <div className="about_summit_btn_box col-12 col-sm-6 col-md-4">
-                                <div className="a_btn a_btn_bdr btn_white_bdr">
+                                <Button href="#bookticketslink" type="a_btn_bdr btn_white_bdr" name="Book Tickets"/>
+                                {/* <div className="a_btn a_btn_bdr btn_white_bdr">
                                     <a href="#bookticketslink">Book Tickets</a>
-                                </div>
+                                </div> */}
                                 <p>Reserve your tickets for upcoming events at special prices</p>
                             </div>
                         </div>

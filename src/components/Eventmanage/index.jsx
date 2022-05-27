@@ -23,11 +23,7 @@ const EventManage = () => {
                                 </div>
                                 <div className="event_manage_by_right col-12 col-xl-6 wow fadeInRight">
                                     <h3>{data.heading}</h3>
-                                    <p>{data.text1}</p>
-
-                                    <p>{data.text2}</p>
-
-                                    <p>{data.text3}</p>
+                                    <p dangerouslySetInnerHTML={{__html: data.description}}></p>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Parallax,  } from 'react-parallax';
 import './herobanner.css';
+import Button from '../Button';
 import { headerMenu } from '../../data'
 
 const Herobanner = () => {
@@ -9,7 +10,7 @@ const Herobanner = () => {
         <section className="hero_banner parallax-window w1 page-section" id="bannerlink">
             <div className="hero_banner_inr">
                 <div className="hero_banner_video">
-                    <img className="img-fluid" src="image/hero_banner.png" alt="banner-image" />
+                    <img className="img-fluid" src="image/hero_banner.png" alt="bannerImage" />
                 </div>
                 <div className="hero_banner_text">
                     <div className="container">
@@ -64,12 +65,8 @@ const Herobanner = () => {
                                         </div>
 
                                     </div>
-                                    <div className="a_btn a_btn_bdr btn_org_bdr">
-                                        <a href={headerMenu.enquire.url} target="_blank" rel="noreferrer">Enquire Now</a>
-                                    </div>
-                                    <div className="a_btn a_btn_fill btn_orange">
-                                        <a href="#bookticketslink">Book Tickets</a>
-                                    </div>
+                                    <Button href={headerMenu.enquire.url} type="a_btn_bdr btn_org_bdr" name="Enquire Now" target="_blank" />
+                                    <Button href="#bookticketslink" type="a_btn_fill btn_orange" name="Book Tickets"/>
                                     <small>Reserve your tickets for upcoming events at special prices</small>
                                     <div className="fill_img_box">
                                         <img className="img-fluid" src="/image/limited seats.png" alt="" />

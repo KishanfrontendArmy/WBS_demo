@@ -56,14 +56,8 @@ export const Footermenu1 = [
     url: "https://wbsevent.netlify.app/attend"
   },
 ];
-export const Footerdiscription = [
-  {
-    title: "World Blockchain Summit is a thought-leadership-driven initiative that brings together stakeholders from the Blockchain and Cryptocurrency ecosystem such as investors, blockchain and crypto projects, exchanges, enterprises, government representatives, and technology leaders.",
-  },
-  {
-    title1: "The summit features inspirational keynotes, pitch competitions, panel discussions, investor meet-ups, project showcases, industry use-cases, and a host of formal and informal networking opportunities.",
-  },
-];
+export const Footerdiscription = "World Blockchain Summit is a thought-leadership-driven initiative that brings together stakeholders from the Blockchain and Cryptocurrency ecosystem such as investors, blockchain and crypto projects, exchanges, enterprises, government representatives, and technology leaders. <br/><br/><br/>The summit features inspirational keynotes, pitch competitions, panel discussions, investor meet-ups, project showcases, industry use-cases, and a host of formal and informal networking opportunities."
+
 export const Footerimage = [
   {
     image: "/image/Vector Smart Object.png",
@@ -91,9 +85,10 @@ export const EventManageData = [
     headingimage: "/image/trescon_logo_event_by.png",
     centerimage: "/image/event_manage_img.jpg",
     heading: "CONNECTING BUSINESS WITH OPPORTUNITIES",
-    text1: "Trescon is a global business events and consulting firm that provides a wide range of business services to a diversified client base.",
-    text2: "Trescon is founded and managed by a group of specialists with more than 6 decades of combined expertise in successfully developing business events, trainings and consulting for corporates, governments, associations and high-net-worth individuals across the world. Our advisory board members comprise of an ever-growing exceptional mix of senior-level industry veterans and successful tech entrepreneurs.",
-    text3: "With a deep understanding of the realities and requirements of the growth markets we operate in – we strive to deliver innovative and high quality business platforms for our clients.",
+    description: "Trescon is a global business events and consulting firm that provides a wide range of business services to a diversified client base. <br/><br/> Trescon is founded and managed by a group of specialists with more than 6 decades of combined expertise in successfully developing business events, trainings and consulting for corporates, governments, associations and high-net-worth individuals across the world. Our advisory board members comprise of an ever-growing exceptional mix of senior-level industry veterans and successful tech entrepreneurs. <br/><br/><br/> With a deep understanding of the realities and requirements of the growth markets we operate in – we strive to deliver innovative and high quality business platforms for our clients."
+    // text1: "Trescon is a global business events and consulting firm that provides a wide range of business services to a diversified client base.",
+    // text2: "Trescon is founded and managed by a group of specialists with more than 6 decades of combined expertise in successfully developing business events, trainings and consulting for corporates, governments, associations and high-net-worth individuals across the world. Our advisory board members comprise of an ever-growing exceptional mix of senior-level industry veterans and successful tech entrepreneurs.",
+    // text3: "With a deep understanding of the realities and requirements of the growth markets we operate in – we strive to deliver innovative and high quality business platforms for our clients.",
   },
 ];
 export const SponserData = [

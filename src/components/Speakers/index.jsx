@@ -7,7 +7,7 @@ import * as $ from 'jquery';
 
 const Speaker = () => {
     const [step, setStep] = useState(1);
-    const [showSpeaker, setShowSpeaker] = useState(8);
+    const showSpeaker = 8;
     const [selectedSpeaker, setSelectedSpeaker] = useState(null);
     const [showLink, setShowLink] = useState(false);
 

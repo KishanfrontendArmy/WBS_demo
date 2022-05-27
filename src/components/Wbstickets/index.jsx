@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './wbstickets.css';
-import { Tickets } from "../../data";
 import { WhyAttendData } from '../../data';
 
 const WbsTickets = () => {
 
     const Automoreless = (index, checked) => {
-        console.log(checked)
-        WhyAttendData.map((res, ind) => {
+        WhyAttendData?.map((res, ind) => {
             if (ind !== index) {
                 document.querySelector('.more_less_testi_input' + ind).checked = false;
             } else {
@@ -17,6 +15,7 @@ const WbsTickets = () => {
                     document.querySelector('.more_less_testi_input' + index).checked = false;
                 }
             }
+            return res;
         })
     }
     return (

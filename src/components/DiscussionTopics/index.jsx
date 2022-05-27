@@ -8,28 +8,6 @@ import './discussiontopic.css';
 import { DiscussionTopicData } from '../../data';
 
 const DiscussionTopic = () => {
-    const sliderForSingleBreakPoint = {
-        320: {
-            slidesPerView: 1,
-            autoHeight: true,
-        },
-        480: {
-            slidesPerView: 2,
-            autoHeight: false,
-        },
-        768: {
-            slidesPerView: 3,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-        1025: {
-            slidesPerView: 4,
-        },
-        1400: {
-            slidesPerView: 5,
-        }
-    }
     const brekpoint = {
         0:{
             items:1

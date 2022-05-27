@@ -4,8 +4,6 @@ import { Footerimage, Footerdiscription, Footermenu, Footermenu1 } from '../../d
 
 const Footer = () => {
     return (
-
-
         <footer className="footer">
             <div className="container">
                 <div className="footer_inr d-flex row justify-content-between">
@@ -15,16 +13,9 @@ const Footer = () => {
                                 <img className="img-fluid" src="/image/ft_logo.png" alt="" />
                             </a>
                         </div>
-                        {Footerdiscription && Footerdiscription.length > 0 && Footerdiscription.map((data, index) => {
-                            return (
-                                <div key={`footer_inr ${index}`}>
-                                    <p className="wow fadeInUp">{data.title}</p>
-
-                                    <p className="wow fadeInUp">{data.title1}</p>
-                                </div>
-                            )
-
-                        })}
+                        <div>
+                            <p className="wow fadeInUp" dangerouslySetInnerHTML={{__html: Footerdiscription}}></p>
+                        </div>
                         <div className="ft_social_media wow fadeInUp">
 
                             <ul className="d-flex align-items-center">
